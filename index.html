@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+
+```
+<!-- SEO Meta Tags -->
+<meta name="description" content="Profesjonalny serwis AGD w Szczecinie, Stargardzie i całym Zachodniopomorskiem. Naprawa pralek, zmywarek, lodówek, piekarników, suszarek. Dojazd od 100zł. Tel: 721988949">
+<meta name="keywords" content="naprawa pralek szczecin, serwis AGD stargard, naprawa zmywarek, serwis agd szczecin">
+
+<link rel="canonical" href="https://naprawaagd24.pl/">
+<title>Serwis AGD Szczecin, Stargard | Naprawa pralek, zmywarek | WISA 721 988 949</title>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Arial', sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 100vh;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    /* Header */
+    header {
+        background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+        padding: 1rem 0;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+        box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .header-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #667eea;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .phone {
+        font-size: 1.5rem;
+        color: #f39c12;
+        font-weight: bold;
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+
+    .phone:hover {
+        color: #e67e22;
+        transform: scale(1.05);
+    }
+
+    /* Hero */
+    .hero {
+        margin-top: 100px;
+        padding: 4rem 0;
+        text-align: center;
+        color: white;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+    }
+
+    .hero p {
+        font-size: 1.3rem;
+        margin-bottom: 2rem;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    }
+
+    .cta-button {
+        display: inline-block;
+        background: linear-gradient(45deg, #e74c3c, #f39c12);
+        color: white;
+        padding: 15px 30px;
+        text-decoration: none;
+        border-radius: 50px;
+        font-size: 1.2rem;
+        font-weight: bold;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .cta-button:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Services Navigation Section */
+    .services-navigation {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        padding: 4rem 0;
+        color: white;
+    }
+
+    .services-navigation h2 {
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 3rem;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .services-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+    }
+
+    .service-link-card {
+        background: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(10px);
+        padding: 2rem;
+        border-radius: 15px;
+        text-decoration: none;
+        color: white;
+        transition: all 0.3s ease;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        text-align: center;
+    }
+
+    .service-link-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        background: rgba(255, 255, 255, 0.25);
+    }
+
+    .service-icon {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    .service-link-card h3 {
+        color: white;
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .service-link-card p {
+        color: rgba(255, 255, 255, 0.9);
+    }
+
+    /* Cities Navigation */
+    .cities-navigation {
+        background: linear-gradient(135deg, #2c3e50, #34495e);
+        padding: 4rem 0;
+        color: white;
+    }
+
+    .cities-navigation h2 {
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .cities-navigation p {
+        text-align: center;
+        margin-bottom: 3rem;
+        color: rgba(255,255,255,0.9);
+    }
+
+    .cities-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+    }
+
+    .city-card {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        color: white;
+        padding: 2rem;
+        border-radius: 15px;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        text-align: center;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .city-card:hover {
+        transform: translateY(-5px);
+        background: rgba(255, 255, 255, 0.2);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    }
+
+    .city-card h3 {
+        margin: 1rem 0;
+    }
+
+    .city-card p {
+        font-size: 0.9rem;
+        color: rgba(255, 255, 255, 0.8);
+    }
+
+    /* Reviews */
+    .reviews {
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        padding: 4rem 0;
+        color: white;
+    }
+
+    .reviews h2 {
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 3rem;
+    }
+
+    .reviews-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 2rem;
+    }
+
+    .review-card {
+        background: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(10px);
+        padding: 2rem;
+        border-radius: 15px;
+        text-align: center;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .stars {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .reviewer {
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        padding-top: 1rem;
+        margin-top: 1rem;
+    }
+
+    .reviewer strong {
+        color: #f39c12;
+        display: block;
+        margin-bottom: 0.25rem;
+    }
+
+    /* Order Form */
+    .order-section {
+        background: linear-gradient(135deg, #2c3e50, #34495e);
+        padding: 4rem 0;
+        color: white;
+    }
+
+    .order-form {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        padding: 2rem;
+        border-radius: 15px;
+        max-width: 600px;
+        margin: 0 auto;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .form-group {
+        margin-bottom: 1.5rem;
+    }
+
+    .form-group label {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-weight: bold;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        width: 100%;
+        padding: 12px;
+        border: none;
+        border-radius: 8px;
+        font-size: 1rem;
+        background: rgba(255, 255, 255, 0.9);
+        color: #333;
+    }
+
+    .submit-btn {
+        width: 100%;
+        background: linear-gradient(45deg, #e74c3c, #f39c12);
+        color: white;
+        padding: 15px;
+        border: none;
+        border-radius: 8px;
+        font-size: 1.2rem;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .submit-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Footer */
+    footer {
+        background: linear-gradient(135deg, #2c3e50, #34495e);
+        color: white;
+        text-align: center;
+        padding: 2rem 0;
+    }
+
+    .footer-content {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .footer-section h3 {
+        margin-bottom: 1rem;
+        color: #667eea;
+    }
+
+    .footer-section a {
+        color: #667eea;
+        text-decoration: none;
+    }
+
+    /* WhatsApp Button */
+    .whatsapp-float {
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 20px;
+        right: 20px;
+        background: #25d366;
+        color: white;
+        border-radius: 50%;
+        text-align: center;
+        font-size: 24px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+        z-index: 100;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+
+    .whatsapp-float:hover {
+        transform: scale(1.1);
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+        .hero h1 {
+            font-size: 2rem;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+        }
+
+        .cities-grid,
+        .services-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+```
+
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">WISA</div>
+                <a href="tel:+48721988949" class="phone">📞 721 988 949</a>
+            </div>
+        </div>
+    </header>
+
+```
+<!-- Hero -->
+<section class="hero">
+    <div class="container">
+        <h1>Profesjonalny Serwis AGD w Zachodniopomorskiem</h1>
+        <p>Naprawa pralek, zmywarek, lodówek, piekarników, suszarek</p>
+        <a href="#order" class="cta-button">Zamów Naprawę</a>
+    </div>
+</section>
+
+<!-- Services Navigation with Links -->
+<section class="services-navigation">
+    <div class="container">
+        <h2>Wybierz Rodzaj Usługi</h2>
+        <div class="services-grid">
+            <a href="naprawa-pralek/" class="service-link-card">
+                <div class="service-icon">🔧</div>
+                <h3>Naprawa Pralek</h3>
+                <p>Wszystkie marki pralek automatycznych. Szybka diagnoza i naprawa.</p>
+            </a>
+            
+            <a href="naprawa-zmywarek/" class="service-link-card">
+                <div class="service-icon">🍽️</div>
+                <h3>Naprawa Zmywarek</h3>
+                <p>Serwis zmywarek wszystkich typów. Usuwamy awarie i problemy.</p>
+            </a>
+            
+            <a href="naprawa-lodowek/" class="service-link-card">
+                <div class="service-icon">❄️</div>
+                <h3>Naprawa Lodówek</h3>
+                <p>Układy chłodnicze, termostaty, uszczelki. Kompleksowy serwis.</p>
+            </a>
+            
+            <a href="naprawa-piekarnikow/" class="service-link-card">
+                <div class="service-icon">🔥</div>
+                <h3>Naprawa Piekarników</h3>
+                <p>Piekarniki elektryczne i gazowe. Grzałki, termostaty, programatory.</p>
+            </a>
+            
+            <a href="naprawa-suszarek/" class="service-link-card">
+                <div class="service-icon">🌪️</div>
+                <h3>Naprawa Suszarek</h3>
+                <p>Suszarki bębnowe wszystkich marek. Profesjonalny serwis.</p>
+            </a>
+            
+            <a href="#order" class="service-link-card">
+                <div class="service-icon">⚡</div>
+                <h3>Szybki Dojazd</h3>
+                <p>Dojazd tego samego dnia. Uczciwe ceny. Gwarancja na usługi.</p>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Cities Navigation -->
+<section class="cities-navigation">
+    <div class="container">
+        <h2>Obsługiwane Miasta</h2>
+        <p>Serwis AGD w całym województwie zachodniopomorskim</p>
+        <div class="cities-grid">
+            <!-- Przykładowe linki - dostosuj do swojej struktury -->
+            <a href="szczecin/" class="city-card">
+                <div class="service-icon">🏙️</div>
+                <h3>Szczecin</h3>
+                <p>Wszystkie dzielnice<br>Szybki dojazd</p>
+            </a>
+            
+            <a href="stargard/" class="city-card">
+                <div class="service-icon">🏛️</div>
+                <h3>Stargard</h3>
+                <p>Miasto i okolice<br>Profesjonalny serwis</p>
+            </a>
+            
+            <a href="goleniow/" class="city-card">
+                <div class="service-icon">✈️</div>
+                <h3>Goleniów</h3>
+                <p>Lotnisko • Centrum<br>Tego samego dnia</p>
+            </a>
+            
+            <a href="nowogard/" class="city-card">
+                <div class="service-icon">🌳</div>
+                <h3>Nowogard</h3>
+                <p>Miasto i gmina<br>Gwarancja na usługi</p>
+            </a>
+            
+            <a href="maszewo/" class="city-card">
+                <div class="service-icon">🌾</div>
+                <h3>Maszewo</h3>
+                <p>Maszewo i okolice<br>Uczciwe ceny</p>
+            </a>
+            
+            <a href="police/" class="city-card">
+                <div class="service-icon">🏭</div>
+                <h3>Police</h3>
+                <p>Miasto Police<br>Szybki serwis</p>
+            </a>
+            
+            <a href="pyrzyce/" class="city-card">
+                <div class="service-icon">🏘️</div>
+                <h3>Pyrzyce</h3>
+                <p>Pyrzyce i gmina<br>Dojazd od 100zł</p>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Reviews -->
+<section class="reviews">
+    <div class="container">
+        <h2>Opinie Klientów</h2>
+        <div class="reviews-grid">
+            <div class="review-card">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p>"Najlepszy serwis AGD w Szczecinie! Pralka naprawiona tego samego dnia."</p>
+                <div class="reviewer">
+                    <strong>Anna K.</strong>
+                    <span>Szczecin</span>
+                </div>
+            </div>
+            <div class="review-card">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p>"Uczciwe ceny bez ukrytych kosztów. Polecam serwis WISA!"</p>
+                <div class="reviewer">
+                    <strong>Marek W.</strong>
+                    <span>Stargard</span>
+                </div>
+            </div>
+            <div class="review-card">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p>"Lodówka działała od razu. Gwarancja na usługę!"</p>
+                <div class="reviewer">
+                    <strong>Katarzyna M.</strong>
+                    <span>Szczecin</span>
+                </div>
+            </div>
+            <div class="review-card">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p>"Bardzo miły i kompetentny serwisant AGD."</p>
+                <div class="reviewer">
+                    <strong>Tomasz L.</strong>
+                    <span>Police</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Order Form -->
+<section class="order-section" id="order">
+    <div class="container">
+        <div class="order-form">
+            <h2>Zamów Naprawę</h2>
+            <form id="orderForm">
+                <div class="form-group">
+                    <label for="service">Rodzaj usługi:</label>
+                    <select id="service" name="service" required>
+                        <option value="">Wybierz usługę</option>
+                        <option value="pralka">Naprawa pralki</option>
+                        <option value="zmywarka">Naprawa zmywarki</option>
+                        <option value="lodowka">Naprawa lodówki</option>
+                        <option value="piekarnik">Naprawa piekarnika</option>
+                        <option value="suszarka">Naprawa suszarki</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="name">Imię i nazwisko:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Telefon:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="city">Miasto:</label>
+                    <select id="city" name="city" required>
+                        <option value="">Wybierz miasto</option>
+                        <option value="Szczecin">Szczecin</option>
+                        <option value="Stargard">Stargard</option>
+                        <option value="Goleniów">Goleniów</option>
+                        <option value="Nowogard">Nowogard</option>
+                        <option value="Maszewo">Maszewo</option>
+                        <option value="Police">Police</option>
+                        <option value="Pyrzyce">Pyrzyce</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="problem">Opis problemu:</label>
+                    <textarea id="problem" name="problem" placeholder="Opisz co się dzieje z urządzeniem..."></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Wyślij Zgłoszenie</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Kontakt</h3>
+                <p>Oleksandr Chumnyi WISA</p>
+                <p>📞 721 988 949</p>
+                <p>📍 Szczecin i okolice</p>
+            </div>
+            <div class="footer-section">
+                <h3>Godziny pracy</h3>
+                <p>Pn-Pt: 8:00 - 20:00</p>
+                <p>Sobota: 9:00 - 18:00</p>
+                <p>Niedziela: 10:00 - 16:00</p>
+            </div>
+            <div class="footer-section">
+                <h3>Usługi</h3>
+                <p><a href="naprawa-pralek/">Naprawa Pralek</a></p>
+                <p><a href="naprawa-zmywarek/">Naprawa Zmywarek</a></p>
+                <p><a href="naprawa-lodowek/">Naprawa Lodówek</a></p>
+            </div>
+        </div>
+        <p>&copy; 2025 Serwis AGD WISA - Wszystkie prawa zastrzeżone</p>
+    </div>
+</footer>
+
+<!-- WhatsApp Button -->
+<a href="https://wa.me/48721988949" class="whatsapp-float">💬</a>
+
+<script>
+    document.getElementById('orderForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const formData = new FormData(this);
+        const service = formData.get('service');
+        const name = formData.get('name');
+        const phone = formData.get('phone');
+        const city = formData.get('city');
+        const problem = formData.get('problem');
+        
+        let message = `🔧 NOWE ZGŁOSZENIE\n\n`;
+        message += `👤 ${name}\n`;
+        message += `📞 ${phone}\n`;
+        message += `🏙️ ${city}\n`;
+        message += `🔧 ${service}\n`;
+        if (problem) message += `❗ ${problem}\n`;
+        
+        const whatsappURL = `https://wa.me/48721988949?text=${encodeURIComponent(message)}`;
+        window.open(whatsappURL, '_blank');
+        
+        alert('Dziękujemy! Za chwilę zostaniesz przekierowany do WhatsApp.');
+    });
+</script>
+```
+
+</body>
+</html>

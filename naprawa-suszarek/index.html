@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="robots" content="index, follow">
+    <title>Naprawa Suszarek | WISA 721 988 949</title>
+    <meta name="description" content="Profesjonalny serwis suszarek wszystkich marek. Naprawa, konserwacja i diagnostyka w Twoim mieście. Suszarka nie grzeje, nie obraca bębna, hałasuje.">
+    <link rel="stylesheet" href="../css/style.css"> 
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Naprawa Suszarek",
+  "image": "https://serwisagdwisa.github.io/logo.jpg",
+  "url": "https://serwisagdwisa.github.io/Naprawa-Suszarek/",
+  "telephone": "+48 721 988 949",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Twoje miasto",
+    "addressRegion": "Zachodniopomorskie",
+    "addressCountry": "PL"
+  },
+  "makesOffer": {
+    "@type": "Offer",
+    "itemOffered": {
+      "@type": "Service",
+      "name": "Wyjazdowy serwis suszarek"
+    }
+  }
+}
+</script>
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="header-content">
+            <a href="../index.html" class="logo">WISA</a>
+            <a href="tel:+48721988949" class="phone">📞 721 988 949</a>
+        </div>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="container">
+        <h1>Naprawa Suszarek</h1>
+        <p>Profesjonalny serwis suszarek wszystkich marek – naprawa, konserwacja i diagnostyka w Twoim mieście</p>
+        <a href="#order" class="cta-button">Zamów Serwis</a>
+    </div>
+</section>
+
+<section class="services">
+    <div class="container">
+        <h2>Najczęstsze problemy z suszarkami</h2>
+        <div class="services-grid">
+            <div class="service-card"><h3>Suszarka nie grzeje</h3></div>
+            <div class="service-card"><h3>Nie obraca się bęben</h3></div>
+            <div class="service-card"><h3>Hałasuje lub drży</h3></div>
+            <div class="service-card"><h3>Przerywa cykl suszenia</h3></div>
+            <div class="service-card"><h3>Nie kończy programu</h3></div>
+            <div class="service-card"><h3>Błąd na wyświetlaczu (np. E61, E66)</h3></div>
+            <div class="service-card"><h3>Nieszczelne drzwi suszarki</h3></div>
+            <div class="service-card"><h3>Konserwacja suszarek</h3></div>
+        </div>
+    </div>
+</section>
+
+<section class="cities-navigation">
+    <div class="container">
+        <h2>Wybierz swoje miasto:</h2>
+        <div class="cities-grid">
+            <a href="szczecin/" class="city-card">Szczecin</a>
+            <a href="stargard/" class="city-card">Stargard</a>
+            <a href="goleniow/" class="city-card">Goleniów</a>
+            <a href="nowogard/" class="city-card">Nowogard</a>
+            <a href="maszewo/" class="city-card">Maszewo</a>
+            <a href="pyrzyce/" class="city-card">Pyrzyce</a>
+            <a href="police/" class="city-card">Police</a>
+        </div>
+    </div>
+</section>
+
+<section id="order" class="order-section">
+    <div class="container">
+        <form class="order-form" onsubmit="sendToWhatsApp(event)">
+            <h2>Zamów serwis suszarki</h2>
+            <div class="form-group">
+                <label>Imię:</label>
+                <input type="text" id="name" required>
+            </div>
+            <div class="form-group">
+                <label>Telefon:</label>
+                <input type="tel" id="phone" required>
+            </div>
+            <div class="form-group">
+                <label>Marka i model suszarki:</label>
+                <input type="text" id="brand" placeholder="np. Bosch WTW87560PL">
+            </div>
+            <div class="form-group">
+                <label>Miasto:</label>
+                <select id="city" required>
+                    <option value="">Wybierz miasto</option>
+                    <option value="Szczecin">Szczecin</option>
+                    <option value="Stargard">Stargard</option>
+                    <option value="Goleniów">Goleniów</option>
+                    <option value="Nowogard">Nowogard</option>
+                    <option value="Maszewo">Maszewo</option>
+                    <option value="Pyrzyce">Pyrzyce</option>
+                    <option value="Police">Police</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Adres:</label>
+                <input type="text" id="address" placeholder="Ulica, numer domu/mieszkania" required>
+            </div>
+            <div class="form-group">
+                <label>Opis problemu:</label>
+                <textarea id="message" placeholder="Krótki opis problemu" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Wyślij na WhatsApp</button>
+        </form>
+    </div>
+</section>
+
+<a href="https://wa.me/48721988949" target="_blank" class="whatsapp-float">💬</a>
+
+<script>
+function sendToWhatsApp(event) {
+    event.preventDefault();
+    let name = document.getElementById("name").value;
+    let phone = document.getElementById("phone").value;
+    let brand = document.getElementById("brand").value;
+    let message = document.getElementById("message").value;
+    let city = document.getElementById("city").value;
+    let address = document.getElementById("address").value;
+
+    let text = `🔧 NAPRAWA SUSZARKI\n\n` +
+               `👤 Imię: ${name}\n` +
+               `📞 Telefon: ${phone}\n` +
+               `🏠 Adres: ${address}, ${city}\n` +
+               `🔧 Marka/model: ${brand}\n` +
+               `❗ Problem: ${message}`;
+
+    let url = "https://api.whatsapp.com/send?phone=48721988949&text=" + encodeURIComponent(text);
+    window.open(url, '_blank');
+    alert("Twoja zgłoszenie zostało wysłane na WhatsApp!");
+}
+</script>
+
+<div class="breadcrumb container">
+    <a href="../index.html">Strona Główna</a> > <span>Naprawa Suszarek</span>
+</div>
+
+</body>
+</html>

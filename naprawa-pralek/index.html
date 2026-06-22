@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <title>Naprawa Pralek | Serwis WISA | Szczecin, Stargard, Police</title>
+    <meta name="description" content="Profesjonalny serwis i naprawa pralek w Zachodniopomorskiem. Obsługujemy: Gryfino, Stargard, Szczecin, Police, Goleniów, Nowogard, Maszewo, Pyrzyce. Szybki dojazd.">
+    <link rel="canonical" href="https://naprawaagd24.pl/naprawa-pralek/">
+    
+    <link rel="stylesheet" href="../css/style.css"> 
+    <link rel="icon" type="image/x-icon" href="https://naprawaagd24.pl/favicon.ico">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Serwis AGD WISA",
+  "image": "https://naprawaagd24.pl/logo.png", 
+  "url": "https://naprawaagd24.pl/naprawa-pralek/",
+  "telephone": "+48 721 988 949",
+  "priceRange": "$$", 
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Mobilny serwis",
+    "addressLocality": "Szczecin",
+    "addressRegion": "Zachodniopomorskie",
+    "postalCode": "70-000",
+    "addressCountry": "PL"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 53.4285,
+    "longitude": 14.5528
+  },
+  "areaServed": [
+    "Szczecin", "Stargard", "Police", "Goleniów", "Nowogard", "Maszewo", "Pyrzyce", "Gryfino"
+  ],
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": [
+      "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"
+    ],
+    "opens": "08:00",
+    "closes": "18:00"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+48 721 988 949",
+    "contactType": "customer service",
+    "availableLanguage": ["pl", "ru", "en"]
+  },
+  "makesOffer": {
+    "@type": "Offer",
+    "itemOffered": {
+      "@type": "Service",
+      "name": "Naprawa pralek",
+      "serviceType": "Naprawa pralek wszystkich marek",
+      "description": "Diagnostyka i naprawa pralek z dojazdem do klienta na terenie woj. zachodniopomorskiego."
+    }
+  }
+}
+</script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="https://naprawaagd24.pl" class="back-to-home">← Strona główna</a>
+                <div class="logo">WISA</div>
+                <a href="tel:+48721988949" class="phone">📞 721 988 949</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Naprawa Pralek - Wybierz Swoje Miasto</h1>
+            <p>Profesjonalny serwis pralek we wszystkich miastach Zachodniopomorskiego</p>
+            <a href="#cities" class="cta-button">Zobacz Miasta</a>
+        </div>
+    </section>
+
+    <section id="cities" class="cities-navigation">
+        <div class="container">
+            <h2>Wybierz Miasto</h2>
+            <div class="cities-grid">
+                <a href="gryfino/" class="city-card">
+                    <h3>Gryfino</h3>
+                    <p>Serwis pralek</p>
+                </a>
+                <a href="stargard/" class="city-card">
+                    <h3>Stargard</h3>
+                    <p>Serwis pralek</p>
+                </a>
+                <a href="szczecin/" class="city-card">
+                    <h3>Szczecin</h3>
+                    <p>Serwis pralek</p>
+                </a>
+                <a href="police/" class="city-card">
+                    <h3>Police</h3>
+                    <p>Serwis pralek</p>
+                </a>
+                <a href="goleniow/" class="city-card">
+                    <h3>Goleniów</h3>
+                    <p>Serwis pralek</p>
+                </a>
+                <a href="nowogard/" class="city-card">
+                    <h3>Nowogard</h3>
+                    <p>Serwis pralek</p>
+                </a>
+                <a href="maszewo/" class="city-card">
+                    <h3>Maszewo</h3>
+                    <p>Serwis pralek</p>
+                </a>
+                <a href="pyrzyce/" class="city-card">
+                    <h3>Pyrzyce</h3>
+                    <p>Serwis pralek</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Zgłoszenie przez WhatsApp</h2>
+            <form id="whatsappForm" onsubmit="sendToWhatsApp(event)">
+                <div class="form-row">
+                    <label for="name">Imię</label>
+                    <input id="name" name="name" type="text" required>
+                </div>
+                <div class="form-row">
+                    <label for="phone">Telefon</label>
+                    <input id="phone" name="phone" type="tel" placeholder="+48..." required>
+                </div>
+                <div class="form-row">
+                    <label for="city">Miasto</label>
+                    <select id="city" name="city" required>
+                        <option value="">Wybierz...</option>
+                        <option>Gryfino</option>
+                        <option>Stargard</option>
+                        <option>Szczecin</option>
+                        <option>Police</option>
+                        <option>Goleniów</option>
+                        <option>Nowogard</option>
+                        <option>Maszewo</option>
+                        <option>Pyrzyce</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <label for="address">Adres (opcjonalnie)</label>
+                    <input id="address" name="address" type="text">
+                </div>
+                <div class="form-row">
+                    <label for="brand">Marka / model</label>
+                    <input id="brand" name="brand" type="text" required>
+                </div>
+                <div class="form-row">
+                    <label for="message">Opis problemu</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <div class="form-row">
+                    <button type="submit" class="cta-button">Wyślij przez WhatsApp</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="container">
+            <h2>Najczęstsze Problemy z Pralkami</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🔄</div>
+                    <h3>Pralka nie wiruje</h3>
+                    <p>Ubrania wychodzą mokre po praniu</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🌡️</div>
+                    <h3>Pralka nie grzeje</h3>
+                    <p>Woda pozostaje zimna podczas prania</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💧</div>
+                    <h3>Woda zostaje w pralce</h3>
+                    <p>Woda stoi w bębnie po cyklu</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🔊</div>
+                    <h3>Pralka hałasuje</h3>
+                    <p>Głośne stukanie podczas wirowania</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💦</div>
+                    <h3>Pralka przecieka</h3>
+                    <p>Woda wycieka spod pralki</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🚰</div>
+                    <h3>Pralka nie pobiera wody</h3>
+                    <p>Brak napełniania bębna</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Serwis AGD WISA | Tel: <a href="tel:+48721988949" style="color: inherit; text-decoration: none;">721 988 949</a></p>
+        </div>
+    </footer>
+
+    <a href="tel:+48721988949" class="floating-call-button">📞</a>
+
+    <script>
+        function sendToWhatsApp(event) {
+            event.preventDefault();
+
+            // Получаем значения полей
+            let name = document.getElementById("name").value.trim();
+            let phone = document.getElementById("phone").value.trim();
+            let brand = document.getElementById("brand").value.trim();
+            let message = document.getElementById("message").value.trim();
+            let city = document.getElementById("city").value.trim();
+            let address = document.getElementById("address").value.trim();
+
+            // Простая валидация телефона
+            if (!phone) {
+                alert("Proszę podać numer telefonu."); // Оставляем alert на польском для пользователя
+                return;
+            }
+
+            // Формируем текст сообщения с форматированием WhatsApp (жирный шрифт через звездочки)
+            let text = "🔧 *ZGŁOSZENIE NAPRAWY PRALKI*\n\n" +
+                       "👤 *Imię:* " + name + "\n" +
+                       "📞 *Telefon:* " + phone + "\n" +
+                       "🏠 *Adres:* " + (address ? address + ", " + city : city) + "\n" +
+                       "🔧 *Marka/model:* " + brand + "\n" +
+                       "❗ *Problem:* " + message;
+
+            // Номер получателя (ваш номер)
+            const targetNumber = "48721988949";
+            
+            // Генерируем ссылку API
+            const url = "https://api.whatsapp.com/send?phone=" + encodeURIComponent(targetNumber) + "&text=" + encodeURIComponent(text);
+
+            // Открываем WhatsApp
+            window.open(url, '_blank');
+
+            // Очищаем форму
+            document.getElementById("whatsappForm").reset();
+        }
+    </script>
+</body>
+</html>

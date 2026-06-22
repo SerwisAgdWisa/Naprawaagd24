@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" id="meta-description" content="">
+  <meta name="keywords" id="meta-keywords" content="">
+  <title id="page-title">Naprawa AGD</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/generator.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1 id="main-heading">Naprawa AGD</h1>
+    <p id="sub-heading">Profesjonalny serwis AGD</p>
+  </header>
+
+  <section class="problems">
+    <h2>Typowe usterki pralek</h2>
+    <ul id="problem-list"></ul>
+  </section>
+
+  <section class="form-section">
+    <h2>Zgłoś usterkę</h2>
+    <form action="https://formspree.io/f/your-form-id" method="POST">
+      <input type="text" name="name" placeholder="Imię i nazwisko" required />
+      <input type="tel" name="phone" placeholder="Telefon" required />
+      <input type="text" name="city" id="city-input" readonly />
+      <textarea name="problem" placeholder="Np. pralka nie wiruje..." required></textarea>
+      <button type="submit">Wyślij zgłoszenie</button>
+    </form>
+  </section>
+
+  <footer>
+    <p id="footer-text">© 2025 Serwis AGD</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <title>Naprawa Suszarek Goleniów | WISA 721 988 949</title>
+    <meta name="description" content="Profesjonalna naprawa suszarek w Goleniowie – suszarka nie grzeje, hałasuje, zatrzymuje cykl lub pokazuje błędy. Serwis wszystkich marek.">
+    <link rel="stylesheet" href="../../css/style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Wyjazdowy Serwis Suszarek Goleniów",
+  "image": "https://serwisagdwisa.github.io/logo.jpg",
+  "url": "https://serwisagdwisa.github.io/Naprawa-Suszarek-Szczecin/goleniow.html",
+  "telephone": "+48 721 988 949",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Podaj ulicę i numer",
+    "addressLocality": "Goleniów",
+    "addressRegion": "Zachodniopomorskie",
+    "postalCode": "72-100",
+    "addressCountry": "PL"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "08:00",
+      "closes": "21:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Saturday",
+      "opens": "09:00",
+      "closes": "18:00"
+    }
+  ],
+  "makesOffer": {
+    "@type": "Offer",
+    "itemOffered": {
+      "@type": "Service",
+      "name": "Wyjazdowy serwis suszarek – naprawa w domu klienta w Goleniowie"
+    }
+  }
+}
+</script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="../index.html" class="logo">WISA</a>
+                <a href="tel:+48721988949" class="phone">📞 721 988 949</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Naprawa Suszarek Goleniów</h1>
+            <p>Serwis suszarek wszystkich marek – szybka i skuteczna naprawa w Goleniowie</p>
+            <a href="#order" class="cta-button">Zamów Naprawę</a>
+        </div>
+    </section>
+
+    <section class="services">
+    <div class="container">
+        <h2>Najczęstsze problemy z suszarkami</h2>
+        <div class="services-grid">
+            <div class="service-card"><h3>Suszarka nie grzeje</h3></div>
+            <div class="service-card"><h3>Suszarka nie suszy ubrań</h3></div>
+            <div class="service-card"><h3>Suszarka zatrzymuje się w połowie programu</h3></div>
+            <div class="service-card"><h3>Suszarka nie włącza się</h3></div>
+            <div class="service-card"><h3>Suszarka buczy albo hałasuje</h3></div>
+            <div class="service-card"><h3>Suszarka nie kręci bębnem</h3></div>
+            <div class="service-card"><h3>Z suszarki cieknie woda</h3></div>
+            <div class="service-card"><h3>Na wyświetlaczu pojawia się błąd (np. E66, E73)</h3></div>
+            <div class="service-card"><h3>Suszarka bardzo długo suszy</h3></div>
+        </div>
+    </div>
+</section>
+
+    <!-- Breadcrumbs -->
+    <div class="breadcrumb container">
+        <a href="../index.html">Strona Główna</a> > <span>Naprawa Suszarek Goleniów</span>
+    </div>
+
+    <!-- Order Form -->
+    <section id="order" class="order-section">
+        <div class="container">
+            <form class="order-form" onsubmit="sendToWhatsApp(event)">
+                <h2>Zamów naprawę suszarki</h2>
+                <div class="form-group">
+                    <label>Imię:</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label>Telefon:</label>
+                    <input type="tel" id="phone" required>
+                </div>
+                <div class="form-group">
+                    <label>Marka i model suszarki:</label>
+                    <input type="text" id="brand" placeholder="np. Electrolux EW8H458BP">
+                </div>
+                <div class="form-group">
+                    <label>Miasto:</label>
+                    <input type="text" id="city" value="Goleniów" readonly>
+                </div>
+                <div class="form-group">
+                    <label>Adres:</label>
+                    <input type="text" id="address" placeholder="Ulica, numer domu/mieszkania" required>
+                </div>
+                <div class="form-group">
+                    <label>Opis problemu:</label>
+                    <textarea id="message" placeholder="Krótki opis problemu" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Wyślij na WhatsApp</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Floating Call Button -->
+    <section>
+        <a href="tel:+48721988949" class="floating-call-button">📞</a>
+    </section>
+
+    <style>
+        .floating-call-button {
+          position: fixed;
+          bottom: 20px;
+          right: 20px;
+          width: 60px;
+          height: 60px;
+          background-color: #28a745;
+          color: white;
+          border-radius: 50%;
+          text-align: center;
+          line-height: 60px;
+          font-size: 24px;
+          z-index: 9999;
+          box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+          text-decoration: none;
+        }
+        .floating-call-button:hover {
+          background-color: #218838;
+        }
+    </style>
+   <div class="breadcrumb container">
+  <a href="../../index.html">Strona Główna</a> > 
+  <a href="../../index.html">Naprawa Suszarek</a> > 
+  <span class="current">Goleniów</span>
+</div>
+
+<section class="other-cities">
+  <div class="container">
+    <h3>Naprawiamy też w innych miastach:</h3>
+    <ul>
+      <li><a href="../szczecin/index.html">Szczecin</a></li>
+      <li><a href="../maszewo/index.html">Maszewo</a></li>
+      <li><a href="../nowogard/index.html">Nowogard</a></li>
+      <li><a href="../pyrzyce/index.html">Pyrzyce</a></li>
+      <li><a href="../police/index.html">Police</a></li>
+      <li><a href="../stargard/index.html">Stargard</a></li>
+      <li><a href="../goleniow/index.html">Goleniów</a></li>
+    </ul>
+  </div>
+</section>
+    <footer>
+        <p>© 2025 Naprawa Suszarek Goleniów | Serwis AGD | Tel: +48 721 988 949</p>
+    </footer>
+
+    <!-- WhatsApp Script -->
+    <script>
+        function sendToWhatsApp(event) {
+            event.preventDefault();
+            let name = document.getElementById("name").value;
+            let phone = document.getElementById("phone").value;
+            let brand = document.getElementById("brand").value;
+            let message = document.getElementById("message").value;
+            let city = document.getElementById("city").value;
+            let address = document.getElementById("address").value;
+
+            let text = `🔧 NAPRAWA SUSZARKI\n\n` +
+                       `👤 Imię: ${name}\n` +
+                       `📞 Telefon: ${phone}\n` +
+                       `🏠 Adres: ${address}, ${city}\n` +
+                       `🔧 Marka/model: ${brand}\n` +
+                       `❗ Problem: ${message}`;
+
+            let url = "https://api.whatsapp.com/send?phone=48721988949&text=" + encodeURIComponent(text);
+            window.open(url, '_blank');
+
+            alert("Twoje zgłoszenie zostało wysłane na WhatsApp!");
+        }
+    </script>
+</body>
+</html>

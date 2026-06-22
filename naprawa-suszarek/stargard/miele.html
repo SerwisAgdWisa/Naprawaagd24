@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow">
+<title>Naprawa Suszarek Miele Stargard | Serwis AGD | 721 988 949</title>
+<meta name="description" content="Profesjonalna naprawa suszarek Miele w Stargardzie. Naprawiamy grzałki, bębny, pompy i elektronikę. Szybka diagnostyka i naprawa bezpośrednio u klienta.">
+<link rel="stylesheet" href="../../css/style.css">
+
+<!-- Schema.org dla wyjazdowego serwisu -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  "name": "Naprawa Suszarek Miele Stargard",
+  "serviceType": "Mobilny serwis suszarek Miele",
+  "areaServed": {
+    "@type": "City",
+    "name": "Stargard"
+  },
+  "telephone": "+48721988949",
+  "url": "https://naprawaagd24.pl/naprawa-suszarek/stargard/miele/"
+}
+</script>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <div class="header-content">
+      <div class="logo">WISA</div>
+      <a href="tel:+48721988949" class="phone">📞 721 988 949</a>
+    </div>
+  </div>
+</header>
+
+<div class="hero">
+  <h1>Naprawa Suszarek Miele w Stargardzie</h1>
+  <p>Specjalistyczna naprawa suszarek Miele w Stargardzie. Usuwamy awarie bębna, grzałki, pompy i elektroniki. Szybka diagnostyka i naprawa u klienta, bez zbędnego oczekiwania.</p>
+</div>
+
+<section class="services">
+  <div class="container">
+    <h2>Najczęstsze awarie suszarek Miele w Stargardzie</h2>
+    <ul>
+      <li>Suszarka Miele nie startuje lub zatrzymuje cykl w trakcie pracy</li>
+      <li>Bęben obraca się nierównomiernie lub wydaje dziwne dźwięki</li>
+      <li>Nie suszy prawidłowo – woda pozostaje w bębnie</li>
+      <li>Przegrzewanie i wyłączanie grzałki w trakcie programu</li>
+      <li>Problemy z pompą odprowadzającą wodę i filtrem</li>
+      <li>Kody błędów specyficzne dla Miele: F33, F42, F76</li>
+      <li>Czujnik wilgotności lub temperatury uszkodzony</li>
+      <li>Awarie modułu elektronicznego i panelu sterowania</li>
+      <li>Drzwi nie zamykają się poprawnie – blokada mechaniczna</li>
+    </ul>
+  </div>
+</section>
+
+<section id="order" class="order-section">
+  <div class="container">
+    <h2>Zamów Naprawę Suszarki Miele</h2>
+    <form id="orderForm">
+      <div class="form-group">
+        <label for="name">Imię i nazwisko:</label>
+        <input type="text" id="name" name="name" placeholder="Twoje imię i nazwisko" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Telefon:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Twój numer telefonu" required>
+      </div>
+      <div class="form-group">
+        <label for="brand">Model suszarki:</label>
+        <input type="text" id="brand" name="brand" placeholder="np. Miele TWF720" required>
+      </div>
+      <div class="form-group">
+        <label for="problem">Opis problemu:</label>
+        <textarea id="problem" name="problem" rows="4" placeholder="Krótki opis awarii" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="address">Adres w Stargardzie:</label>
+        <input type="text" id="address" name="address" placeholder="Ulica, numer domu/mieszkania" required>
+      </div>
+      <button type="submit" class="submit-btn">Wyślij zgłoszenie na WhatsApp</button>
+    </form>
+  </div>
+</section>
+
+<section class="other-cities">
+  <div class="container">
+    <h3>Naprawiamy również w okolicy:</h3>
+    <ul>
+      <li><a href="../goleniow/index.html">Goleniów</a></li>
+      <li><a href="../szczecin/index.html">Szczecin</a></li>
+      <li><a href="../maszewo/index.html">Maszewo</a></li>
+      <li><a href="../nowogard/index.html">Nowogard</a></li>
+      <li><a href="../police/index.html">Police</a></li>
+      <li><a href="../pyrzyce/index.html">Pyrzyce</a></li>
+    </ul>
+  </div>
+</section>
+
+<div class="breadcrumb container">
+  <a href="../../index.html">Strona Główna</a> > 
+  <a href="../../index.html">Naprawa Suszarek</a> > 
+  <a href="../index.html">Stargard</a> > 
+  <span class="current">Miele</span>
+</div>
+
+<footer>
+  <p>© 2025 Naprawa Suszarek Miele Stargard | Serwis AGD | Tel: +48 721 988 949</p>
+</footer>
+
+<style>
+.floating-call-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #28a745;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 60px;
+  font-size: 24px;
+  z-index: 9999;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  text-decoration: none;
+}
+.floating-call-button:hover { background-color: #218838; }
+</style>
+
+<script>
+document.getElementById('orderForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  const formData = new FormData(this);
+  const name = formData.get('name');
+  const phone = formData.get('phone');
+  const brand = formData.get('brand');
+  const address = formData.get('address');
+  const problem = formData.get('problem');
+  const city = 'Stargard';
+  const service = 'Naprawa suszarek Miele';
+  
+  let message = `🔧 NOWE ZGŁOSZENIE SERWISOWE\n\n`;
+  message += `👤 Imię: ${name}\n`;
+  message += `📞 Telefon: ${phone}\n`;
+  message += `🏙️ Miasto: ${city}\n`;
+  message += `📍 Adres: ${address}\n`;
+  message += `🔧 Model: ${brand}\n`;
+  message += `⚙️ Usługa: ${service}\n`;
+  message += `❗ Problem: ${problem}\n`;
+
+  const whatsappURL = `https://wa.me/48721988949?text=${encodeURIComponent(message)}`;
+  window.open(whatsappURL,'_blank');
+  alert('Dziękujemy za zgłoszenie! Za chwilę zostaniesz przekierowany do WhatsApp.');
+});
+</script>
+
+</body>
+</html>

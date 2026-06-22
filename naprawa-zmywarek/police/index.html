@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <meta name="robots" content="index, follow">
+  <title>Naprawa Zmywarek Police | Serwis AGD</title>
+  <meta name="description" content="Profesjonalny serwis zmywarek w Policach. Naprawa wszystkich modeli – szybka diagnoza, dojazd do klienta i gwarancja na naprawy.">
+  <meta name="keywords" content="naprawa zmywarek Police, serwis zmywarek Police, zmywarka nie myje, nie spływa woda, wycieki wody, serwis AGD Police">
+  <link rel="stylesheet" href="../../css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Naprawa Zmywarek Police",
+    "image": "https://serwisagdwisa.github.io/logo.jpg",
+    "telephone": "+48 721 988 949",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Police",
+      "addressRegion": "Zachodniopomorskie",
+      "addressCountry": "PL"
+    },
+    "url": "https://naprawaagd24.pl/naprawa-zmywarek/police/"
+  }
+  </script>
+</head>
+<body>
+<header>
+  <div class="container">
+    <div class="header-content">
+      <a href="../index.html" class="logo">WISA</a>
+      <a href="tel:+48721988949" class="phone">📞 721 988 949</a>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <h1>Naprawa Zmywarek Police</h1>
+    <p>Serwis zmywarek wszystkich marek – szybka naprawa w Policach i okolicach</p>
+    <a href="#order" class="cta-button">Zamów Naprawę</a>
+  </div>
+</section>
+
+<section id="order" class="order-section">
+  <div class="container">
+    <div class="order-form">
+      <h2>Zamów Naprawę Zmywarki</h2>
+      <form id="orderFormZmywarki">
+        <div class="form-group">
+          <label for="name">Imię i nazwisko:</label>
+          <input type="text" id="name" name="name" placeholder="Twoje imię i nazwisko" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Telefon:</label>
+          <input type="tel" id="phone" name="phone" placeholder="Twój numer telefonu" required>
+        </div>
+        <div class="form-group">
+          <label for="brand">Marka i model zmywarki:</label>
+          <input type="text" id="brand" name="brand" placeholder="np. Bosch, Amica, Whirlpool...">
+        </div>
+        <div class="form-group">
+          <label for="problem">Opis usterki:</label>
+          <textarea id="problem" name="problem" rows="4" placeholder="Zmywarka nie myje, nie spływa woda, wycieki..." required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="address">Adres w Policach:</label>
+          <input type="text" id="address" name="address" placeholder="Ulica, numer domu/mieszkania" required>
+        </div>
+        <div class="form-group">
+          <label for="time">Preferowany termin (opcjonalnie):</label>
+          <input type="datetime-local" id="time" name="time">
+        </div>
+        <button type="submit" class="submit-btn">Wyślij zgłoszenie na WhatsApp</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="content">
+  <div class="container">
+    <h2>Serwis i naprawa zmywarek Police</h2>
+    <p>Oferujemy naprawę i serwis zmywarek w Policach oraz pobliskich miejscowościach. Dojeżdżamy do klientów i wykonujemy naprawy na miejscu – szybko i profesjonalnie.</p>
+
+    <h3>Najczęstsze usterki zmywarek:</h3>
+    <ul>
+      <li>Zmywarka nie pobiera wody</li>
+      <li>Problemy z odpompowaniem wody</li>
+      <li>Słabe efekty zmywania</li>
+      <li>Wycieki wody z urządzenia</li>
+      <li>Kody błędów na wyświetlaczu (np. E1, F02, i inne)</li>
+      <li>Brak podgrzewania wody</li>
+      <li>Nietypowe hałasy i wibracje</li>
+    </ul>
+
+    <h3>Marki zmywarek, które naprawiamy:</h3>
+    <ul>
+      <li>Bosch, Siemens, Samsung, LG</li>
+      <li>Amica, Whirlpool, Electrolux</li>
+      <li>Beko, Indesit, Candy, Hisense i inne</li>
+      <li>Gwarancja na każdą naprawę</li>
+    </ul>
+
+    <p>Obsługujemy Police oraz okolice, m.in. Tanowo, Trzebież, Przęsocin, Niekłończyca. Zadzwoń i umów wizytę serwisanta.</p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 Naprawa Zmywarek Police | Serwis AGD | Tel: +48 721 988 949</p>
+</footer>
+
+<section>
+  <a href="tel:+48721988949" class="floating-call-button">📞</a>
+</section>
+
+<style>
+.floating-call-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #28a745;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 60px;
+  font-size: 24px;
+  z-index: 9999;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  text-decoration: none;
+}
+.floating-call-button:hover {
+  background-color: #218838;
+}
+</style>
+
+<script>
+document.getElementById('orderFormZmywarki').addEventListener('submit', function(e){
+  e.preventDefault();
+  const formData = new FormData(this);
+  const name = formData.get('name');
+  const phone = formData.get('phone');
+  const brand = formData.get('brand');
+  const address = formData.get('address');
+  const problem = formData.get('problem');
+  const time = formData.get('time');
+  const city = 'Police';
+  const service = 'Naprawa Zmywarek';
+  let message = `🔧 NOWE ZGŁOSZENIE SERWISOWE\n\n`;
+  message += `👤 Imię: ${name}\n`;
+  message += `📞 Telefon: ${phone}\n`;
+  message += `🏙️ Miasto: ${city}\n`;
+  message += `📍 Adres: ${address}\n`;
+  if (brand) message += `🔧 Marka: ${brand}\n`;
+  message += `⚙️ Usługa: ${service}\n`;
+  if (problem) message += `❗ Problem: ${problem}\n`;
+  if (time) message += `⏰ Termin: ${time}\n`;
+  const whatsappURL = `https://wa.me/48721988949?text=${encodeURIComponent(message)}`;
+  window.open(whatsappURL,'_blank');
+  alert('Dziękujemy za zgłoszenie! Za chwilę zostaniesz przekierowany do WhatsApp.');
+});
+</script>
+
+<section class="other-brands">
+  <div class="container">
+    <h3>Naprawiamy również zmywarki:</h3>
+    <ul>
+      <li><a href="beko.html">Beko</a></li>
+      <li><a href="bosch.html">Bosch</a></li>
+      <li><a href="amica.html">Amica</a></li>
+      <li><a href="whirlpool.html">Whirlpool</a></li>
+      <li><a href="samsung.html">Samsung</a></li>
+      <li><a href="electrolux.html">Electrolux</a></li>
+      <li><a href="siemens.html">Siemens</a></li>
+      <li><a href="candy.html">Candy</a></li>
+      <li><a href="indesit.html">Indesit</a></li>
+      <li><a href="hisense.html">Hisense</a></li>
+    </ul>
+  </div>
+</section>
+
+<!-- Breadcrumbs -->
+<div class="breadcrumb container">
+  <a href="../../index.html">Strona Główna</a> > 
+  <span>Naprawa Zmywarek Police</span>
+</div>
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow">
+<title>Naprawa Suszarek LG Goleniów | Serwis AGD | 721 988 949</title>
+<meta name="description" content="Profesjonalny serwis suszarek LG w Goleniowie. Szybka diagnoza, wymiana części, naprawa grzałek, bębna i elektroniki. Dojazd do klienta.">
+<link rel="stylesheet" href="../../css/style.css">
+
+<!-- Schema.org dla wyjazdowego serwisu -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  "name": "Naprawa Suszarek LG Goleniów",
+  "serviceType": "Mobilny serwis suszarek LG",
+  "areaServed": {
+    "@type": "City",
+    "name": "Goleniów"
+  },
+  "telephone": "+48721988949",
+  "url": "https://naprawaagd24.pl/naprawa-suszarek/goleniow/lg/"
+}
+</script>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <div class="header-content">
+      <div class="logo">WISA</div>
+      <a href="tel:+48721988949" class="phone">📞 721 988 949</a>
+    </div>
+  </div>
+</header>
+
+<div class="hero">
+  <h1>Naprawa Suszarek LG w Goleniowie</h1>
+  <p>Oferujemy profesjonalną naprawę suszarek LG w Goleniowie. Szybka diagnoza, wymiana części, naprawa modułów elektronicznych i problemów z grzaniem. Dojazd do klienta w dogodnym terminie.</p>
+</div>
+
+<section class="services">
+  <div class="container">
+    <h2>Najczęstsze awarie suszarek LG w Goleniowie</h2>
+    <ul>
+      <li>Suszarka LG nie suszy lub słabo grzeje</li>
+      <li>Bęben nie obraca się lub zatrzymuje się w trakcie cyklu</li>
+      <li>Przegrzewanie się suszarki i wyłączanie urządzenia</li>
+      <li>Hałas, piszczenie lub wibracje podczas pracy</li>
+      <li>Kody błędów na wyświetlaczu (np. de, le, oe, tE1, HE)</li>
+      <li>Problemy z czujnikiem wilgotności lub temperatury</li>
+      <li>Brak odprowadzania wody lub zapchany filtr</li>
+      <li>Drzwi suszarki nie zamykają się prawidłowo</li>
+      <li>Automatyczne programy kończą cykl zbyt wcześnie</li>
+    </ul>
+  </div>
+</section>
+
+<section id="order" class="order-section">
+  <div class="container">
+    <h2>Zamów Naprawę Suszarki LG</h2>
+    <form id="orderForm">
+      <div class="form-group">
+        <label for="name">Imię i nazwisko:</label>
+        <input type="text" id="name" name="name" placeholder="Twoje imię i nazwisko" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Telefon:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Twój numer telefonu" required>
+      </div>
+      <div class="form-group">
+        <label for="brand">Model suszarki:</label>
+        <input type="text" id="brand" name="brand" placeholder="np. LG RC80U2AV4D" required>
+      </div>
+      <div class="form-group">
+        <label for="problem">Opis problemu:</label>
+        <textarea id="problem" name="problem" rows="4" placeholder="Krótki opis awarii" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="address">Adres w Goleniowie:</label>
+        <input type="text" id="address" name="address" placeholder="Ulica, numer domu/mieszkania" required>
+      </div>
+      <button type="submit" class="submit-btn">Wyślij zgłoszenie na WhatsApp</button>
+    </form>
+  </div>
+</section>
+
+<section class="other-cities">
+  <div class="container">
+    <h3>Naprawiamy również w okolicy:</h3>
+    <ul>
+      <li><a href="../szczecin/index.html">Szczecin</a></li>
+      <li><a href="../stargard/index.html">Stargard</a></li>
+      <li><a href="../maszewo/index.html">Maszewo</a></li>
+      <li><a href="../nowogard/index.html">Nowogard</a></li>
+      <li><a href="../police/index.html">Police</a></li>
+      <li><a href="../pyrzyce/index.html">Pyrzyce</a></li>
+    </ul>
+  </div>
+</section>
+<div class="breadcrumb container">
+  <a href="../../index.html">Strona Główna</a> > 
+  <a href="../../index.html">Naprawa Suszarek</a> > 
+  <a href="../index.html">Goleniów</a> > 
+  <span class="current">Suszarki LG</span>
+</div>
+<footer>
+  <p>© 2025 Naprawa Suszarek LG Goleniów | Serwis AGD | Tel: +48 721 988 949</p>
+</footer>
+
+<style>
+.floating-call-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #28a745;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 60px;
+  font-size: 24px;
+  z-index: 9999;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  text-decoration: none;
+}
+.floating-call-button:hover { background-color: #218838; }
+</style>
+
+<script>
+document.getElementById('orderForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  const formData = new FormData(this);
+  const name = formData.get('name');
+  const phone = formData.get('phone');
+  const brand = formData.get('brand');
+  const address = formData.get('address');
+  const problem = formData.get('problem');
+  const city = 'Goleniów';
+  const service = 'Naprawa suszarek LG';
+  
+  let message = `🔧 NOWE ZGŁOSZENIE SERWISOWE\n\n`;
+  message += `👤 Imię: ${name}\n`;
+  message += `📞 Telefon: ${phone}\n`;
+  message += `🏙️ Miasto: ${city}\n`;
+  message += `📍 Adres: ${address}\n`;
+  message += `🔧 Model: ${brand}\n`;
+  message += `⚙️ Usługa: ${service}\n`;
+  message += `❗ Problem: ${problem}\n`;
+
+  const whatsappURL = `https://wa.me/48721988949?text=${encodeURIComponent(message)}`;
+  window.open(whatsappURL,'_blank');
+  alert('Dziękujemy za zgłoszenie! Za chwilę zostaniesz przekierowany do WhatsApp.');
+});
+</script>
+
+</body>
+</html>

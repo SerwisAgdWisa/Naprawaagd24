@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <meta name="robots" content="index, follow">
+    <title>Naprawa Zmywarek Candy Goleniów | Serwis Zmywarek Candy | 721 988 949</title>
+    <meta name="description" content="Specjalistyczny serwis zmywarek Candy w Goleniowie. Naprawa zmywarek Candy CDI, CDS. Gwarancja na usługi. Tel: 721 988 949">
+    <meta name="keywords" content="naprawa zmywarek candy goleniów, serwis candy goleniów, zmywarka candy nie pobiera wody goleniów">
+    <link rel="stylesheet" href="../../css/style.css">
+
+```
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Naprawa Zmywarek Candy Goleniów",
+  "telephone": "+48 721 988 949",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Goleniów",
+    "addressRegion": "Zachodniopomorskie",
+    "addressCountry": "PL"
+  },
+  "makesOffer": {
+    "@type": "Offer",
+    "itemOffered": {
+      "@type": "Service",
+      "name": "Naprawa zmywarek Candy"
+    }
+  }
+}
+</script>
+```
+
+</head>
+<body>
+    
+
+```
+<header>
+    <div class="container">
+        <div class="header-content">
+            <a href="../../../index.html" class="logo">WISA</a>
+            <a href="tel:+48721988949" class="phone">📞 721 988 949</a>
+        </div>
+    </div>
+</header>   
+
+<section class="hero">
+    <div class="container">
+        <h1>Naprawa Zmywarek Candy w Goleniowie</h1>
+        <p>Serwis zmywarek wszystkich modeli Candy – Goleniów i okolice</p>
+        <a href="#order" class="cta-button">Zamów Naprawę</a>
+    </div>
+</section>
+
+<section class="services">
+    <div class="container">
+        <h2>Typowe problemy zmywarek Candy w Goleniowie</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>Candy CDI, CDS, CDP</h3>
+                <ul>
+                    <li>Problem z napełnianiem wodą</li>
+                    <li>Zmywarka nie odpompowuje wody</li>
+                    <li>Awaria pompy myjącej</li>
+                    <li>Nie grzeje wody - spalona grzałka</li>
+                    <li>Dozownik detergentu nie otwiera się</li>
+                    <li>Przecieki wody z uszczelnień</li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <h3>Kody błędów Candy</h3>
+                <ul>
+                    <li>E1 - Problem z napełnianiem</li>
+                    <li>E2 - Problem z odpływem</li>
+                    <li>E3 - Problem z temperaturą</li>
+                    <li>E4 - Przeciek wody</li>
+                    <li>E5 - Problem z czujnikiem temperatury</li>
+                    <li>E6 - Problem z czujnikiem mętności</li>
+                    <li>E8 - Problem z grzałką</li>
+                    <li>E9 - Problem z pompą obiegu</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="order" class="order-section">
+    <div class="container">
+        <div class="order-form">
+            <h2>Zamów Naprawę Zmywarki Candy</h2>
+            <form id="orderForm">
+                <div class="form-group">
+                    <label for="name">Imię i nazwisko:</label>
+                    <input type="text" id="name" name="name" placeholder="Twoje imię i nazwisko" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Telefon:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Twój numer telefonu" required>
+                </div>
+                <div class="form-group">
+                    <label for="brand">Marka i model zmywarki Candy:</label>
+                    <input type="text" id="brand" name="brand" placeholder="np. Candy CDI 1L949" value="Candy">
+                </div>
+                <div class="form-group">
+                    <label for="problem">Opis usterki:</label>
+                    <textarea id="problem" name="problem" rows="4" placeholder="Błąd E2, zmywarka nie pobiera wody, nie grzeje..." required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="address">Adres w Goleniowie:</label>
+                    <input type="text" id="address" name="address" placeholder="Ulica, numer domu/mieszkania" required>
+                </div>
+                <div class="form-group">
+                    <label for="time">Preferowany termin (opcjonalnie):</label>
+                    <input type="datetime-local" id="time" name="time">
+                </div>
+                <button type="submit" class="submit-btn">Wyślij zgłoszenie na WhatsApp</button>
+            </form>
+        </div>
+    </div>
+</section>
+<footer>
+  <p>© 2025 Naprawa Zmywarek Electrolux Stargard | Serwis AGD | Tel: +48 721 988 949</p>
+</footer>
+
+<style>
+.floating-call-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #28a745;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 60px;
+  font-size: 24px;
+  z-index: 9999;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  text-decoration: none;
+}
+.floating-call-button:hover {
+  background-color: #218838;
+}
+</style>
+
+
+<script>
+    document.getElementById('orderForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const formData = new FormData(this);
+        const name = formData.get('name');
+        const phone = formData.get('phone');
+        const brand = formData.get('brand');
+        const address = formData.get('address');
+        const problem = formData.get('problem');
+        const time = formData.get('time');
+        
+        const city = 'Goleniów';
+        const service = 'Naprawa zmywarek Candy';
+        
+        let message = `🔧 NOWE ZGŁOSZENIE SERWISOWE\n\n`;
+        message += `👤 Imię: ${name}\n`;
+        message += `📞 Telefon: ${phone}\n`;
+        message += `🏙️ Miasto: ${city}\n`;
+        message += `📍 Adres: ${address}\n`;
+        message += `🔧 Marka: ${brand}\n`;
+        message += `⚙️ Usługa: ${service}\n`;
+        if (problem) message += `❗ Problem: ${problem}\n`;
+        if (time) message += `⏰ Termin: ${time}\n`;
+        
+        const whatsappURL = `https://wa.me/48721988949?text=${encodeURIComponent(message)}`;
+        window.open(whatsappURL, '_blank');
+        
+        alert('Dziękujemy za zgłoszenie! Za chwilę zostaniesz przekierowany do WhatsApp.');
+    });
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
+</script>
+```
+<div class="breadcrumb container">
+        <a href="../../../index.html">Strona Główna</a> > 
+        <a href="../../index.html">Naprawa Zmywarek</a> > 
+        <a href="../index.html">Goleniów</a> > 
+        <span class="current">Zmywarki Candy</span>
+    </div>
+</body>
+</html>
