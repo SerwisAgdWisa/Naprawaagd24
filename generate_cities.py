@@ -47,10 +47,10 @@ cities = {
         "desc": "Naprawa AGD w Pyrzycach i okolicach. Obslugujemy Pyrzyce i gminy okoliczne."
     },
     "gryfino": {
-        "name": "Gryfino",
+        "name": "gryfino",
         "icon": "🌊",
         "districts": "Stare Miasto, Osiedle Nadodrzanskie, Zabnica, Nowe Czarnowo, Lubczyno",
-        "desc": "Serwis AGD w Gryfinie. Naprawa pralek, zmywarek i lodowek w Gryfinie i okolicach."
+        "desc": "Serwis AGD w gryfinie. Naprawa pralek, zmywarek i lodowek w gryfinie i okolicach."
     }
 }
 
