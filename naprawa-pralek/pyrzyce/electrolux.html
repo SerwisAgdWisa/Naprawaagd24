@@ -121,6 +121,60 @@
   ]
 }
 </script>
+
+<style>
+.breadcrumb-nav {
+    background: rgba(0,0,0,0.3);
+    padding: 12px 20px;
+    font-size: 0.9rem;
+}
+.breadcrumb-nav a {
+    color: #a0b4f8;
+    text-decoration: none;
+}
+.breadcrumb-nav a:hover {
+    color: white;
+    text-decoration: underline;
+}
+.breadcrumb-nav span {
+    color: rgba(255,255,255,0.6);
+    margin: 0 6px;
+}
+.breadcrumb-nav .current {
+    color: white;
+    font-weight: bold;
+}
+</style>
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Strona Glowna",
+                "item": "https://naprawaagd24.pl/"
+            },{
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Naprawa Pralek",
+                "item": "https://naprawaagd24.pl/naprawa-pralek/"
+            },{
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Pyrzyce",
+                "item": "https://naprawaagd24.pl/naprawa-pralek/pyrzyce/"
+            },{
+                "@type": "ListItem",
+                "position": 4,
+                "name": "Electrolux"
+            }
+    ]
+}
+</script>
 </head>
 <body>
     <!-- Header -->
@@ -133,6 +187,14 @@
             </div>
         </div>
     </header>
+
+<!-- BREADCRUMB -->
+<nav class="breadcrumb-nav" aria-label="Breadcrumb">
+    <div style="max-width:1200px;margin:0 auto;">
+        <a href="/">Strona Glowna</a><span>›</span><a href="/naprawa-pralek/">Naprawa Pralek</a><span>›</span><a href="/naprawa-pralek/pyrzyce/">Pyrzyce</a><span>›</span><span class="current">Electrolux</span>
+    </div>
+</nav>
+<!-- KONIEC BREADCRUMB -->
 
     <!-- Breadcrumbs -->
     

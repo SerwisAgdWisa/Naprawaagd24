@@ -46,6 +46,55 @@
   }
 }
 </script>
+
+<style>
+.breadcrumb-nav {
+    background: rgba(0,0,0,0.3);
+    padding: 12px 20px;
+    font-size: 0.9rem;
+}
+.breadcrumb-nav a {
+    color: #a0b4f8;
+    text-decoration: none;
+}
+.breadcrumb-nav a:hover {
+    color: white;
+    text-decoration: underline;
+}
+.breadcrumb-nav span {
+    color: rgba(255,255,255,0.6);
+    margin: 0 6px;
+}
+.breadcrumb-nav .current {
+    color: white;
+    font-weight: bold;
+}
+</style>
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Strona Glowna",
+                "item": "https://naprawaagd24.pl/"
+            },{
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Naprawa Piekarnikow",
+                "item": "https://naprawaagd24.pl/naprawa-piekarnikow/"
+            },{
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Pyrzyce"
+            }
+    ]
+}
+</script>
 </head>
 <body>
 
@@ -56,7 +105,15 @@
       <a href="tel:+48721988949" class="phone">📞 721 988 949</a>
     </div>
   </div>
-</header> 
+</header>
+
+<!-- BREADCRUMB -->
+<nav class="breadcrumb-nav" aria-label="Breadcrumb">
+    <div style="max-width:1200px;margin:0 auto;">
+        <a href="/">Strona Glowna</a><span>›</span><a href="/naprawa-piekarnikow/">Naprawa Piekarnikow</a><span>›</span><span class="current">Pyrzyce</span>
+    </div>
+</nav>
+<!-- KONIEC BREADCRUMB --> 
 
 <div class="hero">
   <h1>Profesjonalny Serwis Piekarników w Pyrzycach</h1>
@@ -152,6 +209,163 @@
 
 <footer>
   <p>© 2025 Naprawa Piekarników Pyrzyce | Serwis AGD | Tel: +48 721 988 949</p>
+
+    <!-- СЕКЦИЯ БРЕНДОВ - ДОБАВЛЕНО СКРИПТОМ -->
+    <section style="background:linear-gradient(135deg,#667eea,#764ba2);padding:3rem 0;">
+        <div style="max-width:1200px;margin:0 auto;padding:0 20px;">
+            <h2 style="color:white;text-align:center;margin-bottom:2rem;font-size:2rem;">
+                Wybierz marke - Naprawa Piekarnikow Pyrzyce
+            </h2>
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:15px;">
+                
+            <a href="samsung.html" style="
+                display:block;
+                background:rgba(255,255,255,0.15);
+                backdrop-filter:blur(10px);
+                color:white;
+                padding:20px;
+                border-radius:12px;
+                text-decoration:none;
+                text-align:center;
+                border:1px solid rgba(255,255,255,0.3);
+                transition:all 0.3s ease;
+                font-weight:bold;
+            " onmouseover="this.style.background='rgba(255,255,255,0.25)'"
+               onmouseout="this.style.background='rgba(255,255,255,0.15)'">
+                Samsung
+            </a>
+            <a href="bosch.html" style="
+                display:block;
+                background:rgba(255,255,255,0.15);
+                backdrop-filter:blur(10px);
+                color:white;
+                padding:20px;
+                border-radius:12px;
+                text-decoration:none;
+                text-align:center;
+                border:1px solid rgba(255,255,255,0.3);
+                transition:all 0.3s ease;
+                font-weight:bold;
+            " onmouseover="this.style.background='rgba(255,255,255,0.25)'"
+               onmouseout="this.style.background='rgba(255,255,255,0.15)'">
+                Bosch
+            </a>
+            <a href="whirlpool.html" style="
+                display:block;
+                background:rgba(255,255,255,0.15);
+                backdrop-filter:blur(10px);
+                color:white;
+                padding:20px;
+                border-radius:12px;
+                text-decoration:none;
+                text-align:center;
+                border:1px solid rgba(255,255,255,0.3);
+                transition:all 0.3s ease;
+                font-weight:bold;
+            " onmouseover="this.style.background='rgba(255,255,255,0.25)'"
+               onmouseout="this.style.background='rgba(255,255,255,0.15)'">
+                Whirlpool
+            </a>
+            <a href="beko.html" style="
+                display:block;
+                background:rgba(255,255,255,0.15);
+                backdrop-filter:blur(10px);
+                color:white;
+                padding:20px;
+                border-radius:12px;
+                text-decoration:none;
+                text-align:center;
+                border:1px solid rgba(255,255,255,0.3);
+                transition:all 0.3s ease;
+                font-weight:bold;
+            " onmouseover="this.style.background='rgba(255,255,255,0.25)'"
+               onmouseout="this.style.background='rgba(255,255,255,0.15)'">
+                Beko
+            </a>
+            <a href="siemens.html" style="
+                display:block;
+                background:rgba(255,255,255,0.15);
+                backdrop-filter:blur(10px);
+                color:white;
+                padding:20px;
+                border-radius:12px;
+                text-decoration:none;
+                text-align:center;
+                border:1px solid rgba(255,255,255,0.3);
+                transition:all 0.3s ease;
+                font-weight:bold;
+            " onmouseover="this.style.background='rgba(255,255,255,0.25)'"
+               onmouseout="this.style.background='rgba(255,255,255,0.15)'">
+                Siemens
+            </a>
+            <a href="candy.html" style="
+                display:block;
+                background:rgba(255,255,255,0.15);
+                backdrop-filter:blur(10px);
+                color:white;
+                padding:20px;
+                border-radius:12px;
+                text-decoration:none;
+                text-align:center;
+                border:1px solid rgba(255,255,255,0.3);
+                transition:all 0.3s ease;
+                font-weight:bold;
+            " onmouseover="this.style.background='rgba(255,255,255,0.25)'"
+               onmouseout="this.style.background='rgba(255,255,255,0.15)'">
+                Candy
+            </a>
+            <a href="indesit.html" style="
+                display:block;
+                background:rgba(255,255,255,0.15);
+                backdrop-filter:blur(10px);
+                color:white;
+                padding:20px;
+                border-radius:12px;
+                text-decoration:none;
+                text-align:center;
+                border:1px solid rgba(255,255,255,0.3);
+                transition:all 0.3s ease;
+                font-weight:bold;
+            " onmouseover="this.style.background='rgba(255,255,255,0.25)'"
+               onmouseout="this.style.background='rgba(255,255,255,0.15)'">
+                Indesit
+            </a>
+            <a href="hisense.html" style="
+                display:block;
+                background:rgba(255,255,255,0.15);
+                backdrop-filter:blur(10px);
+                color:white;
+                padding:20px;
+                border-radius:12px;
+                text-decoration:none;
+                text-align:center;
+                border:1px solid rgba(255,255,255,0.3);
+                transition:all 0.3s ease;
+                font-weight:bold;
+            " onmouseover="this.style.background='rgba(255,255,255,0.25)'"
+               onmouseout="this.style.background='rgba(255,255,255,0.15)'">
+                Hisense
+            </a>
+            <a href="amica.html" style="
+                display:block;
+                background:rgba(255,255,255,0.15);
+                backdrop-filter:blur(10px);
+                color:white;
+                padding:20px;
+                border-radius:12px;
+                text-decoration:none;
+                text-align:center;
+                border:1px solid rgba(255,255,255,0.3);
+                transition:all 0.3s ease;
+                font-weight:bold;
+            " onmouseover="this.style.background='rgba(255,255,255,0.25)'"
+               onmouseout="this.style.background='rgba(255,255,255,0.15)'">
+                Amica
+            </a>
+            </div>
+        </div>
+    </section>
+    <!-- KONIEC SEKCJI BRANDOW -->
 </footer>
 
 <style>
@@ -212,5 +426,29 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor=>{
 });
 </script>
 
+
+    <!-- НАВИГАЦИЯ - ДОБАВЛЕНО СКРИПТОМ -->
+    <div style="background:#2c3e50;padding:20px;text-align:center;">
+        <div style="max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;text-align:left;">
+            <div>
+                <h4 style="color:#667eea;margin:0 0 10px 0;">Nawigacja</h4>
+                <a href="../../" style="color:#667eea;text-decoration:none;display:block;margin:5px 0;">← Strona Glowna</a>
+                <a href="../" style="color:#667eea;text-decoration:none;display:block;margin:5px 0;">← Naprawa Piekarnikow</a>
+            </div>
+            <div>
+                <h4 style="color:#667eea;margin:0 0 10px 0;">Inne miasta</h4>
+                <a href="../szczecin/" style="color:#667eea;text-decoration:none;display:block;margin:5px 0;">Szczecin</a><a href="../stargard/" style="color:#667eea;text-decoration:none;display:block;margin:5px 0;">Stargard</a><a href="../goleniow/" style="color:#667eea;text-decoration:none;display:block;margin:5px 0;">Goleniow</a><a href="../nowogard/" style="color:#667eea;text-decoration:none;display:block;margin:5px 0;">Nowogard</a><a href="../maszewo/" style="color:#667eea;text-decoration:none;display:block;margin:5px 0;">Maszewo</a><a href="../police/" style="color:#667eea;text-decoration:none;display:block;margin:5px 0;">Police</a>
+            </div>
+            <div>
+                <h4 style="color:#667eea;margin:0 0 10px 0;">Inne uslugi</h4>
+                <a href="../../naprawa-pralek/pyrzyce/" style="color:#667eea;text-decoration:none;display:block;margin:5px 0;">Naprawa Pralek</a>
+                <a href="../../naprawa-zmywarek/pyrzyce/" style="color:#667eea;text-decoration:none;display:block;margin:5px 0;">Naprawa Zmywarek</a>
+                <a href="../../naprawa-lodowek/pyrzyce/" style="color:#667eea;text-decoration:none;display:block;margin:5px 0;">Naprawa Lodowek</a>
+                <a href="../../naprawa-piekarnikow/pyrzyce/" style="color:#667eea;text-decoration:none;display:block;margin:5px 0;">Naprawa Piekarnikow</a>
+                <a href="../../naprawa-suszarek/pyrzyce/" style="color:#667eea;text-decoration:none;display:block;margin:5px 0;">Naprawa Suszarek</a>
+            </div>
+        </div>
+    </div>
+    <!-- KONIEC NAWIGACJI -->
 </body>
 </html>

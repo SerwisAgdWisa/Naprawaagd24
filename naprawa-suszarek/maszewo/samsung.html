@@ -27,6 +27,60 @@
   "url": "https://naprawaagd24.pl/naprawa-suszarek/maszewo/samsung/"
 }
 </script>
+
+<style>
+.breadcrumb-nav {
+    background: rgba(0,0,0,0.3);
+    padding: 12px 20px;
+    font-size: 0.9rem;
+}
+.breadcrumb-nav a {
+    color: #a0b4f8;
+    text-decoration: none;
+}
+.breadcrumb-nav a:hover {
+    color: white;
+    text-decoration: underline;
+}
+.breadcrumb-nav span {
+    color: rgba(255,255,255,0.6);
+    margin: 0 6px;
+}
+.breadcrumb-nav .current {
+    color: white;
+    font-weight: bold;
+}
+</style>
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Strona Glowna",
+                "item": "https://naprawaagd24.pl/"
+            },{
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Naprawa Suszarek",
+                "item": "https://naprawaagd24.pl/naprawa-suszarek/"
+            },{
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Maszewo",
+                "item": "https://naprawaagd24.pl/naprawa-suszarek/maszewo/"
+            },{
+                "@type": "ListItem",
+                "position": 4,
+                "name": "Samsung"
+            }
+    ]
+}
+</script>
 </head>
 <body>
 
@@ -38,6 +92,14 @@
     </div>
   </div>
 </header>
+
+<!-- BREADCRUMB -->
+<nav class="breadcrumb-nav" aria-label="Breadcrumb">
+    <div style="max-width:1200px;margin:0 auto;">
+        <a href="/">Strona Glowna</a><span>›</span><a href="/naprawa-suszarek/">Naprawa Suszarek</a><span>›</span><a href="/naprawa-suszarek/maszewo/">Maszewo</a><span>›</span><span class="current">Samsung</span>
+    </div>
+</nav>
+<!-- KONIEC BREADCRUMB -->
 
 <div class="hero">
   <h1>Naprawa Suszarek Samsung w Maszewie</h1>
