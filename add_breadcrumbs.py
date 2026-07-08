@@ -25,6 +25,8 @@ BRANDS = {
     "zanussi": "Zanussi", "amica": "Amica", "gorenje": "Gorenje"
 }
 
+
+
 BREADCRUMB_CSS = """
 <style>
 .breadcrumb-nav {
@@ -92,7 +94,7 @@ def make_breadcrumb(items):
             }}''')
     
     schema = f"""
-<script type="application/ld+json">
+<script src="js/generator.js" defer></script> type="application/ld+json">
 {{
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
