@@ -116,7 +116,7 @@ def get_html(slug, title, desc, h1, content):
                     <p><a href="/jak-przedluzyc-zycie-pralki.html">Jak dbac o pralke?</a></p>
                 </div>
             </div>
-            <p>© 2025 Serwis AGD WISA | 721 988 949</p>
+            <p>© 2026 Serwis AGD WISA | 721 988 949</p>
         </div>
     </footer>
 

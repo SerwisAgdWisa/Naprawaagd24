@@ -267,7 +267,7 @@ def generate_brand_page(city_slug, city_name, brand_slug, brand_data):
                 <p><a href="/naprawa-piekarnikow/{city_slug}/">Naprawa Piekarnikow</a></p>
             </div>
         </div>
-        <p>© 2025 Naprawaagd24 | Naprawa Pralko-Suszarek {brand_name} {city_name} | 721 988 949</p>
+        <p>© 2026 Naprawaagd24 | Naprawa Pralko-Suszarek {brand_name} {city_name} | 721 988 949</p>
     </div>
 </footer>
 
@@ -347,7 +347,7 @@ def generate_city_index(city_slug, city_name):
 
 <footer>
     <div class="container">
-        <p>© 2025 Naprawaagd24 | Naprawa Pralko-Suszarek {city_name} | 721 988 949</p>
+        <p>© 2026 Naprawaagd24 | Naprawa Pralko-Suszarek {city_name} | 721 988 949</p>
     </div>
 </footer>
 <a href="https://wa.me/48721988949" class="whatsapp-float">💬</a>
@@ -395,7 +395,7 @@ def create_all():
 </section>
 <footer>
     <div class="container">
-        <p>© 2025 Naprawaagd24 | Naprawa Pralko-Suszarek | 721 988 949</p>
+        <p>© 2026 Naprawaagd24 | Naprawa Pralko-Suszarek | 721 988 949</p>
     </div>
 </footer>
 <a href="https://wa.me/48721988949" class="whatsapp-float">💬</a>
