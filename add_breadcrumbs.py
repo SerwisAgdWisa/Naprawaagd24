@@ -94,7 +94,7 @@ def make_breadcrumb(items):
             }}''')
     
     schema = f"""
-<script src="js/generator.js" defer></script> type="application/ld+json">
+</script> type="application/ld+json">
 {{
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",

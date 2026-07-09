@@ -13,7 +13,7 @@ def get_html(slug, title, desc, h1, content):
     <meta name="description" content="{desc}">
     <link rel="canonical" href="{DOMAIN}/{slug}">
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/generator.js" defer></script> type="application/ld+json">
+    type="application/ld+json">
     {{
       "@context": "https://schema.org",
       "@type": "Article",
@@ -122,7 +122,7 @@ def get_html(slug, title, desc, h1, content):
 
     <a href="https://wa.me/48721988949" class="whatsapp-float">💬</a>
 
-    <script src="js/generator.js" defer></script>>
+   >
     document.getElementById('orderForm').addEventListener('submit', function(e) {{
         e.preventDefault();
         const name = this.name.value;
