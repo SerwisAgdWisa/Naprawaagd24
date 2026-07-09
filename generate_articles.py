@@ -28,7 +28,7 @@ def get_html(slug, title, desc, h1, content):
     <header>
         <div class="container">
             <div class="header-content">
-                <a href="/" class="logo">WISA</a>
+                <a href="/" class="logo">NaprawaAGD24</a>
                 <a href="tel:+48721988949" class="phone">📞 721 988 949</a>
             </div>
         </div>

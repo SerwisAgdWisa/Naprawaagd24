@@ -105,6 +105,7 @@ SERVICES = [
     "naprawa-lodowek",
     "naprawa-piekarnikow",
     "naprawa-suszarek"
+    "naprawa-pralko-suszarek",
 ]
 
 SERVICE_NAMES = {
@@ -112,7 +113,8 @@ SERVICE_NAMES = {
     "naprawa-zmywarek": "zmywarek",
     "naprawa-lodowek": "lodowek",
     "naprawa-piekarnikow": "piekarnikow",
-    "naprawa-suszarek": "suszarek"
+    "naprawa-suszarek": "suszarek",
+    "naprawa-pralko-suszarek": "pralko-suszarek"
 }
 
 def generate_streets_section(city_slug, service_slug):

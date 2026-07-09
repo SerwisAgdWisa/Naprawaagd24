@@ -20,7 +20,11 @@ SERVICES = {
         "brands": ["samsung", "lg", "bosch", "whirlpool", "electrolux", "beko",
                    "aeg", "siemens", "candy", "indesit", "miele", "sharp",
                    "haier", "hisense", "hotpoint-ariston", "zanussi", "amica", "gorenje"]
+    }, "naprawa-pralko-suszarek": {
+        "name": "Naprawa Pralko-Suszarek",
+        "brands": ["samsung", "lg", "bosch", "whirlpool", "electrolux", "beko", "aeg", "siemens", "candy", "indesit", "miele", "sharp", "haier", "hisense", "hotpoint-ariston", "zanussi", "amica", "gorenje"]
     },
+
 }
 
 BRAND_DISPLAY = {
@@ -111,6 +115,7 @@ def generate_navigation(service_slug, city_slug, city_name, service_name):
                 <a href="../../naprawa-lodowek/{city_slug}/" style="color:#667eea;text-decoration:none;display:block;margin:5px 0;">Naprawa Lodowek</a>
                 <a href="../../naprawa-piekarnikow/{city_slug}/" style="color:#667eea;text-decoration:none;display:block;margin:5px 0;">Naprawa Piekarnikow</a>
                 <a href="../../naprawa-suszarek/{city_slug}/" style="color:#667eea;text-decoration:none;display:block;margin:5px 0;">Naprawa Suszarek</a>
+                <a href="../../naprawa-pralko-suszarek/{city_slug}/" style="color:#667eea;text-decoration:none;display:block;margin:5px 0;">Naprawa Pralko-Suszarek</a>
             </div>
         </div>
     </div>
@@ -187,6 +192,7 @@ def fix_index_files():
     print(f"   - папку naprawa-piekarnikow/")
     print(f"   - папку naprawa-suszarek/")
     print(f"   - папку naprawa-zmywarek/")
+    print(f"   - папку naprawa-pralko-suszarek/")
 
 if __name__ == "__main__":
     print("🔨 Добавляю бренды и навигацию...\n")

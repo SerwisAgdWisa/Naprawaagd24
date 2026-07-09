@@ -7,6 +7,7 @@ SERVICES = {
     "naprawa-lodowek": "Naprawa Lodowek",
     "naprawa-piekarnikow": "Naprawa Piekarnikow",
     "naprawa-suszarek": "Naprawa Suszarek",
+    "naprawa-pralko-suszarek": "Naprawa Pralko Suszarek",
 }
 
 CITIES = {
