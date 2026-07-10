@@ -273,7 +273,7 @@ def generate_brand_page(city_slug, city_name, brand_slug, brand_data):
 
 <a href="https://wa.me/48721988949" class="whatsapp-float">💬</a>
 
-</script>>
+<script>
 document.getElementById('orderForm').addEventListener('submit', function(e) {{
     e.preventDefault();
     const name = this.name.value;
