@@ -13,7 +13,7 @@ def get_html(slug, title, desc, h1, content):
     <meta name="description" content="{desc}">
     <link rel="canonical" href="{DOMAIN}/{slug}">
     <link rel="stylesheet" href="css/style.css">
-    type="application/ld+json">
+    <script>type="application/ld+json">
     {{
       "@context": "https://schema.org",
       "@type": "Article",

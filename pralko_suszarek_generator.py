@@ -135,7 +135,7 @@ def generate_brand_page(city_slug, city_name, brand_slug, brand_data):
     <meta name="description" content="Pralko-suszarka {brand_name} nie suszy w {city_name}? Pranie mokre po cyklu? Blad {brand_data["errors"][0]}? Naprawiamy na miejscu. Dojazd tego samego dnia. Tel: 721 988 949">
     <link rel="canonical" href="{page_url}">
     <link rel="stylesheet" href="../../css/style.css">
-    type="application/ld+json">
+    <script>type="application/ld+json">
     {{
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
