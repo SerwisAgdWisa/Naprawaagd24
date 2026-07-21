@@ -1,41 +1,41 @@
 import os
+import re
 from pathlib import Path
 
-# Уникальные title для каждого бренда холодильников
+# Уникальные title для каждого бренда холодильников (с исправленным gorenje)
 BRAND_TITLES = {
-    'samsung': 'nie chlodzi, blad 1E 5E 22E, No Frost',
-    'lg': 'kompresor liniowy, blad Er dH, No Frost',
-    'bosch': 'nie chlodzi, VitaFresh, blad E1 E2 E3',
-    'whirlpool': 'blad AL E1, 6th Sense, No Frost',
-    'electrolux': 'blad E10 E20, TwinTech, No Frost',
-    'beko': 'blad E1 E2, NeoFrost, nie chlodzi',
-    'aeg': 'blad E1 E4, CustomFlex, nie chlodzi',
-    'siemens': 'blad E1 E2, HyperFresh, No Frost',
-    'liebherr': 'blad F1 F2, BioFresh, kompresor',
-    'gorenje': 'blad E1 E2, MultiFlow, nie chlodzi',
-    'candy': 'blad E1 E2, nie chlodzi, alarm temp',
-    'indesit': 'blad F01 F02, nie chlodzi, No Frost',
-    'miele': 'blad F1 F2, PerfectFresh, kompresor',
-    'sharp': 'blad E1 E2, nie chlodzi, halas',
-    'haier': 'blad E1 E2, MyZone, nie chlodzi',
-    'hisense': 'blad E1 E3, nie chlodzi, No Frost',
-    'hotpoint-ariston': 'blad F01 F02, nie chlodzi, No Frost',
-    'gorenje': 'blad E1 E2, AdaptTech, nie chlodzi',
-    'zanussi': 'blad E10 E20, nie chlodzi, No Frost',
-    'amica': 'blad E1 E2, nie chlodzi, No Frost',
+    'samsung':          'nie chłodzii, błąd 1E 5E 22E, No Frost',
+    'lg':               'kompresor liniowy, błąd Er dH, No Frost',
+    'bosch':            'nie chłodzi, VitaFresh, błąd E1 E2 E3',
+    'whirlpool':        'błąd AL E1, 6th Sense, No Frost',
+    'electrolux':       'błąd E10 E20, TwinTech, No Frost',
+    'beko':             'błąd E1 E2, NeoFrost, nie chłodzi',
+    'aeg':              'błąd E1 E4, CustomFlex, nie chłodzi',
+    'siemens':          'błąd E1 E2, HyperFresh, No Frost',
+    'liebherr':         'błąd F1 F2, BioFresh, kompresor',
+    'gorenje':          'błąd E1 E2, AdaptTech, MultiFlow',
+    'candy':            'błąd E1 E2, nie chłodzi, alarm temp',
+    'indesit':          'błąd F01 F02, nie chłodzi, No Frost',
+    'miele':            'błąd F1 F2, PerfectFresh, kompresor',
+    'sharp':            'błąd E1 E2, nie chłodzi, hałas',
+    'haier':            'błąd E1 E2, MyZone, nie chłodzi',
+    'hisense':          'błąd E1 E3, nie chłodzi, No Frost',
+    'hotpoint-ariston': 'błąd F01 F02, nie chłodzi, No Frost',
+    'zanussi':          'błąd E10 E20, nie chłodzi, No Frost',
+    'amica':            'błąd E1 E2, nie chłodzi, No Frost',
 }
 
 # Правильные названия городов
 CITY_NAMES = {
     'szczecin': 'Szczecin',
     'stargard': 'Stargard',
-    'goleniow': 'Goleniow',
-    'goleniów': 'Goleniow',
+    'goleniow': 'Goleniów',
+    'goleniów': 'Goleniów',
     'nowogard': 'Nowogard',
-    'maszewo': 'Maszewo',
-    'police': 'Police',
-    'pyrzyce': 'Pyrzyce',
-    'gryfino': 'Gryfino',
+    'maszewo':  'Maszewo',
+    'police':   'Police',
+    'pyrzyce':  'Pyrzyce',
+    'gryfino':  'Gryfino',
 }
 
 # Правильные названия брендов
@@ -89,13 +89,13 @@ def fix_titles():
                 continue
             
             brand_name = BRAND_NAMES.get(brand_slug, brand_slug.capitalize())
-            brand_keywords = BRAND_TITLES.get(brand_slug, 'nie chlodzi, No Frost, kompresor')
+            brand_keywords = BRAND_TITLES.get(brand_slug, 'nie chłodzi, No Frost, kompresor')
             
-            # Новый уникальный title
-            new_title = f"Naprawa Lodowek {brand_name} {city_name} | {brand_keywords} | 721 988 949"
+            # Новый уникальный title с правильной символикой (Lodówek)
+            new_title = f"Naprawa Lodówek {brand_name} {city_name} | {brand_keywords} | 721 988 949"
             
             # Новый description
-            new_desc = f"Serwis lodowek {brand_name} w {city_name}. Naprawiamy: {brand_keywords}. Dojazd do klienta tego samego dnia. Tel: 721 988 949"
+            new_desc = f"Serwis lodówek {brand_name} w {city_name}. Naprawiamy: {brand_keywords}. Dojazd do klienta tego samego dnia. Tel: 721 988 949"
             
             # Читаем файл
             with open(html_file, 'r', encoding='utf-8') as f:
@@ -104,7 +104,6 @@ def fix_titles():
             original = content
             
             # Заменяем title
-            import re
             content = re.sub(
                 r'<title>[^<]*</title>',
                 f'<title>{new_title}</title>',
@@ -121,7 +120,7 @@ def fix_titles():
             # Заменяем og:title
             content = re.sub(
                 r'<meta property="og:title" content="[^"]*">',
-                f'<meta property="og:title" content="Naprawa Lodowek {brand_name} {city_name} | 721 988 949">',
+                f'<meta property="og:title" content="Naprawa Lodówek {brand_name} {city_name} | 721 988 949">',
                 content
             )
             
