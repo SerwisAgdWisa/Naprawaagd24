@@ -131,10 +131,10 @@
   - Неизвестный слаг бренда 'Electrolux' — добавьте в BRAND_NAMES
   - Обнаружено упоминание ДРУГОГО бренда 'Electrolux' вместо своего
 
-ФАЙЛ: naprawa-piekarnikow\maszewo\gorenie.html
+ФАЙЛ: naprawa-piekarnikow\maszewo\Gorenje.html
   title: 'Naprawa Piekarników Gorenje Maszewo | Serwis Gorenje | 721 988 949'
   h1:    'Profesjonalny Serwis Piekarników Gorenje w Maszewo'
-  - Неизвестный слаг бренда 'gorenie' — добавьте в BRAND_NAMES
+  - Неизвестный слаг бренда 'Gorenje' — добавьте в BRAND_NAMES
   - Обнаружено упоминание ДРУГОГО бренда 'Gorenje' вместо своего
 
 ФАЙЛ: naprawa-piekarnikow\police\Electrolux.html
