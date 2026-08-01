@@ -58,6 +58,19 @@ RATE_LIMIT = int(os.getenv("RATE_LIMIT_PER_MINUTE", "12"))
 DB_PATH = Path(os.getenv("CACHE_DB_PATH", "content_cache.db"))
 
 ROOT_DIR = Path(".")
+
+# Показываемое имя бренда — если на сайте файл называется альтернативным/
+# ошибочным написанием (elektrolux.html, gorenie.html), на странице всё
+# равно должно отображаться правильное официальное название бренда.
+BRAND_DISPLAY_NAMES = {
+    "elektrolux": "Electrolux",
+    "gorenie": "Gorenje",
+}
+
+
+def brand_display_name(brand_slug: str) -> str:
+    return BRAND_DISPLAY_NAMES.get(brand_slug, brand_slug.replace("-", " ").title())
+
 MARKER_CLASS = "unique-ai-content"
 EXCLUDE_DIRS = {".git", "node_modules", ".vscode"}
 
@@ -298,7 +311,7 @@ def generate_with_groq(prompt: str, model: str = GROQ_MODEL, temp: float = GROQ_
             "model": model,
             "messages": [{"role": "system", "content": SYSTEM_PROMPT}, {"role": "user", "content": prompt}],
             "temperature": temp,
-            "max_tokens": 350
+            "max_tokens": 550
         }
 
         try:
@@ -352,7 +365,7 @@ def update_html_dom(soup: BeautifulSoup, generated_text: str, appliance: str, ci
     paragraphs_list = split_into_paragraphs(generated_text)
     paragraphs_html = "".join(f"<p>{p}</p>" for p in paragraphs_list)
     
-    h2_title = f"Specyfika serwisu i naprawy {appliance} {brand.capitalize()} w {city.capitalize()}"
+    h2_title = f"Specyfika serwisu i naprawy {appliance} {brand_display_name(brand)} w {city.capitalize()}"
     
     new_block_html = f"""
     <section class="{MARKER_CLASS}" style="padding: 25px; background: #f8f9fa; border-radius: 8px; margin: 30px 0;">
@@ -452,7 +465,7 @@ def main():
 Miasto: {city_slug.capitalize()}
 Obsługiwany rejon / ulice / dzielnice: {streets_text}
 Sprzęt: {APPLIANCE_NAMES[appliance_dir]}
-Marka: {brand_slug.capitalize()}
+Marka: {brand_display_name(brand_slug)}
 Usterki, kody i części:
 {errors_text}
 
