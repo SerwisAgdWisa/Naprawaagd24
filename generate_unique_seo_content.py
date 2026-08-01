@@ -40,13 +40,13 @@ MARKER = "<!-- unique-seo-block-v2 -->"
 # ------------------------------------------------------------------
 
 CITY_FACTS = {
-    "goleniow": {
-        "display_locative": "Goleniowie",   # "w Goleniowie"
+    "Goleniów": {
+        "display_locative": "Goleniówie",   # "w Goleniówie"
         "display_nominative": "Goleniów",
         "districts": ["Centrum", "Osiedle Słoneczne", "Helenów"],
         "facts": [
             "Obsługujemy zarówno starą zabudowę w centrum, jak i nowsze osiedla.",
-            "Dojeżdżamy do klientów w Goleniowie zwykle w ciągu 60–90 minut.",
+            "Dojeżdżamy do klientów w Goleniówie zwykle w ciągu 60–90 minut.",
         ],
     },
     "nowogard": {

@@ -29,7 +29,7 @@ NOMINATIM_URL = "https://nominatim.openstreetmap.org/search"
 
 # Список городов — ключ должен совпадать со слагом папки на сайте
 CITIES = {
-    "goleniow": "Goleniów, Polska",
+    "Goleniów": "Goleniów, Polska",
     "nowogard": "Nowogard, Polska",
     "maszewo": "Maszewo, Polska",
     "szczecin": "Szczecin, Polska",

@@ -3495,8 +3495,8 @@
 2026-08-01 10:12:18,855 [INFO] [СГЕНЕРИРОВАНО] naprawa-pralek\szczecin\index.html
 2026-08-01 10:12:18,861 [INFO] [ЗАПИСАНО] naprawa-pralek\szczecin\index.html
 2026-08-01 10:12:18,873 [INFO] [RateLimiter] Защита API. Пауза 0.1 сек...
-2026-08-01 10:12:19,815 [INFO] [СГЕНЕРИРОВАНО] naprawa-lodowek\goleniow\index.html
-2026-08-01 10:12:19,821 [INFO] [ЗАПИСАНО] naprawa-lodowek\goleniow\index.html
+2026-08-01 10:12:19,815 [INFO] [СГЕНЕРИРОВАНО] naprawa-lodowek\Goleniów\index.html
+2026-08-01 10:12:19,821 [INFO] [ЗАПИСАНО] naprawa-lodowek\Goleniów\index.html
 2026-08-01 10:12:20,709 [INFO] [СГЕНЕРИРОВАНО] naprawa-lodowek\Gryfino\index.html
 2026-08-01 10:12:20,715 [INFO] [ЗАПИСАНО] naprawa-lodowek\Gryfino\index.html
 2026-08-01 10:12:20,726 [INFO] [RateLimiter] Защита API. Пауза 0.3 сек...
@@ -3515,8 +3515,8 @@
 2026-08-01 10:13:21,840 [INFO] [СГЕНЕРИРОВАНО] naprawa-lodowek\szczecin\index.html
 2026-08-01 10:13:21,848 [INFO] [ЗАПИСАНО] naprawa-lodowek\szczecin\index.html
 2026-08-01 10:13:21,859 [INFO] [RateLimiter] Защита API. Пауза 55.3 сек...
-2026-08-01 10:14:18,043 [INFO] [СГЕНЕРИРОВАНО] naprawa-zmywarek\goleniow\index.html
-2026-08-01 10:14:18,050 [INFO] [ЗАПИСАНО] naprawa-zmywarek\goleniow\index.html
+2026-08-01 10:14:18,043 [INFO] [СГЕНЕРИРОВАНО] naprawa-zmywarek\Goleniów\index.html
+2026-08-01 10:14:18,050 [INFO] [ЗАПИСАНО] naprawa-zmywarek\Goleniów\index.html
 2026-08-01 10:14:18,059 [INFO] [RateLimiter] Защита API. Пауза 0.2 сек...
 2026-08-01 10:14:19,477 [INFO] [СГЕНЕРИРОВАНО] naprawa-zmywarek\maszewo\index.html
 2026-08-01 10:14:19,488 [INFO] [ЗАПИСАНО] naprawa-zmywarek\maszewo\index.html
@@ -3533,8 +3533,8 @@
 2026-08-01 10:15:19,142 [INFO] [СГЕНЕРИРОВАНО] naprawa-zmywarek\szczecin\index.html
 2026-08-01 10:15:19,147 [INFO] [ЗАПИСАНО] naprawa-zmywarek\szczecin\index.html
 2026-08-01 10:15:19,164 [INFO] [RateLimiter] Защита API. Пауза 0.3 сек...
-2026-08-01 10:15:20,394 [INFO] [СГЕНЕРИРОВАНО] naprawa-piekarnikow\goleniow\index.html
-2026-08-01 10:15:20,401 [INFO] [ЗАПИСАНО] naprawa-piekarnikow\goleniow\index.html
+2026-08-01 10:15:20,394 [INFO] [СГЕНЕРИРОВАНО] naprawa-piekarnikow\Goleniów\index.html
+2026-08-01 10:15:20,401 [INFO] [ЗАПИСАНО] naprawa-piekarnikow\Goleniów\index.html
 2026-08-01 10:15:20,410 [INFO] [RateLimiter] Защита API. Пауза 0.4 сек...
 2026-08-01 10:15:21,607 [INFO] [СГЕНЕРИРОВАНО] naprawa-piekarnikow\maszewo\index.html
 2026-08-01 10:15:21,614 [INFO] [ЗАПИСАНО] naprawa-piekarnikow\maszewo\index.html
@@ -3550,8 +3550,8 @@
 2026-08-01 10:16:22,211 [INFO] [ЗАПИСАНО] naprawa-piekarnikow\stargard\index.html
 2026-08-01 10:16:23,167 [INFO] [СГЕНЕРИРОВАНО] naprawa-piekarnikow\szczecin\index.html
 2026-08-01 10:16:23,173 [INFO] [ЗАПИСАНО] naprawa-piekarnikow\szczecin\index.html
-2026-08-01 10:16:23,994 [INFO] [СГЕНЕРИРОВАНО] naprawa-suszarek\goleniow\index.html
-2026-08-01 10:16:24,000 [INFO] [ЗАПИСАНО] naprawa-suszarek\goleniow\index.html
+2026-08-01 10:16:23,994 [INFO] [СГЕНЕРИРОВАНО] naprawa-suszarek\Goleniów\index.html
+2026-08-01 10:16:24,000 [INFO] [ЗАПИСАНО] naprawa-suszarek\Goleniów\index.html
 2026-08-01 10:16:24,014 [INFO] [RateLimiter] Защита API. Пауза 53.1 сек...
 2026-08-01 10:17:18,347 [INFO] [СГЕНЕРИРОВАНО] naprawa-suszarek\maszewo\index.html
 2026-08-01 10:17:18,354 [INFO] [ЗАПИСАНО] naprawa-suszarek\maszewo\index.html
@@ -3570,8 +3570,8 @@
 2026-08-01 10:18:18,384 [INFO] [СГЕНЕРИРОВАНО] naprawa-suszarek\szczecin\index.html
 2026-08-01 10:18:18,392 [INFO] [ЗАПИСАНО] naprawa-suszarek\szczecin\index.html
 2026-08-01 10:18:18,402 [INFO] [RateLimiter] Защита API. Пауза 1.1 сек...
-2026-08-01 10:18:20,651 [INFO] [СГЕНЕРИРОВАНО] naprawa-pralko-suszarek\goleniow\index.html
-2026-08-01 10:18:20,659 [INFO] [ЗАПИСАНО] naprawa-pralko-suszarek\goleniow\index.html
+2026-08-01 10:18:20,651 [INFO] [СГЕНЕРИРОВАНО] naprawa-pralko-suszarek\Goleniów\index.html
+2026-08-01 10:18:20,659 [INFO] [ЗАПИСАНО] naprawa-pralko-suszarek\Goleniów\index.html
 2026-08-01 10:18:20,668 [INFO] [RateLimiter] Защита API. Пауза 0.6 сек...
 2026-08-01 10:18:22,318 [INFO] [СГЕНЕРИРОВАНО] naprawa-pralko-suszarek\gryfino\index.html
 2026-08-01 10:18:22,324 [INFO] [ЗАПИСАНО] naprawa-pralko-suszarek\gryfino\index.html
@@ -3604,7 +3604,7 @@
 2026-08-01 11:08:04,807 [INFO] [ЗАПИСАНО] naprawa-pralek\pyrzyce\index.html
 2026-08-01 11:08:04,818 [INFO] [ЗАПИСАНО] naprawa-pralek\stargard\index.html
 2026-08-01 11:08:04,827 [INFO] [ЗАПИСАНО] naprawa-pralek\szczecin\index.html
-2026-08-01 11:08:04,838 [INFO] [ЗАПИСАНО] naprawa-lodowek\goleniow\index.html
+2026-08-01 11:08:04,838 [INFO] [ЗАПИСАНО] naprawa-lodowek\Goleniów\index.html
 2026-08-01 11:08:04,845 [INFO] [ЗАПИСАНО] naprawa-lodowek\Gryfino\index.html
 2026-08-01 11:08:04,856 [INFO] [ЗАПИСАНО] naprawa-lodowek\maszewo\index.html
 2026-08-01 11:08:04,862 [INFO] [ЗАПИСАНО] naprawa-lodowek\nowogard\index.html
@@ -3612,28 +3612,28 @@
 2026-08-01 11:08:04,878 [INFO] [ЗАПИСАНО] naprawa-lodowek\pyrzyce\index.html
 2026-08-01 11:08:04,888 [INFO] [ЗАПИСАНО] naprawa-lodowek\stargard\index.html
 2026-08-01 11:08:04,895 [INFO] [ЗАПИСАНО] naprawa-lodowek\szczecin\index.html
-2026-08-01 11:08:04,905 [INFO] [ЗАПИСАНО] naprawa-zmywarek\goleniow\index.html
+2026-08-01 11:08:04,905 [INFO] [ЗАПИСАНО] naprawa-zmywarek\Goleniów\index.html
 2026-08-01 11:08:04,912 [INFO] [ЗАПИСАНО] naprawa-zmywarek\maszewo\index.html
 2026-08-01 11:08:04,921 [INFO] [ЗАПИСАНО] naprawa-zmywarek\nowogard\index.html
 2026-08-01 11:08:04,928 [INFO] [ЗАПИСАНО] naprawa-zmywarek\police\index.html
 2026-08-01 11:08:04,938 [INFO] [ЗАПИСАНО] naprawa-zmywarek\pyrzyce\index.html
 2026-08-01 11:08:04,945 [INFO] [ЗАПИСАНО] naprawa-zmywarek\stargard\index.html
 2026-08-01 11:08:04,956 [INFO] [ЗАПИСАНО] naprawa-zmywarek\szczecin\index.html
-2026-08-01 11:08:04,962 [INFO] [ЗАПИСАНО] naprawa-piekarnikow\goleniow\index.html
+2026-08-01 11:08:04,962 [INFO] [ЗАПИСАНО] naprawa-piekarnikow\Goleniów\index.html
 2026-08-01 11:08:04,971 [INFO] [ЗАПИСАНО] naprawa-piekarnikow\maszewo\index.html
 2026-08-01 11:08:04,978 [INFO] [ЗАПИСАНО] naprawa-piekarnikow\nowogard\index.html
 2026-08-01 11:08:04,988 [INFO] [ЗАПИСАНО] naprawa-piekarnikow\police\index.html
 2026-08-01 11:08:04,995 [INFO] [ЗАПИСАНО] naprawa-piekarnikow\pyrzyce\index.html
 2026-08-01 11:08:05,005 [INFO] [ЗАПИСАНО] naprawa-piekarnikow\stargard\index.html
 2026-08-01 11:08:05,012 [INFO] [ЗАПИСАНО] naprawa-piekarnikow\szczecin\index.html
-2026-08-01 11:08:05,026 [INFO] [ЗАПИСАНО] naprawa-suszarek\goleniow\index.html
+2026-08-01 11:08:05,026 [INFO] [ЗАПИСАНО] naprawa-suszarek\Goleniów\index.html
 2026-08-01 11:08:05,034 [INFO] [ЗАПИСАНО] naprawa-suszarek\maszewo\index.html
 2026-08-01 11:08:05,041 [INFO] [ЗАПИСАНО] naprawa-suszarek\nowogard\index.html
 2026-08-01 11:08:05,048 [INFO] [ЗАПИСАНО] naprawa-suszarek\police\index.html
 2026-08-01 11:08:05,057 [INFO] [ЗАПИСАНО] naprawa-suszarek\pyrzyce\index.html
 2026-08-01 11:08:05,066 [INFO] [ЗАПИСАНО] naprawa-suszarek\stargard\index.html
 2026-08-01 11:08:05,075 [INFO] [ЗАПИСАНО] naprawa-suszarek\szczecin\index.html
-2026-08-01 11:08:05,083 [INFO] [ЗАПИСАНО] naprawa-pralko-suszarek\goleniow\index.html
+2026-08-01 11:08:05,083 [INFO] [ЗАПИСАНО] naprawa-pralko-suszarek\Goleniów\index.html
 2026-08-01 11:08:05,091 [INFO] [ЗАПИСАНО] naprawa-pralko-suszarek\gryfino\index.html
 2026-08-01 11:08:05,099 [INFO] [ЗАПИСАНО] naprawa-pralko-suszarek\maszewo\index.html
 2026-08-01 11:08:05,108 [INFO] [ЗАПИСАНО] naprawa-pralko-suszarek\nowogard\index.html
@@ -3653,7 +3653,7 @@
 2026-08-01 11:08:17,664 [INFO] [ЗАПИСАНО] naprawa-pralek\pyrzyce\index.html
 2026-08-01 11:08:17,814 [INFO] [ЗАПИСАНО] naprawa-pralek\stargard\index.html
 2026-08-01 11:08:17,969 [INFO] [ЗАПИСАНО] naprawa-pralek\szczecin\index.html
-2026-08-01 11:08:18,107 [INFO] [ЗАПИСАНО] naprawa-lodowek\goleniow\index.html
+2026-08-01 11:08:18,107 [INFO] [ЗАПИСАНО] naprawa-lodowek\Goleniów\index.html
 2026-08-01 11:08:18,243 [INFO] [ЗАПИСАНО] naprawa-lodowek\Gryfino\index.html
 2026-08-01 11:08:18,377 [INFO] [ЗАПИСАНО] naprawa-lodowek\maszewo\index.html
 2026-08-01 11:08:18,513 [INFO] [ЗАПИСАНО] naprawa-lodowek\nowogard\index.html
@@ -3661,28 +3661,28 @@
 2026-08-01 11:08:18,792 [INFO] [ЗАПИСАНО] naprawa-lodowek\pyrzyce\index.html
 2026-08-01 11:08:18,933 [INFO] [ЗАПИСАНО] naprawa-lodowek\stargard\index.html
 2026-08-01 11:08:19,063 [INFO] [ЗАПИСАНО] naprawa-lodowek\szczecin\index.html
-2026-08-01 11:08:19,204 [INFO] [ЗАПИСАНО] naprawa-zmywarek\goleniow\index.html
+2026-08-01 11:08:19,204 [INFO] [ЗАПИСАНО] naprawa-zmywarek\Goleniów\index.html
 2026-08-01 11:08:19,339 [INFO] [ЗАПИСАНО] naprawa-zmywarek\maszewo\index.html
 2026-08-01 11:08:19,485 [INFO] [ЗАПИСАНО] naprawa-zmywarek\nowogard\index.html
 2026-08-01 11:08:19,627 [INFO] [ЗАПИСАНО] naprawa-zmywarek\police\index.html
 2026-08-01 11:08:19,766 [INFO] [ЗАПИСАНО] naprawa-zmywarek\pyrzyce\index.html
 2026-08-01 11:08:19,897 [INFO] [ЗАПИСАНО] naprawa-zmywarek\stargard\index.html
 2026-08-01 11:08:20,031 [INFO] [ЗАПИСАНО] naprawa-zmywarek\szczecin\index.html
-2026-08-01 11:08:20,165 [INFO] [ЗАПИСАНО] naprawa-piekarnikow\goleniow\index.html
+2026-08-01 11:08:20,165 [INFO] [ЗАПИСАНО] naprawa-piekarnikow\Goleniów\index.html
 2026-08-01 11:08:20,296 [INFO] [ЗАПИСАНО] naprawa-piekarnikow\maszewo\index.html
 2026-08-01 11:08:20,436 [INFO] [ЗАПИСАНО] naprawa-piekarnikow\nowogard\index.html
 2026-08-01 11:08:20,584 [INFO] [ЗАПИСАНО] naprawa-piekarnikow\police\index.html
 2026-08-01 11:08:20,705 [INFO] [ЗАПИСАНО] naprawa-piekarnikow\pyrzyce\index.html
 2026-08-01 11:08:20,843 [INFO] [ЗАПИСАНО] naprawa-piekarnikow\stargard\index.html
 2026-08-01 11:08:20,991 [INFO] [ЗАПИСАНО] naprawa-piekarnikow\szczecin\index.html
-2026-08-01 11:08:21,108 [INFO] [ЗАПИСАНО] naprawa-suszarek\goleniow\index.html
+2026-08-01 11:08:21,108 [INFO] [ЗАПИСАНО] naprawa-suszarek\Goleniów\index.html
 2026-08-01 11:08:21,251 [INFO] [ЗАПИСАНО] naprawa-suszarek\maszewo\index.html
 2026-08-01 11:08:21,381 [INFO] [ЗАПИСАНО] naprawa-suszarek\nowogard\index.html
 2026-08-01 11:08:21,513 [INFO] [ЗАПИСАНО] naprawa-suszarek\police\index.html
 2026-08-01 11:08:21,642 [INFO] [ЗАПИСАНО] naprawa-suszarek\pyrzyce\index.html
 2026-08-01 11:08:21,783 [INFO] [ЗАПИСАНО] naprawa-suszarek\stargard\index.html
 2026-08-01 11:08:21,927 [INFO] [ЗАПИСАНО] naprawa-suszarek\szczecin\index.html
-2026-08-01 11:08:22,039 [INFO] [ЗАПИСАНО] naprawa-pralko-suszarek\goleniow\index.html
+2026-08-01 11:08:22,039 [INFO] [ЗАПИСАНО] naprawa-pralko-suszarek\Goleniów\index.html
 2026-08-01 11:08:22,116 [INFO] [ЗАПИСАНО] naprawa-pralko-suszarek\gryfino\index.html
 2026-08-01 11:08:22,221 [INFO] [ЗАПИСАНО] naprawa-pralko-suszarek\maszewo\index.html
 2026-08-01 11:08:22,333 [INFO] [ЗАПИСАНО] naprawa-pralko-suszarek\nowogard\index.html

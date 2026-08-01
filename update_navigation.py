@@ -37,7 +37,7 @@ BRAND_DISPLAY = {
 }
 
 CITIES = {
-    "szczecin": "Szczecin", "stargard": "Stargard", "goleniow": "Goleniow",
+    "szczecin": "Szczecin", "stargard": "Stargard", "Goleniów": "Goleniów",
     "nowogard": "Nowogard", "maszewo": "Maszewo", "police": "Police",
     "pyrzyce": "Pyrzyce", "gryfino": "Gryfino"
 }

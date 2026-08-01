@@ -26,8 +26,8 @@ BRAND_TITLES = {
 CITY_NAMES = {
     'szczecin': 'Szczecin',
     'stargard': 'Stargard',
-    'goleniow': 'Goleniow',
-    'goleniów': 'Goleniow',
+    'Goleniów': 'Goleniów',
+    'goleniów': 'Goleniów',
     'nowogard': 'Nowogard',
     'maszewo':  'Maszewo',
     'police':   'Police',

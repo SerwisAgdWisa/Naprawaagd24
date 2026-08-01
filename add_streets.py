@@ -31,8 +31,8 @@ CITY_STREETS = {
             "ul. Norwida", "ul. Wolnosci", "ul. Rynek Staromiejski"
         ]
     },
-    "goleniow": {
-        "name": "Goleniow",
+    "Goleniów": {
+        "name": "Goleniów",
         "streets": [
             "ul. Wojska Polskiego", "ul. Niepodleglosci", "ul. Konstytucji 3 Maja",
             "ul. Moniuszki", "ul. Chopina", "ul. Slowackiego",

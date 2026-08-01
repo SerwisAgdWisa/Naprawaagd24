@@ -66,7 +66,7 @@ def get_html(slug, title, desc, h1, content):
                             <option value="">Wybierz miasto</option>
                             <option>Szczecin</option>
                             <option>Stargard</option>
-                            <option>Goleniow</option>
+                            <option>Goleniów</option>
                             <option>Nowogard</option>
                             <option>Maszewo</option>
                             <option>Police</option>
@@ -444,7 +444,7 @@ srodowisko_content = '''
                         <li>Uczciwe ceny bez sciem</li>
                         <li>Jesli nie warto - powiemy wprost</li>
                         <li>Dojazd do klienta - zero transportu</li>
-                        <li>Szczecin Stargard Goleniow i okolice</li>
+                        <li>Szczecin Stargard Goleniów i okolice</li>
                         <li>Tel: 721 988 949</li>
                         <li>WhatsApp dostepny</li>
                     </ul>

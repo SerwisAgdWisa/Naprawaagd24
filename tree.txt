@@ -1,0 +1,807 @@
+Folder PATH listing for volume Windows
+Volume serial number is 000000C6 6835:4253
+C:.
+-   .env
+-   .nojekyll
+-   add_breadcrumbs.py
+-   add_footer_link.py
+-   add_google_maps.py
+-   add_streets.py
+-   add_unique_content.py
+-   auto_tech_facts_db.py
+-   build_tech_facts_db_extra.py
+-   check_clean.py
+-   check_clean_similarity.py
+-   check_content_consistency.py
+-   check_uniqueness.py
+-   check_uniqueness_distribution.py
+-   check_uniqueness_main_content.py
+-   clean_truncated_cache.py
+-   CNAME
+-   content_cache.db
+-   czy-oplaca-sie-naprawiac-lodowke.html
+-   czy-oplaca-sie-naprawiac-pralke.html
+-   czy-oplaca-sie-naprawiac-zmywarke.html
+-   extract_facts_from_pages.py
+-   fetch_geo_data.py
+-   find_missing_tech_facts.py
+-   fix_brand_name.py
+-   fix_html_structure.py
+-   fix_lodowki_titles.py
+-   fix_piekarnikow_titles.py
+-   fix_seo.py
+-   fix_visible_code.py
+-   generate_articles.py
+-   generate_content_api.py
+-   generate_content_api_fixed.py
+-   generate_content_api_v3.py
+-   generate_content_api_v4.py
+-   generate_content_ollama.py
+-   generate_content_with_ai.py
+-   generate_html_sitemap.py
+-   generate_index_content.py
+-   generate_sitemap.py
+-   generate_unique_seo_content.py
+-   google4efe7e79ab24f4cf.html
+-   index.html
+-   jak-przedluzyc-zycie-pralki.html
+-   lokalna.html
+-   mapa-stron.html
+-   naprawa-agd-a-srodowisko.html
+-   pralko_suszarek_generator.py
+-   robots.txt
+-   seo_generator.log
+-   sitemap.xml
+-   tech_facts_db.py
+-   tech_facts_db_extra.py
+-   tree.txt
+-   update_navigation.py
+-   validate_content_cache.py
+-   
++   .vscode
+-       settings.json
+-       
++   css
+-       style.css
+-       
++   Goleniów
+-       index.html
+-       
++   maszewo
+-       index.html
+-       
++   naprawa-lodowek
+-   -   index.html
+-   -   
+-   +   Goleniów
+-   -       amica.html
+-   -       beko.html
+-   -       bosch.html
+-   -       candy.html
+-   -       electrolux.html
+-   -       gorenje.html
+-   -       haier.html
+-   -       hisense.html
+-   -       index.html
+-   -       lg.html
+-   -       liebherr.html
+-   -       miele.html
+-   -       samsung.html
+-   -       sharp.html
+-   -       siemens.html
+-   -       whirlpool.html
+-   -       
+-   +   Gryfino
+-   -       amica.html
+-   -       beko.html
+-   -       bosch.html
+-   -       candy.html
+-   -       electrolux.html
+-   -       gorenje.html
+-   -       haier.html
+-   -       hisense.html
+-   -       index.html
+-   -       lg.html
+-   -       liebherr.html
+-   -       miele.html
+-   -       samsung.html
+-   -       sharp.html
+-   -       siemens.html
+-   -       whirlpool.html
+-   -       
+-   +   maszewo
+-   -       amica.html
+-   -       beko.html
+-   -       bosch.html
+-   -       candy.html
+-   -       electrolux.html
+-   -       gorenje.html
+-   -       haier.html
+-   -       hisense.html
+-   -       index.html
+-   -       lg.html
+-   -       liebherr.html
+-   -       miele.html
+-   -       samsung.html
+-   -       sharp.html
+-   -       siemens.html
+-   -       whirlpool.html
+-   -       
+-   +   nowogard
+-   -       amica.html
+-   -       beko.html
+-   -       bosch.html
+-   -       candy.html
+-   -       electrolux.html
+-   -       gorenje.html
+-   -       haier.html
+-   -       hisense.html
+-   -       index.html
+-   -       lg.html
+-   -       liebherr.html
+-   -       miele.html
+-   -       samsung.html
+-   -       sharp.html
+-   -       siemens.html
+-   -       whirlpool.html
+-   -       
+-   +   police
+-   -       amica.html
+-   -       beko.html
+-   -       bosch.html
+-   -       candy.html
+-   -       electrolux.html
+-   -       gorenje.html
+-   -       haier.html
+-   -       hisense.html
+-   -       index.html
+-   -       lg.html
+-   -       liebherr.html
+-   -       miele.html
+-   -       samsung.html
+-   -       sharp.html
+-   -       siemens.html
+-   -       whirlpool.html
+-   -       
+-   +   pyrzyce
+-   -       amica.html
+-   -       beko.html
+-   -       bosch.html
+-   -       candy.html
+-   -       electrolux.html
+-   -       gorenje.html
+-   -       haier.html
+-   -       hisense.html
+-   -       index.html
+-   -       lg.html
+-   -       liebherr.html
+-   -       miele.html
+-   -       samsung.html
+-   -       sharp.html
+-   -       siemens.html
+-   -       whirlpool.html
+-   -       
+-   +   stargard
+-   -       amica.html
+-   -       beko.html
+-   -       bosch.html
+-   -       candy.html
+-   -       electrolux.html
+-   -       gorenje.html
+-   -       haier.html
+-   -       hisense.html
+-   -       index.html
+-   -       lg.html
+-   -       liebherr.html
+-   -       miele.html
+-   -       samsung.html
+-   -       sharp.html
+-   -       siemens.html
+-   -       whirlpool.html
+-   -       
+-   L   szczecin
+-           amica.html
+-           beko.html
+-           bosch.html
+-           candy.html
+-           electrolux.html
+-           gorenje.html
+-           haier.html
+-           hisense.html
+-           index.html
+-           lg.html
+-           liebherr.html
+-           miele.html
+-           samsung.html
+-           sharp.html
+-           siemens.html
+-           whirlpool.html
+-           
++   naprawa-piekarnikow
+-   -   index.html
+-   -   
+-   +   Goleniów
+-   -       amica.html
+-   -       beko.html
+-   -       bosch.html
+-   -       elektrolux.html
+-   -       indesit.html
+-   -       index.html
+-   -       samsung.html
+-   -       siemens.html
+-   -       whirlpool.html
+-   -       
+-   +   maszewo
+-   -       amica.html
+-   -       beko.html
+-   -       bosch.html
+-   -       candy.html
+-   -       elektrolux.html
+-   -       gorenie.html
+-   -       hisense.html
+-   -       indesit.html
+-   -       index.html
+-   -       miele.html
+-   -       samsung.html
+-   -       whirlpool.html
+-   -       
+-   +   nowogard
+-   -       amica.html
+-   -       beko.html
+-   -       bosch.html
+-   -       candy.html
+-   -       hisense.html
+-   -       indesit.html
+-   -       index.html
+-   -       samsung.html
+-   -       whirlpool.html
+-   -       
+-   +   police
+-   -       amica.html
+-   -       beko.html
+-   -       bosch.html
+-   -       candy.html
+-   -       elektrolux.html
+-   -       hisense.html
+-   -       index.html
+-   -       miele.html
+-   -       samsung.html
+-   -       siemens.html
+-   -       whirlpool.html
+-   -       
+-   +   pyrzyce
+-   -       amica.html
+-   -       beko.html
+-   -       bosch.html
+-   -       candy.html
+-   -       elektrolux.html
+-   -       hisense.html
+-   -       indesit.html
+-   -       index.html
+-   -       samsung.html
+-   -       siemens.html
+-   -       whirlpool.html
+-   -       
+-   +   stargard
+-   -       amica.html
+-   -       beko.html
+-   -       bosch.html
+-   -       candy.html
+-   -       elektrolux.html
+-   -       gorenje.html
+-   -       index.html
+-   -       neff.html
+-   -       samsung .html
+-   -       siemens.html
+-   -       
+-   L   szczecin
+-           amica.html
+-           beko.html
+-           bosch.html
+-           candy.html
+-           elektrolux.html
+-           gorenje.html
+-           hisense.html
+-           index.html
+-           samsung.html
+-           whirlpool.html
+-           
++   naprawa-pralek
+-   -   index.html
+-   -   
+-   +   goleni w
+-   -       aeg.html
+-   -       amica.html
+-   -       beko.html
+-   -       bosch.html
+-   -       candy.html
+-   -       electrolux.html
+-   -       gorenje.html
+-   -       haier.html
+-   -       hisense.html
+-   -       hotpoint-ariston.html
+-   -       indesit.html
+-   -       index.html
+-   -       lg.html
+-   -       miele.html
+-   -       samsung.html
+-   -       sharp.html
+-   -       siemens.html
+-   -       whirlpool.html
+-   -       zanussi.html
+-   -       
+-   +   maszewo
+-   -       aeg.html
+-   -       amica.html
+-   -       beko.html
+-   -       bosch.html
+-   -       candy.html
+-   -       electrolux.html
+-   -       gorenje.html
+-   -       haier.html
+-   -       hisense.html
+-   -       hotpoint-ariston.html
+-   -       indesit.html
+-   -       index.html
+-   -       lg.html
+-   -       miele.html
+-   -       samsung.html
+-   -       sharp.html
+-   -       siemens.html
+-   -       whirlpool.html
+-   -       zanussi.html
+-   -       
+-   +   nowogard
+-   -       aeg.html
+-   -       amica.html
+-   -       beko.html
+-   -       bosch.html
+-   -       candy.html
+-   -       electrolux.html
+-   -       gorenje.html
+-   -       haier.html
+-   -       hisense.html
+-   -       hotpoint-ariston.html
+-   -       indesit.html
+-   -       index.html
+-   -       lg.html
+-   -       miele.html
+-   -       samsung.html
+-   -       sharp.html
+-   -       siemens.html
+-   -       whirlpool.html
+-   -       zanussi.html
+-   -       
+-   +   police
+-   -       aeg.html
+-   -       amica.html
+-   -       beko.html
+-   -       bosch.html
+-   -       candy.html
+-   -       electrolux.html
+-   -       gorenje.html
+-   -       haier.html
+-   -       hisense.html
+-   -       hotpoint-ariston.html
+-   -       indesit.html
+-   -       index.html
+-   -       lg.html
+-   -       miele.html
+-   -       samsung.html
+-   -       sharp.html
+-   -       siemens.html
+-   -       whirlpool.html
+-   -       zanussi.html
+-   -       
+-   +   pyrzyce
+-   -       aeg.html
+-   -       amica.html
+-   -       beko.html
+-   -       bosch.html
+-   -       candy.html
+-   -       electrolux.html
+-   -       gorenje.html
+-   -       haier.html
+-   -       hisense.html
+-   -       hotpoint-ariston.html
+-   -       indesit.html
+-   -       index.html
+-   -       lg.html
+-   -       miele.html
+-   -       samsung.html
+-   -       sharp.html
+-   -       siemens.html
+-   -       whirlpool.html
+-   -       zanussi.html
+-   -       
+-   +   stargard
+-   -       aeg.html
+-   -       amica.html
+-   -       beko.html
+-   -       bosch.html
+-   -       candy.html
+-   -       electrolux.html
+-   -       gorenje.html
+-   -       haier.html
+-   -       hisense.html
+-   -       hotpoint-ariston.html
+-   -       indesit.html
+-   -       index.html
+-   -       lg.html
+-   -       miele.html
+-   -       samsung.html
+-   -       sharp.html
+-   -       siemens.html
+-   -       whirlpool.html
+-   -       zanussi.html
+-   -       
+-   L   szczecin
+-           aeg.html
+-           amica.html
+-           beko.html
+-           bosch.html
+-           candy.html
+-           electrolux.html
+-           gorenje.html
+-           haier.html
+-           hisense.html
+-           hotpoint-ariston.html
+-           indesit.html
+-           index.html
+-           lg.html
+-           miele.html
+-           samsung.html
+-           sharp.html
+-           siemens.html
+-           whirlpool.html
+-           zanussi.html
+-           
++   naprawa-pralko-suszarek
+-   -   index.html
+-   -   
+-   +   Goleniów
+-   -       aeg.html
+-   -       beko.html
+-   -       bosch.html
+-   -       candy.html
+-   -       electrolux.html
+-   -       gorenje.html
+-   -       hotpoint-ariston.html
+-   -       indesit.html
+-   -       index.html
+-   -       lg.html
+-   -       samsung.html
+-   -       siemens.html
+-   -       whirlpool.html
+-   -       
+-   +   gryfino
+-   -       aeg.html
+-   -       beko.html
+-   -       bosch.html
+-   -       candy.html
+-   -       electrolux.html
+-   -       gorenje.html
+-   -       hotpoint-ariston.html
+-   -       indesit.html
+-   -       index.html
+-   -       lg.html
+-   -       samsung.html
+-   -       siemens.html
+-   -       whirlpool.html
+-   -       
+-   +   maszewo
+-   -       aeg.html
+-   -       beko.html
+-   -       bosch.html
+-   -       candy.html
+-   -       electrolux.html
+-   -       gorenje.html
+-   -       hotpoint-ariston.html
+-   -       indesit.html
+-   -       index.html
+-   -       lg.html
+-   -       samsung.html
+-   -       siemens.html
+-   -       whirlpool.html
+-   -       
+-   +   nowogard
+-   -       aeg.html
+-   -       beko.html
+-   -       bosch.html
+-   -       candy.html
+-   -       electrolux.html
+-   -       gorenje.html
+-   -       hotpoint-ariston.html
+-   -       indesit.html
+-   -       index.html
+-   -       lg.html
+-   -       samsung.html
+-   -       siemens.html
+-   -       whirlpool.html
+-   -       
+-   +   police
+-   -       aeg.html
+-   -       beko.html
+-   -       bosch.html
+-   -       candy.html
+-   -       electrolux.html
+-   -       gorenje.html
+-   -       hotpoint-ariston.html
+-   -       indesit.html
+-   -       index.html
+-   -       lg.html
+-   -       samsung.html
+-   -       siemens.html
+-   -       whirlpool.html
+-   -       
+-   +   pyrzyce
+-   -       aeg.html
+-   -       beko.html
+-   -       bosch.html
+-   -       candy.html
+-   -       electrolux.html
+-   -       gorenje.html
+-   -       hotpoint-ariston.html
+-   -       indesit.html
+-   -       index.html
+-   -       lg.html
+-   -       samsung.html
+-   -       siemens.html
+-   -       whirlpool.html
+-   -       
+-   +   stargard
+-   -       aeg.html
+-   -       beko.html
+-   -       bosch.html
+-   -       candy.html
+-   -       electrolux.html
+-   -       gorenje.html
+-   -       hotpoint-ariston.html
+-   -       indesit.html
+-   -       index.html
+-   -       lg.html
+-   -       samsung.html
+-   -       siemens.html
+-   -       whirlpool.html
+-   -       
+-   L   szczecin
+-           aeg.html
+-           beko.html
+-           bosch.html
+-           candy.html
+-           electrolux.html
+-           gorenje.html
+-           hotpoint-ariston.html
+-           indesit.html
+-           index.html
+-           lg.html
+-           samsung.html
+-           siemens.html
+-           whirlpool.html
+-           
++   naprawa-suszarek
+-   -   index.html
+-   -   
+-   +   Goleniów
+-   -       amica.html
+-   -       beko.html
+-   -       bosch.html
+-   -       candy.html
+-   -       elektrolux.html
+-   -       haier.html
+-   -       hisense.html
+-   -       index.html
+-   -       lg.html
+-   -       miele.html
+-   -       samsung.html
+-   -       siemens.html
+-   -       whirlpool.html
+-   -       
+-   +   maszewo
+-   -       amica.html
+-   -       beko.html
+-   -       bosch.html
+-   -       candy.html
+-   -       elektrolux.html
+-   -       haier.html
+-   -       hisense.html
+-   -       index.html
+-   -       lg.html
+-   -       miele.html
+-   -       samsung.html
+-   -       siemens.html
+-   -       whirlpool.html
+-   -       
+-   +   nowogard
+-   -       amica.html
+-   -       beko.html
+-   -       bosch.html
+-   -       candy.html
+-   -       elektrolux.html
+-   -       haier.html
+-   -       hisense.html
+-   -       index.html
+-   -       lg.html
+-   -       miele.html
+-   -       samsung.html
+-   -       siemens.html
+-   -       whirlpool.html
+-   -       
+-   +   police
+-   -       amica.html
+-   -       beko.html
+-   -       bosch.html
+-   -       candy.html
+-   -       elektrolux.html
+-   -       haier.html
+-   -       hisense.html
+-   -       index.html
+-   -       lg.html
+-   -       miele.html
+-   -       samsung.html
+-   -       siemens.html
+-   -       whirlpool.html
+-   -       
+-   +   pyrzyce
+-   -       amica.html
+-   -       beko.html
+-   -       bosch.html
+-   -       candy.html
+-   -       elektrolux.html
+-   -       haier.html
+-   -       hisense.html
+-   -       index.html
+-   -       lg.html
+-   -       miele.html
+-   -       samsung.html
+-   -       siemens.html
+-   -       whirlpool.html
+-   -       
+-   +   stargard
+-   -       amica.html
+-   -       beko.html
+-   -       bosch.html
+-   -       candy.html
+-   -       elektrolux.html
+-   -       haier.html
+-   -       hisense.html
+-   -       index.html
+-   -       lg.html
+-   -       miele.html
+-   -       samsung.html
+-   -       siemens.html
+-   -       whirlpool.html
+-   -       
+-   L   szczecin
+-           amica.html
+-           beko.html
+-           bosch.html
+-           candy.html
+-           elektrolux.html
+-           haier.html
+-           hisense.html
+-           index.html
+-           lg.html
+-           miele.html
+-           samsung.html
+-           siemens.html
+-           whirlpool.html
+-           
++   naprawa-zmywarek
+-   -   index.html
+-   -   
+-   +   Goleniów
+-   -       amica.html
+-   -       beko.html
+-   -       bosch.html
+-   -       candy.html
+-   -       elektrolux.html
+-   -       hisense.html
+-   -       indesit.html
+-   -       index.html
+-   -       samsung.html
+-   -       siemens.html
+-   -       whirlpool.html
+-   -       
+-   +   maszewo
+-   -       amica.html
+-   -       beko.html
+-   -       bosch.html
+-   -       electrolux.html
+-   -       hisense.html
+-   -       indesit.html
+-   -       index.html
+-   -       miele.html
+-   -       samsung.html
+-   -       whirlpool.html
+-   -       
+-   +   nowogard
+-   -       amica.html
+-   -       ariston.html
+-   -       beko.html
+-   -       bosch.html
+-   -       candy.html
+-   -       electrolux.html
+-   -       hisense.html
+-   -       indesit.html
+-   -       index.html
+-   -       miele.html
+-   -       samsung.html
+-   -       siemens.html
+-   -       whirlpool.html
+-   -       
+-   +   police
+-   -       amica.html
+-   -       beko.html
+-   -       bosch.html
+-   -       candy.html
+-   -       electrolux.html
+-   -       hisense.html
+-   -       index.html
+-   -       miele.html
+-   -       samsung.html
+-   -       siemens.html
+-   -       whirlpool.html
+-   -       
+-   +   pyrzyce
+-   -       aeg.html
+-   -       amica.html
+-   -       ariston.html
+-   -       beko.html
+-   -       bosch.html
+-   -       candy.html
+-   -       elektrolux.html
+-   -       hisense.html
+-   -       indesit.html
+-   -       index.html
+-   -       miele.html
+-   -       samsung.html
+-   -       siemens.html
+-   -       whirlpool.html
+-   -       
+-   +   stargard
+-   -       amica.html
+-   -       ariston.html
+-   -       beko.html
+-   -       bosch.html
+-   -       candy.html
+-   -       elektrolux.html
+-   -       hisense.html
+-   -       index.html
+-   -       samsung.html
+-   -       whirlpool.html
+-   -       
+-   L   szczecin
+-           amica.html
+-           ariston.html
+-           beko.html
+-           bosch.html
+-           candy.html
+-           elektrolux.html
+-           hisense.html
+-           index.html
+-           samsung.html
+-           siemens.html
+-           whirlpool.html
+-           
++   nowogard
+-       index.html
+-       
++   police
+-       index.html
+-       
++   pyrzyce
+-       index.html
+-       
++   stargard
+-       index.html
+-       
++   szczecin
+-       index.html
+-       
+L   __pycache__
+        auto_tech_facts_db.cpython-314.pyc
+        generate_content_api_v4.cpython-314.pyc
+        tech_facts_db.cpython-314.pyc
+        tech_facts_db_extra.cpython-314.pyc
+        
