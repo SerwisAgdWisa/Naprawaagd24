@@ -160,7 +160,7 @@ class Metrics:
         Ошибок:              {self.errors}
         Вызовов API:         {self.api_calls} (Ошибок API: {self.api_errors})
         Оценка токенов:      ~{self.total_tokens_est}
-        Оценка стоимости:    ~${self.estimate_cost():.5f}
+         Оценка стоимости:    ~${self.estimate_cost():.5f}
         Время выполнения:    {duration:.1f} сек.
         ═══════════════════════════════════════
         """)
@@ -174,10 +174,14 @@ metrics = Metrics()
 
 def check_api_health() -> bool:
     """Health-check доступности Groq API."""
+    if not GROQ_API_KEYS:
+        return False
     try:
+        # Берем первый валидный ключ из списка
+        first_key = get_current_api_key()
         resp = requests.get(
             "https://api.groq.com/openai/v1/models",
-            headers={"Authorization": f"Bearer {GROQ_API_KEY}"},
+            headers={"Authorization": f"Bearer {first_key}"},
             timeout=10
         )
         return resp.status_code == 200
@@ -258,14 +262,29 @@ def extract_streets_from_soup(soup: BeautifulSoup) -> list[str]:
     unique_items = list(dict.fromkeys(streets_or_districts))
     return unique_items[:5]
 
+EXISTING_CONTENT_CLASSES = [
+    'local-info', MARKER_CLASS,
+    'symptoms-table', 'faq-item',
+    'expertise-box', 'service-card',
+]
+
 def extract_existing_seo_text(soup: BeautifulSoup) -> str:
     extracted = []
-    for tag in soup.find_all(['section', 'div'], class_=['local-info', MARKER_CLASS]):
+    for tag in soup.find_all(['section', 'div', 'table'], class_=EXISTING_CONTENT_CLASSES):
         text = tag.get_text(separator=' ', strip=True)
-        if text: extracted.append(text)
-    return " ".join(extracted)
+        if text:
+            extracted.append(text)
 
-# =========================================================
+    if not extracted:
+        main_tag = soup.find('main')
+        if main_tag:
+            text = main_tag.get_text(separator=' ', strip=True)
+            if text:
+                extracted.append(text)
+
+    combined = " ".join(extracted)
+    return combined[:1200] + "..." if len(combined) > 1200 else combined
+
 # ГЕНЕРАЦИЯ И DOM-ОБРАБОТКА
 # =========================================================
 
@@ -278,16 +297,57 @@ def generate_with_groq(prompt: str, model: str = GROQ_MODEL, temp: float = GROQ_
     payload = {
         "model": model,
         "messages": [{"role": "system", "content": SYSTEM_PROMPT}, {"role": "user", "content": prompt}],
-        "temperature": temp
+        "temperature": temp,
+        "max_tokens": 350
     }
     
     for attempt in range(1, 6):
         try:
             resp = requests.post(url, json=payload, headers=headers, timeout=30)
+            
+            # --- ДИАГНОСТИКА И ОБРАБОТКА 429 ---
             if resp.status_code == 429:
                 metrics.api_errors += 1
-                wait_time = attempt * 10
-                logging.warning(f"[429 Rate Limit] Пауза {wait_time} сек...")
+                
+                # ТВОЯ ПРОСЬБА: ВЫВОДИМ В КАНАЛ ОТЛАДКИ ПОЛНЫЙ ТЕКСТ ОШИБКИ GROQ
+                logging.error(f"\n=== [DIAGNOSTIC 429 INFO] ===")
+                logging.error(f"Status Code: {resp.status_code}")
+                logging.error(f"Headers: {dict(resp.headers)}")
+                logging.error(f"Response Body: {resp.text}")
+                logging.error(f"=============================\n")
+
+                # 1. Пробуем достать Retry-After из заголовков
+                retry_header = resp.headers.get("Retry-After") or resp.headers.get("retry-after")
+                wait_time = None
+
+                if retry_header:
+                    try:
+                        wait_time = float(retry_header)
+                    except ValueError:
+                        pass
+
+                # 2. Если заголовка нет, пробуем распарсить JSON ошибки (Groq пишет: "Try again in X.Xs")
+                if wait_time is None:
+                    try:
+                        err_data = resp.json()
+                        err_msg = err_data.get("error", {}).get("message", "")
+                        if "Try again in" in err_msg:
+                            # Вытаскиваем секунды из строки "Try again in 27.5s"
+                            time_str = err_msg.split("Try again in")[1].strip().split("s")[0]
+                            wait_time = float(time_str) + 1.0  # +1 сек запас
+                    except Exception:
+                        pass
+
+                # 3. Фолбэк, если сервер не прислал точного времени
+                if wait_time is None:
+                    wait_time = min(60.0, float(attempt * 12))
+
+                logging.warning(f"[429 Rate Limit] Сброс лимитера. Задержка {wait_time:.1f} сек...")
+
+                # ОЧИСТКА ИСТОРИИ ЛИМИТЕРА (убирает 42-секундный дубль)
+                with rate_limiter.lock:
+                    rate_limiter.requests.clear()
+
                 time.sleep(wait_time)
                 continue
             
@@ -299,7 +359,6 @@ def generate_with_groq(prompt: str, model: str = GROQ_MODEL, temp: float = GROQ_
 
             result_text = data["choices"][0]["message"]["content"].strip()
             
-            # Подсчет токенов
             usage = data.get("usage", {})
             metrics.total_tokens_est += usage.get("total_tokens", len(prompt.split()) + len(result_text.split()))
 
@@ -308,7 +367,7 @@ def generate_with_groq(prompt: str, model: str = GROQ_MODEL, temp: float = GROQ_
         except Exception as e:
             metrics.api_errors += 1
             if attempt == 5:
-                raise APIRateLimitError(f"Сбой Groq API: {e}") from e
+                raise APIRateLimitError(f"Сбой Groq API после 5 попыток: {e}") from e
             time.sleep(2 ** attempt)
             
     raise SEOGeneratorError("Неизвестная ошибка связи с API.")
