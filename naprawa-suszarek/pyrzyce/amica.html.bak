@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="index, follow" name="robots"/>
+<title>Naprawa Suszarek Amica Pyrzyce | Serwis AGD | 721 988 949</title>
+<meta content="Profesjonalny serwis suszarek Amica w Pyrzycach. Naprawa awarii: brak grzania, nierównomierne suszenie, kody błędów E4, E5, problemy z bębnem, pompą ciepła i czujnikami wilgotności." name="description"/>
+<link href="../../css/style.css" rel="stylesheet"/>
+<!-- Schema.org dla wyjazdowego serwisu -->
+<style>
+.breadcrumb-nav {
+    background: rgba(0,0,0,0.3);
+    padding: 12px 20px;
+    font-size: 0.9rem;
+}
+.breadcrumb-nav a {
+    color: #a0b4f8;
+    text-decoration: none;
+}
+.breadcrumb-nav a:hover {
+    color: white;
+    text-decoration: underline;
+}
+.breadcrumb-nav span {
+    color: rgba(255,255,255,0.6);
+    margin: 0 6px;
+}
+.breadcrumb-nav .current {
+    color: white;
+    font-weight: bold;
+}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Strona Główna",
+      "item": "https://naprawawagd24.pl/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Naprawa Suszarek",
+      "item": "https://naprawawagd24.pl/naprawa-suszarek/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Pyrzyce",
+      "item": "https://naprawawagd24.pl/naprawa-suszarek/pyrzyce/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Amica",
+      "item": "https://naprawawagd24.pl/naprawa-suszarek/pyrzyce/amica.html"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Naprawa Suszarek Amica Pyrzyce",
+  "image": "https://naprawawagd24.pl/logo.jpg",
+  "url": "https://naprawawagd24.pl/naprawa-suszarek/pyrzyce/amica.html",
+  "telephone": "+48721988949",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Pyrzyce",
+    "addressRegion": "Zachodniopomorskie",
+    "postalCode": "74-200",
+    "addressCountry": "PL"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
+      "opens": "08:00",
+      "closes": "21:00"
+    }
+  ]
+}
+</script>
+<link href="https://naprawaagd24.pl/naprawa-suszarek/pyrzyce/amica.html" rel="canonical"/></head>
+<body>
+<header>
+<div class="container">
+<div class="header-content">
+<div class="logo">Naprawaagd24</div>
+<a class="phone" href="tel:+48721988949">📞 721 988 949</a>
+</div>
+</div>
+</header>
+<!-- BREADCRUMB -->
+<nav aria-label="Breadcrumb" class="breadcrumb-nav">
+<div style="max-width:1200px;margin:0 auto;">
+<a href="/">Strona Glowna</a><span>›</span><a href="/naprawa-suszarek/">Naprawa Suszarek</a><span>›</span><a href="/naprawa-suszarek/pyrzyce/">Pyrzyce</a><span>›</span><span class="current">Amica</span>
+</div>
+</nav>
+<!-- KONIEC BREADCRUMB -->
+<div class="hero">
+<h1>Naprawa Suszarek Amica w Pyrzycach</h1>
+<p>Specjalistyczny serwis suszarek Amica w Pyrzycach. Naprawiamy awarie elektroniki, bębna, pomp ciepła i czujników wilgotności. Szybka diagnoza i naprawa w domu klienta.</p>
+</div>
+<section class="services">
+<div class="container">
+<h2>Najczęstsze awarie suszarek Amica w Pyrzycach</h2>
+<ul>
+<li>Suszarka Amica nie uruchamia się lub zatrzymuje cykl w połowie</li>
+<li>Brak grzania – powietrze zimne podczas suszenia</li>
+<li>Bęben kręci się nierównomiernie lub blokuje się</li>
+<li>Głośne hałasy lub wibracje podczas pracy</li>
+<li>Zatkany filtr, problemy z odprowadzaniem wody</li>
+<li>Kody błędów: E4, E5, E6 – typowe w modelach Amica</li>
+<li>Nie działa czujnik wilgotności lub temperatury</li>
+<li>Awaria pompy ciepła – brak cyrkulacji powietrza</li>
+<li>Drzwi nie zamykają się prawidłowo lub blokują</li>
+</ul>
+</div>
+</section>
+<section class="order-section" id="order">
+<div class="container">
+<h2>Zamów Naprawę Suszarki Amica</h2>
+<form id="orderForm">
+<div class="form-group">
+<label for="name">Imię i nazwisko:</label>
+<input id="name" name="name" placeholder="Twoje imię i nazwisko" required="" type="text"/>
+</div>
+<div class="form-group">
+<label for="phone">Telefon:</label>
+<input id="phone" name="phone" placeholder="Twój numer telefonu" required="" type="tel"/>
+</div>
+<div class="form-group">
+<label for="brand">Model suszarki:</label>
+<input id="brand" name="brand" placeholder="np. Amica DRE 8313" required="" type="text"/>
+</div>
+<div class="form-group">
+<label for="problem">Opis problemu:</label>
+<textarea id="problem" name="problem" placeholder="Krótki opis awarii" required="" rows="4"></textarea>
+</div>
+<div class="form-group">
+<label for="address">Adres w Pyrzycach:</label>
+<input id="address" name="address" placeholder="Ulica, numer domu/mieszkania" required="" type="text"/>
+</div>
+<button class="submit-btn" type="submit">Wyślij zgłoszenie na WhatsApp</button>
+</form>
+</div>
+</section>
+<section class="other-cities">
+<div class="container">
+<h3>Naprawiamy również w okolicy:</h3>
+<ul>
+<li><a href="../goleniow/index.html">goleniow</a></li>
+<li><a href="../stargard/index.html">Stargard</a></li>
+<li><a href="../maszewo/index.html">Maszewo</a></li>
+<li><a href="../nowogard/index.html">Nowogard</a></li>
+<li><a href="../police/index.html">Police</a></li>
+<li><a href="../pyrzyce/index.html">Pyrzyce</a></li>
+</ul>
+</div>
+</section>
+<div class="breadcrumb container">
+<a href="../../index.html">Strona Główna</a> &gt; 
+  <a href="../../index.html">Naprawa Suszarek</a> &gt; 
+  <a href="../index.html">Pyrzyce</a> &gt; 
+  <span class="current">Amica</span>
+</div>
+<!-- unique-local-block -->
+<footer>
+<p>© 2026 Naprawa Suszarek Amica Pyrzyce | Serwis AGD | Tel: +48 721 988 949</p>
+<p><a href="/mapa-stron.html">Mapa strony (wszystkie usługi i miasta)</a></p>
+</footer>
+<style>
+.floating-call-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #28a745;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 60px;
+  font-size: 24px;
+  z-index: 9999;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  text-decoration: none;
+}
+.floating-call-button:hover { background-color: #218838; }
+</style>
+<script>
+document.getElementById('orderForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  const formData = new FormData(this);
+  const name = formData.get('name');
+  const phone = formData.get('phone');
+  const brand = formData.get('brand');
+  const address = formData.get('address');
+  const problem = formData.get('problem');
+  const city = 'Pyrzyce';
+  const service = 'Naprawa suszarek Amica';
+  
+  let message = `🔧 NOWE ZGŁOSZENIE SERWISOWE\n\n`;
+  message += `👤 Imię: ${name}\n`;
+  message += `📞 Telefon: ${phone}\n`;
+  message += `🏙️ Miasto: ${city}\n`;
+  message += `📍 Adres: ${address}\n`;
+  message += `🔧 Model: ${brand}\n`;
+  message += `⚙️ Usługa: ${service}\n`;
+  message += `❗ Problem: ${problem}\n`;
+
+  const whatsappURL = `https://wa.me/48721988949?text=${encodeURIComponent(message)}`;
+  window.open(whatsappURL,'_blank');
+  alert('Dziękujemy za zgłoszenie! Za chwilę zostaniesz przekierowany do WhatsApp.');
+});
+</script>
+
+
+<section class="unique-ai-content" style="background: #1a1d20; padding: 2rem; border-radius: 12px; margin: 2rem 0; color: #e1e1e1;">
+<h3 style="color: #3b82f6; margin-bottom: 1rem;">Specyfika serwisu Amica w mieście Pyrzyce</h3>
+<p style="margin-bottom: 1rem;">Techniczna analiza konkretnych usterek i wyzwań dla marki Amica. W naszym doświadczeniu, suszarki marki Amica często cierpią z powodu awarii programuatora, który może powodować miganie zegara lub automatycznego trybu suszenia. Ten problem jest często spowodowany przez zanik napięcia w obwodzie, co może być wynikiem uszkodzenia lub zaniku kondensatorów. Innym częstym problemem jest uszkodzenie czujnika temperatury PT1000, co powoduje kod E05 i uniemożliwia prawidłowe funkcjonowanie suszarki. W takim przypadku, konieczne jest wymiana uszkodzonego czujnika na nowy.</p><p style="margin-bottom: 1rem;">Logistyka dojazdu serwisu w mieście Pyrzyce. Nasz serwis w Pyrzycach dysponuje w pełni wyposażonymi samochodami serwisowymi, które pozwalają nam szybko i sprawnie dotrzeć do klienta w dowolnej części miasta. Czas reakcji na wezwanie jest maksymalnie 30 minut, dzięki czemu możemy szybko przyjechać do Ciebie i rozpocząć pracę nad rozwiązaniem problemu z Twoją suszarką. Nasz serwis jest dostępny w całym mieście Pyrzyce i okolicznych miejscowościach, więc niezależnie od tego, gdzie mieszkasz, możesz liczyć na szybkie i skuteczne rozwiązanie problemu.</p><p style="margin-bottom: 1rem;">Praktyczna porada diagnostyczna do wykonania przed przyjazdem fachowca. Zanim wezwiesz technika, warto sprawdzić kilka rzeczy. Sprawdź, czy w suszarki nie wlewałeś zbyt dużej ilości wody, co może powodować awarię programuatora lub uszkodzenie czujnika temperatury. Ponadto, sprawdź, czy suszarka jest prawidłowo podłączona do sieci elektrycznej i czy wszystkie przewody są w dobrym stanie. Jeśli masz jakiekolwiek wątpliwości lub podejrzewasz, że suszarka jest uszkodzona, to</p>
+</section>
+</body>
+</html>

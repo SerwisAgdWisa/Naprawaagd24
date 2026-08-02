@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/> <meta content="index, follow" name="robots"/>
+<title>Naprawa Piekarników Amica Nowogard | Serwis AGD | 721 988 949</title>
+<meta content="Profesjonalny serwis piekarników Amica w Nowogardzie. Naprawa wszystkich modeli Amica, szybka diagnoza usterek i gwarancja jakości." name="description"/>
+<link href="../../css/style.css" rel="stylesheet"/>
+<style>
+.breadcrumb-nav {
+    background: rgba(0,0,0,0.3);
+    padding: 12px 20px;
+    font-size: 0.9rem;
+}
+.breadcrumb-nav a {
+    color: #a0b4f8;
+    text-decoration: none;
+}
+.breadcrumb-nav a:hover {
+    color: white;
+    text-decoration: underline;
+}
+.breadcrumb-nav span {
+    color: rgba(255,255,255,0.6);
+    margin: 0 6px;
+}
+.breadcrumb-nav .current {
+    color: white;
+    font-weight: bold;
+}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Strona Główna",
+      "item": "https://naprawawagd24.pl/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Naprawa Piekarników",
+      "item": "https://naprawawagd24.pl/naprawa-piekarnikow/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Nowogard",
+      "item": "https://naprawawagd24.pl/naprawa-piekarnikow/nowogard/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Amica",
+      "item": "https://naprawawagd24.pl/naprawa-piekarnikow/nowogard/amica.html"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Naprawa Piekarników Amica Nowogard",
+  "image": "https://naprawawagd24.pl/logo.jpg",
+  "url": "https://naprawawagd24.pl/naprawa-piekarnikow/nowogard/amica.html",
+  "telephone": "+48721988949",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Nowogard",
+    "addressRegion": "Zachodniopomorskie",
+    "postalCode": "72-200",
+    "addressCountry": "PL"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
+      "opens": "08:00",
+      "closes": "21:00"
+    }
+  ]
+}
+</script>
+<link href="https://naprawaagd24.pl/naprawa-piekarnikow/nowogard/amica.html" rel="canonical"/></head>
+<body>
+<header>
+<div class="container">
+<div class="header-content">
+<div class="logo">Naprawaagd24</div>
+<a class="phone" href="tel:+48721988949">📞 721 988 949</a>
+</div>
+</div>
+</header>
+<!-- BREADCRUMB -->
+<nav aria-label="Breadcrumb" class="breadcrumb-nav">
+<div style="max-width:1200px;margin:0 auto;">
+<a href="/">Strona Glowna</a><span>›</span><a href="/naprawa-piekarnikow/">Naprawa Piekarnikow</a><span>›</span><a href="/naprawa-piekarnikow/nowogard/">Nowogard</a><span>›</span><span class="current">Amica</span>
+</div>
+</nav>
+<!-- KONIEC BREADCRUMB -->
+<div class="hero">
+<h1>Profesjonalny Serwis Piekarników Amica w Nowogardzie</h1>
+<p>Naprawiamy piekarniki Amica w Nowogardzie i okolicach. Szybka diagnoza, profesjonalny serwis oraz gwarancja na wykonane naprawy.</p>
+<a class="cta-button" href="#order">Zamów Naprawę</a>
+</div>
+<section class="services">
+<div class="container">
+<h2>Typowe problemy piekarników Amica w Nowogardzie</h2>
+<div class="services-grid">
+<div class="service-card">
+<h3>Najczęstsze awarie</h3>
+<ul>
+<li>Piekarnik nie włącza się – problem z zasilaniem lub modułem sterującym.</li>
+<li>Nie nagrzewa się prawidłowo – awaria grzałki górnej lub dolnej.</li>
+<li>Zwarcie przy włączaniu – wymaga sprawdzenia instalacji i elementów grzewczych.</li>
+<li>Nie działa termoobieg – uszkodzony wentylator lub moduł sterujący.</li>
+<li>Drzwi nie zamykają się poprawnie – problem z zawiasami lub uszczelką.</li>
+<li>Wyświetlacz błędów – może wymagać resetu lub wymiany panelu sterowania.</li>
+<li>Piekarnik nagrzewa nierównomiernie – awaria czujnika temperatury lub grzałki.</li>
+<li>Przerywana praca lub wyłączanie w trakcie pieczenia – problem z termostatem lub elektroniką.</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section class="order-section" id="order">
+<div class="container">
+<div class="order-form">
+<h2>Zamów Naprawę Piekarnika Amica</h2>
+<form id="orderForm">
+<div class="form-group">
+<label for="name">Imię i nazwisko:</label>
+<input id="name" name="name" placeholder="Twoje imię i nazwisko" required="" type="text"/>
+</div>
+<div class="form-group">
+<label for="phone">Telefon:</label>
+<input id="phone" name="phone" placeholder="Twój numer telefonu" required="" type="tel"/>
+</div>
+<div class="form-group">
+<label for="brand">Marka i model piekarnika Amica:</label>
+<input id="brand" name="brand" placeholder="np. Amica ED37619B X-TYPE" type="text" value="Amica"/>
+</div>
+<div class="form-group">
+<label for="problem">Opis usterki:</label>
+<textarea id="problem" name="problem" placeholder="Np. piekarnik nie nagrzewa się lub zwarcie przy włączaniu..." required="" rows="4"></textarea>
+</div>
+<div class="form-group">
+<label for="address">Adres w Nowogardzie:</label>
+<input id="address" name="address" placeholder="Ulica, numer domu/mieszkania" required="" type="text"/>
+</div>
+<div class="form-group">
+<label for="time">Preferowany termin (opcjonalnie):</label>
+<input id="time" name="time" type="datetime-local"/>
+</div>
+<button class="submit-btn" type="submit">Wyślij zgłoszenie na WhatsApp</button>
+</form>
+</div>
+</div>
+</section>
+<section>
+<a class="floating-call-button" href="tel:+48721988949">📞</a>
+</section>
+<div class="breadcrumb container">
+<a href="../../index.html">Strona Główna</a> &gt; 
+  <a href="../../index.html">Naprawa Piekarników</a> &gt; 
+  <a href="../index.html">Nowogard</a> &gt; 
+  <span class="current">Piekarniki Amica</span>
+</div>
+<section class="other-cities">
+<div class="container">
+<h3>Naprawiamy też:</h3>
+<ul>
+<li><a href="../szczecin/amica.html">Szczecin</a></li>
+<li><a href="../goleniow/amica.html">goleniow</a></li>
+<li><a href="../stargard/amica.html">Stargard</a></li>
+<li><a href="../maszewo/amica.html">Maszewo</a></li>
+<li><a href="../pyrzyce/amica.html">Pyrzyce</a></li>
+<li><a href="../police/amica.html">Police</a></li>
+</ul>
+</div>
+</section>
+<!-- unique-local-block -->
+<footer>
+<p>© 2026 Naprawa Piekarników Amica Nowogard | Serwis AGD | Tel: +48 721 988 949</p>
+<p><a href="/mapa-stron.html">Mapa strony (wszystkie usługi i miasta)</a></p>
+</footer>
+<style>
+.floating-call-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #28a745;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 60px;
+  font-size: 24px;
+  z-index: 9999;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  text-decoration: none;
+}
+.floating-call-button:hover {
+  background-color: #218838;
+}
+</style>
+<script>
+document.getElementById('orderForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  const formData = new FormData(this);
+  const name = formData.get('name');
+  const phone = formData.get('phone');
+  const brand = formData.get('brand');
+  const address = formData.get('address');
+  const problem = formData.get('problem');
+  const time = formData.get('time');
+  const city = 'Nowogard';
+  const service = 'Naprawa piekarników Amica';
+  let message = `🔧 NOWE ZGŁOSZENIE SERWISOWE\n\n`;
+  message += `👤 Imię: ${name}\n`;
+  message += `📞 Telefon: ${phone}\n`;
+  message += `🏙️ Miasto: ${city}\n`;
+  message += `📍 Adres: ${address}\n`;
+  message += `🔧 Marka: ${brand}\n`;
+  message += `⚙️ Usługa: ${service}\n`;
+  if(problem) message += `❗ Problem: ${problem}\n`;
+  if(time) message += `⏰ Termin: ${time}\n`;
+  const whatsappURL = `https://wa.me/48721988949?text=${encodeURIComponent(message)}`;
+  window.open(whatsappURL,'_blank');
+  alert('Dziękujemy za zgłoszenie! Za chwilę zostaniesz przekierowany do WhatsApp.');
+});
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor=>{
+  anchor.addEventListener('click', function(e){
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    if(target) target.scrollIntoView({behavior:'smooth', block:'start'});
+  });
+});
+</script>
+
+
+<section class="unique-ai-content" style="background: #1a1d20; padding: 2rem; border-radius: 12px; margin: 2rem 0; color: #e1e1e1;">
+<h3 style="color: #3b82f6; margin-bottom: 1rem;">Specyfika serwisu Amica w mieście Nowogard</h3>
+<p style="margin-bottom: 1rem;">Wśród najczęstszych usterek piekarników marki Amica w Nowogardzie wyróżnia się dwa główne problematyki. Pierwsza z nich to awaria kodu E05, która wynika z uszkodzenia czujnika temperatury PT1000. Czujnik ten jest bardzo wrażliwy na przeciążenie, co może być spowodowane przez nieprawidłowe ustawienie temperatury lub przez zanieczyszczenie czujnika. Inną przyczyną awarii może być również zły kontakt czujnika z obwodem. Innym problemem, z którym często spotykamy się w naszym serwisie, jest awaria kodu Miganie AUTO / Zegara, spowodowana resetem programu sterowania po zaniku napięcia. Reset ten może być spowodowany przez awarię zasilania lub przez nieprawidłowe ustawienie programu.</p><p style="margin-bottom: 1rem;">W przypadku awarii kodu E05, nasz serwis w Nowogardzie oferuje szybkie i skuteczne rozwiązanie. Nasz zespół techniczny jest wyposażony w najnowocześniejsze narzędzia i urządzenia, które pozwalają na szybkie i precyzyjne diagnostykę awarii. W przypadku, gdy awaria jest spowodowana uszkodzeniem czujnika temperatury, nasz serwis może wykonać wymianę czujnika w krótkim czasie. W przypadku awarii kodu Miganie AUTO / Zegara, nasz serwis może również wykonać reset programu sterowania, co pozwoli na ponowne uruchomienie piekarnika.</p><p style="margin-bottom: 1rem;">W Nowogardzie nasz serwis jest dostępny w krótkim czasie, niezależnie od tego, czy jesteś w centrum miasta, czy w jednej z okolicznych wsi. Nasz zespół techniczny jest wyposażony w specjalistyczne pojazdy, które pozwalają na szybkie i efektywne dojazd do klienta. W przypadku awarii kodu E05 lub Miganie AUTO / Zegara, nasz serwis może wykonać naprawę w krótkim czasie, co pozwoli na ponowne korzystanie</p>
+</section>
+</body>
+</html>

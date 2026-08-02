@@ -1,13 +1,13 @@
 <!DOCTYPE html>
+
 <html lang="pl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <meta name="robots" content="index, follow">
-    <title>Naprawa Zmywarek | WISA 721 988 949</title>
-    <meta name="description" content="Profesjonalny serwis zmywarek w Twoim mieście. Naprawa wszystkich modeli, problemy z wodą, grzałką i elektroniką.">
-    <meta name="robots" content="index, follow">
-    <link rel="stylesheet" href="../css/style.css"> 
-
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/> <meta content="index, follow" name="robots"/>
+<title>Naprawa Zmywarek | WISA 721 988 949</title>
+<meta content="Profesjonalny serwis zmywarek w Twoim mieście. Naprawa wszystkich modeli, problemy z wodą, grzałką i elektroniką." name="description"/>
+<meta content="index, follow" name="robots"/>
+<link href="../css/style.css" rel="stylesheet"/>
 <style>
 .breadcrumb-nav {
     background: rgba(0,0,0,0.3);
@@ -31,8 +31,6 @@
     font-weight: bold;
 }
 </style>
-
-
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",
@@ -51,115 +49,108 @@
     ]
 }
 </script>
-</head>
+<link href="/css/premium-theme.css" rel="stylesheet"/></head>
 <body>
-    <header>
-        <div class="container">
-            <div class="header-content">
-                <a href="../index.html" class="logo">Naprawaagd24</a>
-                <a href="tel:+48721988949" class="phone">📞 721 988 949</a>
-            </div>
-        </div>
-    </header>
-
+<header>
+<div class="container">
+<div class="header-content">
+<a class="logo" href="../index.html">Naprawaagd24</a>
+<a class="phone" href="tel:+48721988949">📞 721 988 949</a>
+</div>
+</div>
+</header>
 <!-- BREADCRUMB -->
-<nav class="breadcrumb-nav" aria-label="Breadcrumb">
-    <div style="max-width:1200px;margin:0 auto;">
-        <a href="/">Strona Glowna</a><span>›</span><span class="current">Naprawa Zmywarek</span>
-    </div>
+<nav aria-label="Breadcrumb" class="breadcrumb-nav">
+<div style="max-width:1200px;margin:0 auto;">
+<a href="/">Strona Glowna</a><span>›</span><span class="current">Naprawa Zmywarek</span>
+</div>
 </nav>
 <!-- KONIEC BREADCRUMB -->
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <h1>Naprawa Zmywarek w Twoim Mieście</h1>
-            <p>Profesjonalny serwis zmywarek wszystkich modeli. Szybka diagnoza, naprawa elektroniki i mechaniki, wymiana części oraz gwarancja na wykonane usługi.</p>
-            <a href="#order" class="cta-button">Zamów Naprawę</a>
-        </div>
-    </section>
-
-    <!-- Problems Grid -->
-    <section class="services">
-        <div class="container">
-            <h2>Najczęstsze problemy zmywarek</h2>
-            <div class="services-grid">
-                <div class="service-card"><h3>Zmywarka nie włącza się</h3></div>
-                <div class="service-card"><h3>Nie pobiera wody</h3></div>
-                <div class="service-card"><h3>Nie odprowadza wody</h3></div>
-                <div class="service-card"><h3>Nie grzeje wody</h3></div>
-                <div class="service-card"><h3>Hałas podczas pracy</h3></div>
-                <div class="service-card"><h3>Przecieki wody</h3></div>
-                <div class="service-card"><h3>Nie suszy naczyń</h3></div>
-                <div class="service-card"><h3>Błąd elektroniki</h3></div>
-                <div class="service-card"><h3>Nie działa panel sterowania</h3></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Cities Navigation -->
-    <section class="cities-navigation">
-        <div class="container">
-            <h2>Wybierz swoje miasto:</h2>
-            <div class="cities-grid">
-                <a href="szczecin/" class="city-card">Szczecin</a>
-                <a href="stargard/" class="city-card">Stargard</a>
-                <a href="goleniow/" class="city-card">goleniow</a>
-                <a href="nowogard/" class="city-card">Nowogard</a>
-                <a href="maszewo/" class="city-card">Maszewo</a>
-                <a href="pyrzyce/" class="city-card">Pyrzyce</a>
-                <a href="police/" class="city-card">Police</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Order Form -->
-    <section id="order" class="order-section">
-        <div class="container">
-            <form class="order-form" onsubmit="sendToWhatsApp(event)">
-                <h2>Zamów naprawę zmywarki</h2>
-                <div class="form-group">
-                    <label>Imię i nazwisko:</label>
-                    <input type="text" id="name" required>
-                </div>
-                <div class="form-group">
-                    <label>Telefon:</label>
-                    <input type="tel" id="phone" required>
-                </div>
-                <div class="form-group">
-                    <label>Marka i model zmywarki:</label>
-                    <input type="text" id="brand" placeholder="np. Electrolux ESL 94200">
-                </div>
-                <div class="form-group">
-                    <label>Miasto:</label>
-                    <select id="city" required>
-                        <option value="">Wybierz miasto</option>
-                        <option value="Szczecin">Szczecin</option>
-                        <option value="Stargard">Stargard</option>
-                        <option value="goleniow">goleniow</option>
-                        <option value="Nowogard">Nowogard</option>
-                        <option value="Maszewo">Maszewo</option>
-                        <option value="Pyrzyce">Pyrzyce</option>
-                        <option value="Police">Police</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label>Adres:</label>
-                    <input type="text" id="address" placeholder="Ulica, numer domu/mieszkania" required>
-                </div>
-                <div class="form-group">
-                    <label>Opis problemu:</label>
-                    <textarea id="message" placeholder="Krótki opis problemu" required></textarea>
-                </div>
-                <button type="submit" class="submit-btn">Wyślij na WhatsApp</button>
-            </form>
-        </div>
-    </section>
-
-    <section>
-  <a href="tel:+48721988949" class="floating-call-button">📞</a>
+<!-- Hero Section -->
+<section class="hero">
+<div class="container">
+<h1>Naprawa Zmywarek w Twoim Mieście</h1>
+<p>Profesjonalny serwis zmywarek wszystkich modeli. Szybka diagnoza, naprawa elektroniki i mechaniki, wymiana części oraz gwarancja na wykonane usługi.</p>
+<a class="cta-button" href="#order">Zamów Naprawę</a>
+</div>
 </section>
-
+<!-- Problems Grid -->
+<section class="services">
+<div class="container">
+<h2>Najczęstsze problemy zmywarek</h2>
+<div class="services-grid">
+<div class="service-card"><h3>Zmywarka nie włącza się</h3></div>
+<div class="service-card"><h3>Nie pobiera wody</h3></div>
+<div class="service-card"><h3>Nie odprowadza wody</h3></div>
+<div class="service-card"><h3>Nie grzeje wody</h3></div>
+<div class="service-card"><h3>Hałas podczas pracy</h3></div>
+<div class="service-card"><h3>Przecieki wody</h3></div>
+<div class="service-card"><h3>Nie suszy naczyń</h3></div>
+<div class="service-card"><h3>Błąd elektroniki</h3></div>
+<div class="service-card"><h3>Nie działa panel sterowania</h3></div>
+</div>
+</div>
+</section>
+<!-- Cities Navigation -->
+<section class="cities-navigation">
+<div class="container">
+<h2>Wybierz swoje miasto:</h2>
+<div class="cities-grid">
+<a class="city-card" href="szczecin/">Szczecin</a>
+<a class="city-card" href="stargard/">Stargard</a>
+<a class="city-card" href="goleniow/">goleniow</a>
+<a class="city-card" href="nowogard/">Nowogard</a>
+<a class="city-card" href="maszewo/">Maszewo</a>
+<a class="city-card" href="pyrzyce/">Pyrzyce</a>
+<a class="city-card" href="police/">Police</a>
+</div>
+</div>
+</section>
+<!-- Order Form -->
+<section class="order-section" id="order">
+<div class="container">
+<form class="order-form" onsubmit="sendToWhatsApp(event)">
+<h2>Zamów naprawę zmywarki</h2>
+<div class="form-group">
+<label>Imię i nazwisko:</label>
+<input id="name" required="" type="text"/>
+</div>
+<div class="form-group">
+<label>Telefon:</label>
+<input id="phone" required="" type="tel"/>
+</div>
+<div class="form-group">
+<label>Marka i model zmywarki:</label>
+<input id="brand" placeholder="np. Electrolux ESL 94200" type="text"/>
+</div>
+<div class="form-group">
+<label>Miasto:</label>
+<select id="city" required="">
+<option value="">Wybierz miasto</option>
+<option value="Szczecin">Szczecin</option>
+<option value="Stargard">Stargard</option>
+<option value="goleniow">goleniow</option>
+<option value="Nowogard">Nowogard</option>
+<option value="Maszewo">Maszewo</option>
+<option value="Pyrzyce">Pyrzyce</option>
+<option value="Police">Police</option>
+</select>
+</div>
+<div class="form-group">
+<label>Adres:</label>
+<input id="address" placeholder="Ulica, numer domu/mieszkania" required="" type="text"/>
+</div>
+<div class="form-group">
+<label>Opis problemu:</label>
+<textarea id="message" placeholder="Krótki opis problemu" required=""></textarea>
+</div>
+<button class="submit-btn" type="submit">Wyślij na WhatsApp</button>
+</form>
+</div>
+</section>
+<section>
+<a class="floating-call-button" href="tel:+48721988949">📞</a>
+</section>
 <style>
 .floating-call-button {
   position: fixed;
@@ -181,9 +172,8 @@
   background-color: #218838;
 }
 </style>
-
-    <!-- WhatsApp Script -->
-   <script>
+<!-- WhatsApp Script -->
+<script>
         function sendToWhatsApp(event) {
             event.preventDefault();
             let name = document.getElementById("name").value;
@@ -206,9 +196,8 @@
             alert("Twoje zgłoszenie zostało wysłane na WhatsApp!");
         }
     </script>
-
-    <div class="breadcrumb container">
-        <a href="../index.html">Strona Główna</a> > <span>Naprawa Zmywarek</span>
-    </div>
-</body>
+<div class="breadcrumb container">
+<a href="../index.html">Strona Główna</a> &gt; <span>Naprawa Zmywarek</span>
+</div>
+<div class="sticky-bottom-bar"><a href="tel:+48721988949">📞 Zadzwoń teraz: +48721988949</a></div></body>
 </html>

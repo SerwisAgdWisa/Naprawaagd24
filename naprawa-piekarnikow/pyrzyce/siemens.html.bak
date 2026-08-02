@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/> <meta content="index, follow" name="robots"/>
+<title>Naprawa Piekarników Siemens Pyrzyce | Serwis AGD | 721 988 949</title>
+<meta content="Profesjonalny serwis piekarników Siemens w Pyrzycach. Naprawa wszystkich modeli, diagnoza usterek, problemy z grzałkami, panelami sterowania i zwarcia przy włączeniu." name="description"/>
+<link href="../../css/style.css" rel="stylesheet"/>
+<style>
+.breadcrumb-nav {
+    background: rgba(0,0,0,0.3);
+    padding: 12px 20px;
+    font-size: 0.9rem;
+}
+.breadcrumb-nav a {
+    color: #a0b4f8;
+    text-decoration: none;
+}
+.breadcrumb-nav a:hover {
+    color: white;
+    text-decoration: underline;
+}
+.breadcrumb-nav span {
+    color: rgba(255,255,255,0.6);
+    margin: 0 6px;
+}
+.breadcrumb-nav .current {
+    color: white;
+    font-weight: bold;
+}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Strona Główna",
+      "item": "https://naprawawagd24.pl/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Naprawa Piekarników",
+      "item": "https://naprawawagd24.pl/naprawa-piekarnikow/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Pyrzyce",
+      "item": "https://naprawawagd24.pl/naprawa-piekarnikow/pyrzyce/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Siemens",
+      "item": "https://naprawawagd24.pl/naprawa-piekarnikow/pyrzyce/siemens.html"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Naprawa Piekarników Siemens Pyrzyce",
+  "image": "https://naprawawagd24.pl/logo.jpg",
+  "url": "https://naprawawagd24.pl/naprawa-piekarnikow/pyrzyce/siemens.html",
+  "telephone": "+48721988949",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Pyrzyce",
+    "addressRegion": "Zachodniopomorskie",
+    "postalCode": "74-200",
+    "addressCountry": "PL"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
+      "opens": "08:00",
+      "closes": "21:00"
+    }
+  ]
+}
+</script>
+<link href="https://naprawaagd24.pl/naprawa-piekarnikow/pyrzyce/siemens.html" rel="canonical"/></head>
+<body>
+<header>
+<div class="container">
+<div class="header-content">
+<div class="logo">Naprawaagd24</div>
+<a class="phone" href="tel:+48721988949">📞 721 988 949</a>
+</div>
+</div>
+</header>
+<!-- BREADCRUMB -->
+<nav aria-label="Breadcrumb" class="breadcrumb-nav">
+<div style="max-width:1200px;margin:0 auto;">
+<a href="/">Strona Glowna</a><span>›</span><a href="/naprawa-piekarnikow/">Naprawa Piekarnikow</a><span>›</span><a href="/naprawa-piekarnikow/pyrzyce/">Pyrzyce</a><span>›</span><span class="current">Siemens</span>
+</div>
+</nav>
+<!-- KONIEC BREADCRUMB -->
+<div class="hero">
+<h1>Serwis Piekarników Siemens w Pyrzycach</h1>
+<p>Specjalizujemy się w naprawie piekarników Siemens w Pyrzycach i okolicach. Rozwiązujemy problemy z grzałkami, panelami sterowania, zwarciami przy włączeniu i nierównomiernym pieczeniem.</p>
+<a class="cta-button" href="#order">Zamów Naprawę</a>
+</div>
+<section class="services">
+<div class="container">
+<h2>Typowe problemy piekarników Siemens w Pyrzycach</h2>
+<p>Oto najczęstsze awarie piekarników Siemens zgłaszane przez klientów w Pyrzycach:</p>
+<div class="services-grid">
+<div class="service-card">
+<h3>Najczęstsze usterki</h3>
+<ul>
+<li>Piekarnik nie nagrzewa się wcale lub nagrzewa się nierównomiernie</li>
+<li>Zwarcia przy włączeniu – wyłączają bezpieczniki</li>
+<li>Nie działa grzanie dolne lub górne</li>
+<li>Problem z funkcją termoobiegu</li>
+<li>Panel sterowania nie reaguje lub działa niestabilnie</li>
+<li>Wyświetlacz pokazuje błędy lub migocze</li>
+<li>Drzwi piekarnika nie zamykają się prawidłowo</li>
+<li>Nie działają programy automatyczne</li>
+<li>Wnętrze piekarnika nie podświetla się</li>
+<li>Nierównomierne pieczenie – góra-dół</li>
+<li>Dźwięki niepokojące lub stukania podczas pracy</li>
+<li>Timer i zegar nie działają prawidłowo</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section class="order-section" id="order">
+<div class="container">
+<div class="order-form">
+<h2>Zamów Naprawę Piekarnika Siemens</h2>
+<form id="orderForm">
+<div class="form-group">
+<label for="name">Imię i nazwisko:</label>
+<input id="name" name="name" placeholder="Twoje imię i nazwisko" required="" type="text"/>
+</div>
+<div class="form-group">
+<label for="phone">Telefon:</label>
+<input id="phone" name="phone" placeholder="Twój numer telefonu" required="" type="tel"/>
+</div>
+<div class="form-group">
+<label for="brand">Marka i model piekarnika:</label>
+<input id="brand" name="brand" placeholder="np. Siemens HB634GBS1" type="text" value=""/>
+</div>
+<div class="form-group">
+<label for="problem">Opis usterki:</label>
+<textarea id="problem" name="problem" placeholder="Np. zwarcie przy włączeniu, nie działa grzałka..." required="" rows="4"></textarea>
+</div>
+<div class="form-group">
+<label for="address">Adres w Pyrzycach:</label>
+<input id="address" name="address" placeholder="Ulica, numer domu/mieszkania" required="" type="text"/>
+</div>
+<div class="form-group">
+<label for="time">Preferowany termin (opcjonalnie):</label>
+<input id="time" name="time" type="datetime-local"/>
+</div>
+<button class="submit-btn" type="submit">Wyślij zgłoszenie na WhatsApp</button>
+</form>
+</div>
+</div>
+</section>
+<section>
+<a class="floating-call-button" href="tel:+48721988949">📞</a>
+</section>
+<div class="breadcrumb container">
+<a href="../../index.html">Strona Główna</a> &gt; 
+  <a href="../../index.html">Naprawa Piekarników</a> &gt; 
+  <span class="current">Pyrzyce</span>
+</div>
+<section class="other-cities">
+<div class="container">
+<h3>Naprawiamy też:</h3>
+<ul>
+<li><a href="../szczecin/index.html">Szczecin</a></li>
+<li><a href="../goleniow/index.html">goleniow</a></li>
+<li><a href="../maszewo/index.html">Maszewo</a></li>
+<li><a href="../nowogard/index.html">Nowogard</a></li>
+<li><a href="../pyrzyce/index.html">Pyrzyce</a></li>
+<li><a href="../police/index.html">Police</a></li>
+</ul>
+</div>
+</section>
+<!-- unique-local-block -->
+<footer>
+<p>© 2026 Naprawa Piekarników Siemens Pyrzyce | Serwis AGD | Tel: +48 721 988 949</p>
+<p><a href="/mapa-stron.html">Mapa strony (wszystkie usługi i miasta)</a></p>
+</footer>
+<style>
+.floating-call-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #28a745;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 60px;
+  font-size: 24px;
+  z-index: 9999;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  text-decoration: none;
+}
+.floating-call-button:hover {
+  background-color: #218838;
+}
+</style>
+<script>
+document.getElementById('orderForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  const formData = new FormData(this);
+  const name = formData.get('name');
+  const phone = formData.get('phone');
+  const brand = formData.get('brand');
+  const address = formData.get('address');
+  const problem = formData.get('problem');
+  const time = formData.get('time');
+  const city = 'Pyrzyce';
+  const service = 'Naprawa piekarników Siemens';
+  let message = `🔧 NOWE ZGŁOSZENIE SERWISOWE\n\n`;
+  message += `👤 Imię: ${name}\n`;
+  message += `📞 Telefon: ${phone}\n`;
+  message += `🏙️ Miasto: ${city}\n`;
+  message += `📍 Adres: ${address}\n`;
+  message += `🔧 Marka i model: ${brand}\n`;
+  message += `⚙️ Usługa: ${service}\n`;
+  if(problem) message += `❗ Problem: ${problem}\n`;
+  if(time) message += `⏰ Termin: ${time}\n`;
+  const whatsappURL = `https://wa.me/48721988949?text=${encodeURIComponent(message)}`;
+  window.open(whatsappURL,'_blank');
+  alert('Dziękujemy za zgłoszenie! Za chwilę zostaniesz przekierowany do WhatsApp.');
+});
+
+// Smooth scroll for internal links
+document.querySelectorAll('a[href^="#"]').forEach(anchor=>{
+  anchor.addEventListener('click', function(e){
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    if(target) target.scrollIntoView({behavior:'smooth', block:'start'});
+  });
+});
+</script>
+
+
+<section class="unique-ai-content" style="background: #1a1d20; padding: 2rem; border-radius: 12px; margin: 2rem 0; color: #e1e1e1;">
+<h3 style="color: #3b82f6; margin-bottom: 1rem;">Specyfika serwisu Siemens w mieście Pyrzyce</h3>
+<p style="margin-bottom: 1rem;">Piekarniki Siemens w mieście Pyrzyce - techniczne wyzwania i diagnozy.
+
+Piekarniki Siemens wyróżniają się zaawansowaną technologią i niezawodnością, ale jak każde urządzenie, również mogą doświadczyć nieprawidłowego działania. W przypadku usterki E23, zablokowany czujnik AquaStop powoduje aktywację modułu AquaStop, który zatrzymuje pracę piekarnika. Innym problemem może być usterka E18/F18, która powoduje niedrożność pompy spustowej, co może powodować przeciążenie systemu wentylacyjnego.</p><p style="margin-bottom: 1rem;">Dodatkowo, zużyte styki przycisków dotykowych mogą powodować nieprawidłowe działanie panelu sterowania, a zablokowany mechanizm zamka drzwi może powodować, że drzwi nie domykają się szczelnie. W niektórych przypadkach, przepalona grzałka wentylatora może powodować nieprawidłowe działanie wentylatora, co może powodować niesmaczne zapachy w piekarniku.
+
+Logistyka dojazdu serwisu w mieście Pyrzyce.
+
+Serwis AGD w Pyrzycach oferuje szybkie i skuteczne rozwiązanie problemów z piekarnikami Siemens. Nasz zespół serwisowy jest do dyspozycji klientów w ciągu 24 godzin od momentu zgłoszenia usterki.</p><p style="margin-bottom: 1rem;">Dojazd do klienta jest realizowany w krótkim czasie, dzięki czemu możemy szybko rozwiązać problem i przywrócić piekarnik do pełnej sprawności. Nasze serwisowe samochody są wyposażone w niezbędne narzędzia i urządzenia do naprawy piekarników Siemens, co gwarantuje szybkie i skuteczne rozwiązanie problemu.
+
+Praktyczna porada diagnostyczna przed przyjazdem fachowca.
+
+Przed przyjazdem fachowca, warto sprawdzić kilka rzeczy, aby ułatwić proces diagnozy. Zalecamy sprawdzenie, czy piekarnik jest podłączony do sieci elektrycz.</p>
+</section>
+</body>
+</html>

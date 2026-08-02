@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="index, follow" name="robots"/>
+<title>Naprawa Suszarek Electrolux Stargard | Serwis AGD | 721 988 949</title>
+<meta content="Naprawa suszarek Electrolux w Stargardzie. Serwis awarii: brak grzania, błędy E60/E63, zatrzymywanie się programu, problemy z czujnikami i pompą ciepła. Dojazd do klienta." name="description"/>
+<link href="../../css/style.css" rel="stylesheet"/>
+<!-- Schema.org dla serwisu lokalnego -->
+<style>
+.breadcrumb-nav {
+    background: rgba(0,0,0,0.3);
+    padding: 12px 20px;
+    font-size: 0.9rem;
+}
+.breadcrumb-nav a {
+    color: #a0b4f8;
+    text-decoration: none;
+}
+.breadcrumb-nav a:hover {
+    color: white;
+    text-decoration: underline;
+}
+.breadcrumb-nav span {
+    color: rgba(255,255,255,0.6);
+    margin: 0 6px;
+}
+.breadcrumb-nav .current {
+    color: white;
+    font-weight: bold;
+}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Strona Główna",
+      "item": "https://naprawawagd24.pl/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Naprawa Suszarek",
+      "item": "https://naprawawagd24.pl/naprawa-suszarek/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Stargard",
+      "item": "https://naprawawagd24.pl/naprawa-suszarek/stargard/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Electrolux",
+      "item": "https://naprawawagd24.pl/naprawa-suszarek/stargard/elektrolux.html"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Naprawa Suszarek Electrolux Stargard",
+  "image": "https://naprawawagd24.pl/logo.jpg",
+  "url": "https://naprawawagd24.pl/naprawa-suszarek/stargard/elektrolux.html",
+  "telephone": "+48721988949",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Stargard",
+    "addressRegion": "Zachodniopomorskie",
+    "postalCode": "73-110",
+    "addressCountry": "PL"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
+      "opens": "08:00",
+      "closes": "21:00"
+    }
+  ]
+}
+</script>
+<link href="https://naprawaagd24.pl/naprawa-suszarek/stargard/elektrolux.html" rel="canonical"/></head>
+<body>
+<header>
+<div class="container">
+<div class="header-content">
+<div class="logo">Naprawaagd24</div>
+<a class="phone" href="tel:+48721988949">📞 721 988 949</a>
+</div>
+</div>
+</header>
+<!-- BREADCRUMB -->
+<nav aria-label="Breadcrumb" class="breadcrumb-nav">
+<div style="max-width:1200px;margin:0 auto;">
+<a href="/">Strona Glowna</a><span>›</span><a href="/naprawa-suszarek/">Naprawa Suszarek</a><span>›</span><a href="/naprawa-suszarek/stargard/">Stargard</a><span>›</span><span class="current">Electrolux</span>
+</div>
+</nav>
+<!-- KONIEC BREADCRUMB -->
+<div class="hero">
+<h1>Naprawa Suszarek Electrolux w Stargardzie</h1>
+<p>Profesjonalny serwis suszarek Electrolux w Stargardzie. Diagnozujemy i naprawiamy problemy z elektroniką, pompą ciepła, czujnikami wilgotności i programatorem. Dojazd do klienta w Stargardzie i okolicy.</p>
+</div>
+<section class="services">
+<div class="container">
+<h2>Typowe usterki suszarek Electrolux</h2>
+<ul>
+<li>Suszarka Electrolux zatrzymuje się po kilku minutach pracy</li>
+<li>Błąd E63 lub E64 – problem z grzałką / przegrzewaniem</li>
+<li>Brak obrotów bębna lub nierównomierne kręcenie</li>
+<li>Nie suszy ubrań do końca – wilgotne pranie po zakończeniu</li>
+<li>Zapach spalenizny lub nadmierne nagrzewanie obudowy</li>
+<li>Problemy z pompą ciepła – brak cyrkulacji powietrza</li>
+<li>Kody błędów: E60, E63, E70 – częste w modelach Electrolux</li>
+<li>Uszkodzony czujnik temperatury lub wilgotności</li>
+<li>Woda nie odprowadza się prawidłowo – zatkany odpływ</li>
+</ul>
+</div>
+</section>
+<section class="order-section" id="order">
+<div class="container">
+<h2>Zamów Naprawę Suszarki Electrolux w Stargardzie</h2>
+<form id="orderForm">
+<div class="form-group">
+<label for="name">Imię i nazwisko:</label>
+<input id="name" name="name" placeholder="Twoje imię i nazwisko" required="" type="text"/>
+</div>
+<div class="form-group">
+<label for="phone">Telefon:</label>
+<input id="phone" name="phone" placeholder="Twój numer telefonu" required="" type="tel"/>
+</div>
+<div class="form-group">
+<label for="brand">Model suszarki:</label>
+<input id="brand" name="brand" placeholder="np. Electrolux EW7H458BP" required="" type="text"/>
+</div>
+<div class="form-group">
+<label for="problem">Opis problemu:</label>
+<textarea id="problem" name="problem" placeholder="Krótki opis awarii" required="" rows="4"></textarea>
+</div>
+<div class="form-group">
+<label for="address">Adres w Stargardzie:</label>
+<input id="address" name="address" placeholder="Ulica, numer domu/mieszkania" required="" type="text"/>
+</div>
+<button class="submit-btn" type="submit">Wyślij zgłoszenie na WhatsApp</button>
+</form>
+</div>
+</section>
+<section class="other-cities">
+<div class="container">
+<h3>Naprawiamy również w okolicy:</h3>
+<ul>
+<li><a href="../goleniow/index.html">goleniow</a></li>
+<li><a href="../szczecin/index.html">Szczecin</a></li>
+<li><a href="../maszewo/index.html">Maszewo</a></li>
+<li><a href="../nowogard/index.html">Nowogard</a></li>
+<li><a href="../police/index.html">Police</a></li>
+<li><a href="../pyrzyce/index.html">Pyrzyce</a></li>
+</ul>
+</div>
+</section>
+<div class="breadcrumb container">
+<a href="../../index.html">Strona Główna</a> &gt; 
+  <a href="../../index.html">Naprawa Suszarek</a> &gt; 
+  <a href="../index.html">Stargard</a> &gt; 
+  <span class="current">Electrolux</span>
+</div>
+<!-- unique-local-block -->
+<footer>
+<p>© 2026 Naprawa Suszarek Electrolux Stargard | Serwis AGD | Tel: +48 721 988 949</p>
+<p><a href="/mapa-stron.html">Mapa strony (wszystkie usługi i miasta)</a></p>
+</footer>
+<style>
+.floating-call-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #28a745;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 60px;
+  font-size: 24px;
+  z-index: 9999;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  text-decoration: none;
+}
+.floating-call-button:hover { background-color: #218838; }
+</style>
+<script>
+document.getElementById('orderForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  const formData = new FormData(this);
+  const name = formData.get('name');
+  const phone = formData.get('phone');
+  const brand = formData.get('brand');
+  const address = formData.get('address');
+  const problem = formData.get('problem');
+  const city = 'Stargard';
+  const service = 'Naprawa suszarek Electrolux';
+  
+  let message = `🔧 NOWE ZGŁOSZENIE SERWISOWE\n\n`;
+  message += `👤 Imię: ${name}\n`;
+  message += `📞 Telefon: ${phone}\n`;
+  message += `🏙️ Miasto: ${city}\n`;
+  message += `📍 Adres: ${address}\n`;
+  message += `🔧 Model: ${brand}\n`;
+  message += `⚙️ Usługa: ${service}\n`;
+  message += `❗ Problem: ${problem}\n`;
+
+  const whatsappURL = `https://wa.me/48721988949?text=${encodeURIComponent(message)}`;
+  window.open(whatsappURL,'_blank');
+  alert('Dziękujemy za zgłoszenie! Za chwilę zostaniesz przekierowany do WhatsApp.');
+});
+</script>
+
+
+<section class="unique-ai-content" style="background: #1a1d20; padding: 2rem; border-radius: 12px; margin: 2rem 0; color: #e1e1e1;">
+<h3 style="color: #3b82f6; margin-bottom: 1rem;">Specyfika serwisu Electrolux w mieście Stargard</h3>
+<p style="margin-bottom: 1rem;">Właściwa konserwacja i naprawa suszarek marki Electrolux w Stargardzie wymaga wiedzy i doświadczenia w obsłudze urządzeń AGD. Jedną z częstych usterek, z jaką spotykamy się w naszym warsztacie, jest zbyt długi czas suszenia, spowodowany przez zabrudzony skraplacz lub wymiennik ciepła. W takim przypadku konieczne jest sprawdzenie, czy skraplacz lub wymiennik ciepła są czyste i wolne od zanieczyszczeń. Uszkodzony skraplacz lub wymiennik ciepła może powodować również głośną pracę lub hałasowanie suszarki, spowodowane obecnością obcego ciała w bębnie lub filtrze. W takim przypadku konieczne jest usunięcie obcego ciała i sprawdzenie, czy bęben i filtr są wolne od zanieczyszczeń. Dodatkowo, uszkodzony kondensator rozruchowy silnika może powodować, że suszarka nie obraca się, co może być sygnałem uszkodzenia silnika. W takim przypadku konieczne jest sprawdzenie kondensatora i wymianę go, jeśli jest uszkodzony.</p><p style="margin-bottom: 1rem;">Nasz serwis w Stargardzie oferuje szybkie i skuteczne rozwiązania dla problemów z susarkami Electrolux. Dojeżdżamy do dzielnic Centrum, Osiedle Kluczewo i Pyrzyckie Przedmieście w czasie do 30 minut. Przed wezwaniem technika, warto sprawdzić, czy suszarka jest w stanie obracać się swobodnie i czy nie ma zabrudzeń wokół bębna. Jeśli suszarka nie obraca się, warto również sprawdzić, czy nie ma przepalonej grzałki, która może powodować brak ciepła w suszarku. W takim przypadku konieczne jest wymiana grzałki.</p><p style="margin-bottom: 1rem;">Przed przyjazdem fachowca, warto również sprawdzić, czy suszarka wyświetla błąd i przerywa program. W takim przypadku konieczne jest spraw</p>
+</section>
+</body>
+</html>

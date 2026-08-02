@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="index, follow" name="robots"/>
+<title>Naprawa Suszarek Beko Szczecin | Serwis AGD | 721 988 949</title>
+<meta content="Profesjonalny serwis suszarek Beko w Szczecinie. Naprawa awarii: brak grzania, problemy z bębnem, kody błędów, uszkodzone czujniki wilgotności i pompa ciepła." name="description"/>
+<link href="../../css/style.css" rel="stylesheet"/>
+<!-- Schema.org dla wyjazdowego serwisu -->
+<style>
+.breadcrumb-nav {
+    background: rgba(0,0,0,0.3);
+    padding: 12px 20px;
+    font-size: 0.9rem;
+}
+.breadcrumb-nav a {
+    color: #a0b4f8;
+    text-decoration: none;
+}
+.breadcrumb-nav a:hover {
+    color: white;
+    text-decoration: underline;
+}
+.breadcrumb-nav span {
+    color: rgba(255,255,255,0.6);
+    margin: 0 6px;
+}
+.breadcrumb-nav .current {
+    color: white;
+    font-weight: bold;
+}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Strona Główna",
+      "item": "https://naprawawagd24.pl/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Naprawa Suszarek",
+      "item": "https://naprawawagd24.pl/naprawa-suszarek/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Szczecin",
+      "item": "https://naprawawagd24.pl/naprawa-suszarek/szczecin/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Beko",
+      "item": "https://naprawawagd24.pl/naprawa-suszarek/szczecin/beko.html"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Naprawa Suszarek Beko Szczecin",
+  "image": "https://naprawawagd24.pl/logo.jpg",
+  "url": "https://naprawawagd24.pl/naprawa-suszarek/szczecin/beko.html",
+  "telephone": "+48721988949",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Szczecin",
+    "addressRegion": "Zachodniopomorskie",
+    "postalCode": "70-001",
+    "addressCountry": "PL"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
+      "opens": "08:00",
+      "closes": "21:00"
+    }
+  ]
+}
+</script>
+<link href="https://naprawaagd24.pl/naprawa-suszarek/szczecin/beko.html" rel="canonical"/></head>
+<body>
+<header>
+<div class="container">
+<div class="header-content">
+<div class="logo">Naprawaagd24</div>
+<a class="phone" href="tel:+48721988949">📞 721 988 949</a>
+</div>
+</div>
+</header>
+<!-- BREADCRUMB -->
+<nav aria-label="Breadcrumb" class="breadcrumb-nav">
+<div style="max-width:1200px;margin:0 auto;">
+<a href="/">Strona Glowna</a><span>›</span><a href="/naprawa-suszarek/">Naprawa Suszarek</a><span>›</span><a href="/naprawa-suszarek/szczecin/">Szczecin</a><span>›</span><span class="current">Beko</span>
+</div>
+</nav>
+<!-- KONIEC BREADCRUMB -->
+<div class="hero">
+<h1>Naprawa Suszarek Beko w Szczecinie</h1>
+<p>Specjalistyczny serwis suszarek Beko w Szczecinie. Naprawiamy awarie elektroniki, bębna, pomp ciepła i czujników wilgotności. Szybka diagnoza i naprawa w domu klienta.</p>
+</div>
+<section class="services">
+<div class="container">
+<h2>Najczęstsze awarie suszarek Beko</h2>
+<ul>
+<li>Suszarka Beko nie uruchamia się lub przerywa cykl</li>
+<li>Brak grzania – powietrze nie nagrzewa się prawidłowo</li>
+<li>Bęben nie obraca się lub pracuje nierównomiernie</li>
+<li>Hałas lub wibracje podczas pracy</li>
+<li>Zatkany filtr, problemy z odpływem wody</li>
+<li>Kody błędów: E10, E20, E30 – typowe dla modeli Beko</li>
+<li>Uszkodzony czujnik wilgotności lub temperatury</li>
+<li>Problemy z pompą ciepła – brak cyrkulacji powietrza</li>
+<li>Drzwi nie zamykają się prawidłowo</li>
+</ul>
+</div>
+</section>
+<section class="order-section" id="order">
+<div class="container">
+<h2>Zamów Naprawę Suszarki Beko</h2>
+<form id="orderForm">
+<div class="form-group">
+<label for="name">Imię i nazwisko:</label>
+<input id="name" name="name" placeholder="Twoje imię i nazwisko" required="" type="text"/>
+</div>
+<div class="form-group">
+<label for="phone">Telefon:</label>
+<input id="phone" name="phone" placeholder="Twój numer telefonu" required="" type="tel"/>
+</div>
+<div class="form-group">
+<label for="brand">Model suszarki:</label>
+<input id="brand" name="brand" placeholder="np. Beko DS7433PX" required="" type="text"/>
+</div>
+<div class="form-group">
+<label for="problem">Opis problemu:</label>
+<textarea id="problem" name="problem" placeholder="Krótki opis awarii" required="" rows="4"></textarea>
+</div>
+<div class="form-group">
+<label for="address">Adres w Szczecinie:</label>
+<input id="address" name="address" placeholder="Ulica, numer domu/mieszkania" required="" type="text"/>
+</div>
+<button class="submit-btn" type="submit">Wyślij zgłoszenie na WhatsApp</button>
+</form>
+</div>
+</section>
+<section class="other-cities">
+<div class="container">
+<h3>Naprawiamy również w okolicy:</h3>
+<ul>
+<li><a href="../goleniow/index.html">goleniow</a></li>
+<li><a href="../stargard/index.html">Stargard</a></li>
+<li><a href="../maszewo/index.html">Maszewo</a></li>
+<li><a href="../nowogard/index.html">Nowogard</a></li>
+<li><a href="../police/index.html">Police</a></li>
+<li><a href="../pyrzyce/index.html">Pyrzyce</a></li>
+</ul>
+</div>
+</section>
+<div class="breadcrumb container">
+<a href="../../index.html">Strona Główna</a> &gt; 
+  <a href="../../index.html">Naprawa Suszarek</a> &gt; 
+  <a href="../index.html">Szczecin</a> &gt; 
+  <span class="current">Beko</span>
+</div>
+<!-- unique-local-block -->
+<footer>
+<p>© 2026 Naprawa Suszarek Beko Szczecin | Serwis AGD | Tel: +48 721 988 949</p>
+<p><a href="/mapa-stron.html">Mapa strony (wszystkie usługi i miasta)</a></p>
+</footer>
+<style>
+.floating-call-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #28a745;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 60px;
+  font-size: 24px;
+  z-index: 9999;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  text-decoration: none;
+}
+.floating-call-button:hover { background-color: #218838; }
+</style>
+<script>
+document.getElementById('orderForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  const formData = new FormData(this);
+  const name = formData.get('name');
+  const phone = formData.get('phone');
+  const brand = formData.get('brand');
+  const address = formData.get('address');
+  const problem = formData.get('problem');
+  const city = 'Szczecin';
+  const service = 'Naprawa suszarek Beko';
+  
+  let message = `🔧 NOWE ZGŁOSZENIE SERWISOWE\n\n`;
+  message += `👤 Imię: ${name}\n`;
+  message += `📞 Telefon: ${phone}\n`;
+  message += `🏙️ Miasto: ${city}\n`;
+  message += `📍 Adres: ${address}\n`;
+  message += `🔧 Model: ${brand}\n`;
+  message += `⚙️ Usługa: ${service}\n`;
+  message += `❗ Problem: ${problem}\n`;
+
+  const whatsappURL = `https://wa.me/48721988949?text=${encodeURIComponent(message)}`;
+  window.open(whatsappURL,'_blank');
+  alert('Dziękujemy za zgłoszenie! Za chwilę zostaniesz przekierowany do WhatsApp.');
+});
+</script>
+
+
+<section class="unique-ai-content" style="background: #1a1d20; padding: 2rem; border-radius: 12px; margin: 2rem 0; color: #e1e1e1;">
+<h3 style="color: #3b82f6; margin-bottom: 1rem;">Specyfika serwisu Beko w mieście Szczecin</h3>
+<p style="margin-bottom: 1rem;">Specyfika serwisu Beko w mieście Szczecin. Suszarki Beko, podobnie jak inne urządzenia, mogą doświadczyć awarii z powodu różnych przyczyn. Jedną z głównych przyczyn awarii w Beko suszarkach jest uszkodzony hydrostat, który powoduje, że suszarka ciągle pobiera wodę.</p><p style="margin-bottom: 1rem;">Inna przyczyna to brak poboru wody lub błąd wylewania, który może być spowodowany uszkodzonym elektrozaworem lub pompą. Dodatkowo, uszkodzony czujnik poziomu wody może powodować błąd E04, a zużycie szczotek lub błąd silnika może powodować błąd E11. Przykładowo, kod E04 (ciągłe pobieranie wody) może wskazywać na uszkodzony hydrostat, natomiast kod E08/E09 (brak poboru wody lub błąd wylewania) może wskazywać na uszkodzony elektrozawór lub pompę.
+
+Nasz serwis w Szczecinie oferuje szybkie i skuteczne rozwiązanie problemu z Twoją suszarką Beko.</p><p style="margin-bottom: 1rem;">Dojeżdżamy do wszystkich dzielnic miasta, w tym Pogodna, Niebuszewo, Prawobrzeże i Centrum, oraz do okolicznych miejscowości. Czas dojazdu technika do klienta wynosi maksymalnie 45 minut, co pozwala nam szybko i skutecznie rozwiązać problem z Twoją suszarką Beko. W przypadku, gdy masz podejrzenie, że Twoja suszarka Beko ma problem z uszkodzonym hydrostatem lub elektrozaworem, zalecamy sprawdzenie, czy suszarka ma ciągłe pobieranie wody lub brak poboru wody.</p>
+</section>
+</body>
+</html>
