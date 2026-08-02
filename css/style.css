@@ -199,3 +199,24 @@
         gap: 12px !important;
     }
 }
+/* ==========================================
+   СТИЛИЗАЦИЯ ИКОНОК
+   ========================================== */
+
+/* По умолчанию иконки сдержанные (графит/серый) */
+.card-icon, 
+.service-item i, 
+.icon {
+    font-size: 1.5rem;
+    color: var(--text-muted); /* #8c94a0 */
+    transition: color 0.25s ease, transform 0.25s ease;
+    display: inline-block;
+    margin-bottom: 8px;
+}
+
+/* При наведении на карточку иконка загорается ОРАНЖЕВЫМ */
+.card:hover .card-icon,
+.service-item:hover i {
+    color: var(--accent-orange); /* #ff5500 */
+    transform: scale(1.1);
+}
