@@ -23,22 +23,22 @@ SIMILARITY_THRESHOLD = 0.60  # Порог дублирования (60% и вы�
 
 
 class HTMLTextExtractor(HTMLParser):
-    """Вытаскивает только видимый текст из HTML, игнорируя скрипты и стили."""
+    """Вытаскивает только видимый текст из HTML, игнорируя head, скрипты и стили."""
     def __init__(self):
         super().__init__()
         self.result = []
-        self.skip_tag = False
+        self.in_ignored_tag = 0
 
     def handle_starttag(self, tag, attrs):
-        if tag in ("script", "style", "head", "meta", "title"):
-            self.skip_tag = True
+        if tag in ("script", "style", "head", "noscript", "svg", "iframe"):
+            self.in_ignored_tag += 1
 
     def handle_endtag(self, tag):
-        if tag in ("script", "style", "head", "meta", "title"):
-            self.skip_tag = False
+        if tag in ("script", "style", "head", "noscript", "svg", "iframe") and self.in_ignored_tag > 0:
+            self.in_ignored_tag -= 1
 
     def handle_data(self, data):
-        if not self.skip_tag:
+        if self.in_ignored_tag == 0:
             text = data.strip()
             if text:
                 self.result.append(text)

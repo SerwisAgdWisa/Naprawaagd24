@@ -83,16 +83,111 @@
         </div>
     </section>
 <!-- MAPA LOKALNA STARGARD -->
-<section style="padding:2rem 0;background:#1a1a2e;">
-    <div style="max-width:1200px;margin:0 auto;padding:0 20px;">
-        <h2 style="color:white;text-align:center;margin-bottom:1rem;">
-            Naprawa AGD w Stargardzie - Szybki dojazd
-        </h2>
-        <p style="color:rgba(255,255,255,0.7);text-align:center;margin-bottom:1.5rem;">
-            Obsługujemy cały Stargard i najbliższe okolice. Zadzwoń: 721 988 949
-        </p>
-        
-        <div style="width:100%;height:350px;border-radius:12px;overflow:hidden;border:2px solid #a0b4f8;">
+/* Блок карты без inline-стилей */
+.map-section {
+    background-color: var(--bg-main) !important;
+    padding: 30px 16px;
+    text-align: center;
+}
+
+.map-title {
+    color: var(--text-white) !important;
+    font-size: 1.4rem;
+    margin-bottom: 6px;
+    font-weight: 800;
+}
+
+.map-desc {
+    color: var(--text-muted) !important;
+    font-size: 0.9rem;
+    margin-bottom: 16px;
+<!-- Обертка <style> обязательна, чтобы браузер понял, что это стили, а не текст -->
+<style>
+/* ==========================================
+   БЛОК КАРТЫ GOOGLE (.map-section)
+   ========================================== */
+
+/* 1. Основные стили (Десктоп / ПК) */
+.map-section {
+    background-color: var(--bg-main) !important;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.map-section .map-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.map-section .map-title {
+    color: var(--text-white) !important;
+    font-size: 1.8rem;
+    font-weight: 800;
+    margin-bottom: 8px;
+    text-shadow: none !important;
+}
+
+.map-section .map-desc {
+    color: var(--text-muted) !important;
+    font-size: 1rem;
+    margin-bottom: 24px;
+    text-shadow: none !important;
+}
+
+.map-section .map-wrapper {
+    width: 100%;
+    height: 400px;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid var(--border-card);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.map-section .map-wrapper iframe {
+    border: none !important;
+    width: 100%;
+    height: 100%;
+}
+
+.map-section .map-subtext {
+    color: var(--text-muted) !important;
+    font-size: 0.9rem;
+    margin-top: 16px;
+}
+
+.map-section .map-phone {
+    color: var(--accent-orange) !important;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+/* 2. Мобильный адаптив (Обернуто в @media) */
+@media (max-width: 768px) {
+    .map-section {
+        padding: 24px 12px !important;
+    }
+
+    .map-section .map-title {
+        font-size: 1.3rem !important;
+        margin-bottom: 6px !important;
+    }
+
+    .map-section .map-desc {
+        font-size: 0.85rem !important;
+        margin-bottom: 16px !important;
+    }
+
+    .map-section .map-wrapper {
+        height: 280px !important;
+        border-radius: 12px !important;
+    }
+
+    .map-section .map-subtext {
+        font-size: 0.8rem !important;
+        margin-top: 12px !important;
+    }
+}
+</style>
             <iframe 
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d38400!2d15.0300!3d53.3300!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47aa72d500000001%3A0x123456789abcdef!2sStargard!5e0!3m2!1spl!2spl!4v1625000000000" 
                 width="100%" 
@@ -148,34 +243,6 @@
             <span class="current">Stargard</span>
         </div>
     </div>
-
-    
-<!-- MAPA GOOGLE - DODANA SKRYPTEM -->
-<section style="background:linear-gradient(135deg,#1a1a2e,#16213e);padding:3rem 0;">
-    <div style="max-width:1200px;margin:0 auto;padding:0 20px;">
-        <h2 style="color:white;text-align:center;margin-bottom:0.5rem;font-size:1.8rem;">
-            Obszar obslugi - Stargard
-        </h2>
-        <p style="color:rgba(255,255,255,0.7);text-align:center;margin-bottom:1.5rem;">
-            Stargard i okolice w promieniu 30km | Dojazd tego samego dnia | Tel: 721 988 949
-        </p>
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39442!2d15.0497!3d53.3353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47aa3a3b3b3b3b3b%3A0x42b45b23a5895509!2sStargard!5e0!3m2!1spl!2spl!4v1625000000001"
-            width="100%"
-            height="400"
-            style="border:0;border-radius:12px;box-shadow:0 5px 20px rgba(0,0,0,0.3);"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-        <p style="color:rgba(255,255,255,0.6);text-align:center;margin-top:1rem;font-size:0.9rem;">
-            Nie widzisz swojej miejscowosci? Zadzwon - obslugujemy caly region!
-            <a href="tel:+48721988949" style="color:#f39c12;font-weight:bold;"> 721 988 949</a>
-        </p>
-    </div>
-</section>
-<!-- KONIEC MAPY -->
-
 <footer>
         <div class="container">
             <div class="footer-content">

@@ -2,6 +2,7 @@ import argparse
 import json
 import logging
 import os
+import random
 import signal
 import sqlite3
 import sys
@@ -53,20 +54,17 @@ def rotate_api_key():
         logging.info(f" Переключение на API ключ #{current_key_index + 1}")
 
 GROQ_MODEL = os.getenv("GROQ_MODEL", "llama-3.1-8b-instant")
-GROQ_TEMP = float(os.getenv("GROQ_TEMPERATURE", "0.25"))
+GROQ_TEMP = float(os.getenv("GROQ_TEMPERATURE", "0.45"))  # Слегка поднята температура для вариативности
 RATE_LIMIT = int(os.getenv("RATE_LIMIT_PER_MINUTE", "12"))
 DB_PATH = Path(os.getenv("CACHE_DB_PATH", "content_cache.db"))
+SITE_DOMAIN = os.getenv("SITE_DOMAIN", "https://naprawaagd24.pl")
 
 ROOT_DIR = Path(".")
 
-# Показываемое имя бренда — если на сайте файл называется альтернативным/
-# ошибочным написанием (elektrolux.html, gorenie.html), на странице всё
-# равно должно отображаться правильное официальное название бренда.
 BRAND_DISPLAY_NAMES = {
     "elektrolux": "Electrolux",
     "gorenie": "Gorenje",
 }
-
 
 def brand_display_name(brand_slug: str) -> str:
     return BRAND_DISPLAY_NAMES.get(brand_slug, brand_slug.replace("-", " ").title())
@@ -83,20 +81,13 @@ APPLIANCE_NAMES = {
     "naprawa-pralko-suszarek": "pralko-suszarki",
 }
 
-SYSTEM_PROMPT = """Jesteś starszym technikiem serwisu AGD i ekspertem SEO w Polsce.
-ZASADY:
-- Brak wstępów typu "Szukasz serwisu...". Pisz czystą wiedzę techniczną i lokalną.
-- Jeśli podano istniejący tekst SEO (np. tabelę usterek, FAQ) — NIE powtarzaj tych samych informacji.
-  Uzupełnij je czymś nowym: inny kąt, inna usterka, inna praktyczna wskazówka.
-- Akapit 1: Analiza przyczyn awarii dla podanych kodów błędów (opis mechaniczny: np. zużycie szczotek silnika, zakamieniona grzałka).
-- Akapit 2: Specyfika serwisu w danym mieście — podaj ulice/dzielnice oraz czas dojazdu technika.
-- Akapit 3: Praktyczna rada dla klienta: co sprawdzić samemu przed wezwaniem fachowca.
-- Długość: Ściśle 3 akapity (łącznie 150-200 słów). Zwróć WYŁĄCZNIE gotowy tekst po polsku bez formatowania Markdown.
-
-PRZYKŁAD STRUKTURY:
-Akapit 1 (Przyczyny): Awaria kodu E18 w pralkach marki Bosch najczęściej wynika z zablokowanej pompy odpływowej lub zagiętego węża...
-Akapit 2 (Lokalizacja): Nasz serwis w Szczecinie dojeżdża do dzielnic Prawobrzeże oraz ul. Mieszka I w czasie do 45 minut...
-Akapit 3 (Rada): Zanim wezwiesz technika, odkręć filtr pompy w dolnej części obudowy i sprawdź, czy nie utknęło tam ciało obce..."""
+# Вариативность ролей для избежания одинакового стиля
+PERSPECTIVES = [
+    "Jesteś inżynierem elektronikiem specjalizującym się w modułach sterujących AGD.",
+    "Jesteś praktycznym mobilnym serwisantem AGD z 15-letnim doświadczeniem w terenie.",
+    "Jesteś kierownikiem warsztatu naprawczego AGD w Polsce.",
+    "Jesteś specjalistą ds. diagnostyki usterek mechanicznych i hydraulicznych sprzętu AGD."
+]
 
 class SEOGeneratorError(Exception): pass
 class APIRateLimitError(SEOGeneratorError): pass
@@ -212,13 +203,16 @@ def safe_write_file(path: Path, content: str):
     backup_path = path.with_suffix(path.suffix + ".bak")
     try:
         if path.exists():
-            path.rename(backup_path)
+            # На Windows os.replace безопасно перезаписывает целевой файл
+            os.replace(path, backup_path)
+        
         path.write_text(content, encoding="utf-8", errors="replace")
+        
         if backup_path.exists():
             backup_path.unlink()
     except Exception as e:
         if backup_path.exists():
-            backup_path.rename(path)
+            os.replace(backup_path, path)
         raise SEOGeneratorError(f"Сбой записи в {path}: {e}") from e
 
 def split_into_paragraphs(text: str) -> list[str]:
@@ -298,7 +292,20 @@ def extract_existing_seo_text(soup: BeautifulSoup) -> str:
     combined = " ".join(extracted)
     return combined[:1200] + "..." if len(combined) > 1200 else combined
 
-def generate_with_groq(prompt: str, model: str = GROQ_MODEL, temp: float = GROQ_TEMP) -> str:
+def ensure_canonical_tag(soup: BeautifulSoup, rel_path: Path) -> BeautifulSoup:
+    """Устанавливает абсолютный canonical URL для исключения дублей в Google."""
+    clean_url = f"{SITE_DOMAIN}/{rel_path.as_posix()}"
+    head = soup.find('head')
+    if head:
+        existing_canonical = head.find('link', {'rel': 'canonical'})
+        if existing_canonical:
+            existing_canonical['href'] = clean_url
+        else:
+            new_tag = soup.new_tag('link', rel='canonical', href=clean_url)
+            head.append(new_tag)
+    return soup
+
+def generate_with_groq(prompt: str, system_prompt: str, model: str = GROQ_MODEL, temp: float = GROQ_TEMP) -> str:
     rate_limiter.wait_if_needed()
     metrics.api_calls += 1
 
@@ -309,7 +316,7 @@ def generate_with_groq(prompt: str, model: str = GROQ_MODEL, temp: float = GROQ_
         headers = {"Authorization": f"Bearer {api_key}", "Content-Type": "application/json"}
         payload = {
             "model": model,
-            "messages": [{"role": "system", "content": SYSTEM_PROMPT}, {"role": "user", "content": prompt}],
+            "messages": [{"role": "system", "content": system_prompt}, {"role": "user", "content": prompt}],
             "temperature": temp,
             "max_tokens": 550
         }
@@ -403,6 +410,7 @@ def main():
     parser = argparse.ArgumentParser(description="Industrial Grade SEO Content Generator.")
     parser.add_argument("--apply", action="store_true", help="Записать изменения в HTML-файлы")
     parser.add_argument("--dry-run", action="store_true", help="Симуляция без записи файлов и генерации")
+    parser.add_argument("--force", action="store_true", help="Игнорировать кэш и сгенерировать заново")
     args = parser.parse_args()
 
     if not GROQ_API_KEYS:
@@ -445,7 +453,7 @@ def main():
         if not brand_tech or not brand_tech.get("common_errors"):
             continue
 
-        cached_text = db.get(cache_key)
+        cached_text = None if args.force else db.get(cache_key)
 
         if not cached_text:
             if args.dry_run:
@@ -457,25 +465,40 @@ def main():
             streets_text = ", ".join(extracted_streets) if extracted_streets else "całe miasto i okolice"
 
             errors = brand_tech["common_errors"]
+            # Перемешиваем ошибки для разной структуры
+            random.shuffle(errors)
             errors_text = "\n".join(
-                f"- Kod: {e['code']}, przyczyna: {e['cause']}, część: {e['part']}" for e in errors
+                f"- Kod/Usterka: {e['code']}, przyczyna: {e['cause']}, część: {e['part']}" for e in errors
             )
 
-            prompt = f"""DANE TECHNICZNE I LOKALIZACJA:
-Miasto: {city_slug.capitalize()}
-Obsługiwany rejon / ulice / dzielnice: {streets_text}
-Sprzęt: {APPLIANCE_NAMES[appliance_dir]}
+            # Выбираем случайную роль и угол подачи
+            selected_perspective = random.choice(PERSPECTIVES)
+            
+            system_prompt = f"""{selected_perspective} Piszesz unikalny, profesjonalny tekst SEO w języku polskim dla serwisu AGD.
+ZASADY:
+- Zakaz szablonowych wstępów ("Szukasz...", "Oferujemy...", "Witamy...").
+- Piszesz WYŁĄCZNIE konkretną wiedzę techniczną i lokalną.
+- Zachowaj naturalny, zróżnicowany styl zdań.
+- Wygeneruj WYŁĄCZNIE 3 akapity (150-200 słów) bez formatowania Markdown."""
+
+            prompt = f"""KONTEKST:
+Lokalizacja: {city_slug.capitalize()} (rejon: {streets_text})
+Urządzenie: {APPLIANCE_NAMES[appliance_dir]}
 Marka: {brand_display_name(brand_slug)}
-Usterki, kody i części:
+
+DANE DIAGNOSTYCZNE:
 {errors_text}
 
-ISTNIEJĄCY TEKST SEO DO ROZWINIĘCIA:
-{existing_seo if existing_seo else "Brak."}
+STRUKTURA (3 AKAPITY):
+1. Techniczna analiza konkretnych usterek i wyzwań dla marki {brand_display_name(brand_slug)}.
+2. Logistyka dojazdu serwisu w mieście {city_slug.capitalize()} (czas reakcji, dojazd do klienta).
+3. Praktyczna porada diagnostyczna do wykonania przed przyjazdem fachowca.
 
-Napisz 3 zwięzłe akapity techniczne dla serwisu w mieście {city_slug.capitalize()}."""
+Zainspiruj się poniższym tekstem, ale NIE POWTARZAJ GO:
+{existing_seo if existing_seo else "Brak."}"""
 
             try:
-                text = generate_with_groq(prompt)
+                text = generate_with_groq(prompt, system_prompt)
                 db.set(cache_key, text)
                 cached_text = text
                 metrics.generated += 1
@@ -486,9 +509,13 @@ Napisz 3 zwięzłe akapity techniczne dla serwisu w mieście {city_slug.capitali
 
         if args.apply and cached_text and not args.dry_run:
             try:
+                # 1. Вставляем уникальный текст
                 updated_soup = update_html_dom(
                     soup, cached_text, APPLIANCE_NAMES[appliance_dir], city_slug, brand_slug
                 )
+                # 2. Добавляем canonical tag для SEO
+                updated_soup = ensure_canonical_tag(updated_soup, path)
+                
                 safe_write_file(path, str(updated_soup))
                 metrics.applied += 1
             except Exception as e:
