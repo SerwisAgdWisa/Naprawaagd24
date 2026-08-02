@@ -202,3 +202,10 @@ input:focus, select:focus, textarea:focus {
     h1 { font-size: 1.35rem; }
     .btn-primary,.cta-button { min-height: 46px; font-size: .9rem; }
 }
+.service-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
