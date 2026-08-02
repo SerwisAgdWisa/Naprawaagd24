@@ -1,222 +1,147 @@
 /* ==========================================
-   ПОЛНАЯ АДАПТАЦИЯ ПОД МОБИЛЬНЫЕ (APP UI)
-   PRODUCTION READY v2.1 REFINED
+   PRODUCTION READY v2.2 (CLEAN SYNTAX)
    ========================================== */
 
-@media (max-width: 768px) {
+:root {
+    --bg-main: #121417;
+    --bg-card: #1c1f24;
+    --bg-input: #0b0c0e;
+    
+    --accent-orange: #ff5500;
+    --accent-hover: #d94800;
+    --accent-glow: rgba(255, 85, 0, 0.15);
+    
+    --text-primary: #edf0f5;
+    --text-muted: #8c94a0;
+    --border-card: #282c34;
+    
+    --radius-sm: 8px;
+    --radius-md: 12px;
+}
 
-    /* ---- 1. КОМПАКТНЫЕ СЕТКИ (2 КОЛОНКИ: Города, Категории, Иконки) ---- */
-    .cities-grid, 
-    .categories-grid,
-    .quick-services-grid {
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-main) !important;
+    color: var(--text-primary) !important;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+    color: var(--text-primary);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin-top: 0;
+}
+
+h1 { font-size: 2.2rem; line-height: 1.25; }
+h2 { font-size: 1.75rem; }
+h3 { font-size: 1.25rem; }
+
+p, .description {
+    color: var(--text-muted);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+a {
+    color: var(--accent-orange);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: var(--accent-hover);
+    text-decoration: underline;
+}
+
+/* КАРТОЧКИ И ЭЛЕМЕНТЫ */
+.card, .service-item, .city-item, .box {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-card);
+    border-radius: var(--radius-md);
+    padding: 20px;
+    margin-bottom: 12px;
+    transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.card:hover, .service-item:hover, .city-item:hover {
+    border-color: var(--accent-orange);
+    transform: translateY(-2px);
+}
+
+/* КНОПКИ */
+.btn-primary, .cta-button, .btn, button {
+    background: var(--accent-orange);
+    color: #ffffff;
+    border: none;
+    border-radius: var(--radius-sm);
+    padding: 14px 24px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: background 0.2s ease;
+}
+
+.btn-primary:hover, .cta-button:hover, .btn:hover, button:hover {
+    background: var(--accent-hover);
+}
+
+/* ИКОНКИ */
+.card-icon, .service-item i, .icon {
+    font-size: 1.5rem;
+    color: var(--text-muted);
+    display: inline-block;
+    margin-bottom: 8px;
+    transition: color 0.2s ease;
+}
+
+.card:hover .card-icon, .service-item:hover i {
+    color: var(--accent-orange);
+}
+
+/* ПОЛЯ ВВОДА */
+input[type="text"], input[type="tel"], input[type="email"], select, textarea {
+    background-color: var(--bg-input);
+    border: 1px solid var(--border-card);
+    color: var(--text-primary);
+    border-radius: var(--radius-sm);
+    padding: 12px 16px;
+    width: 100%;
+    font-size: 16px;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: var(--accent-orange);
+    outline: none;
+}
+
+/* МОБИЛЬНАЯ АДАПТАЦИЯ */
+@media (max-width: 768px) {
+    .cities-grid, .categories-grid {
         display: grid !important;
         grid-template-columns: repeat(2, 1fr) !important;
         gap: 10px !important;
-        padding: 0 16px !important;
-        box-sizing: border-box;
     }
 
-    /* ---- 2. ТЕКСТОВЫЕ СЕТКИ (1 КОЛОНКА: Сложные карточки, Тарифы, Статьи) ---- */
-    .services-grid,
-    .grid-container,
-    .cards-wrapper {
-        display: flex !important;
-        flex-direction: column !important;
-        gap: 12px !important;
-        padding: 0 16px !important;
-        box-sizing: border-box;
-    }
-
-    /* ---- КАРТОЧКИ (Премиальный App Style) ---- */
-    .card, 
-    .service-item, 
-    .city-item {
-        margin-bottom: 0 !important;
-        padding: 16px !important;
-        border-radius: var(--radius-md, 12px) !important;
-        background-color: var(--bg-card, #1c1f24) !important;
-        border: 1px solid var(--border-card, #282c34) !important;
-        display: flex !important;
-        flex-direction: column !important;
-        align-items: flex-start !important; /* Выравнивание по левому краю */
-        text-align: left !important;
-        word-break: break-word !important;
-        touch-action: manipulation !important;
-        -webkit-tap-highlight-color: rgba(255, 85, 0, 0.1) !important;
-        transition: transform 0.15s ease !important;
-    }
-
-    /* Исключение: Компактные карточки в 2 колонки центрируем */
-    .cities-grid .city-item,
-    .categories-grid .card {
-        align-items: center !important;
-        text-align: center !important;
-        padding: 12px 8px !important;
-        min-height: 90px !important;
-        justify-content: center !important;
-    }
-
-    .card:active, .service-item:active, .city-item:active {
-        transform: scale(0.98) !important;
-        border-color: var(--accent-orange, #ff5500) !important;
-    }
-
-    /* Типографика карточек */
-    .card h2, .card h3, .service-item h3 {
-        font-size: 1.05rem !important;
-        margin: 4px 0 6px 0 !important;
-        line-height: 1.3 !important;
-        color: var(--text-primary, #edf0f5) !important;
-    }
-
-    .card p, .service-item p {
-        font-size: 0.85rem !important;
-        margin: 0 !important;
-        color: var(--text-muted, #8c94a0) !important;
-        line-height: 1.4 !important;
-    }
-
-    .card-icon, .icon {
-        font-size: 1.5rem !important;
-        margin-bottom: 6px !important;
-        color: var(--accent-orange, #ff5500);
-    }
-
-    /* ---- HERO / ПЕРВЫЙ ЭКРАН ---- */
-    .hero, section:first-of-type {
-        padding: 24px 16px 16px 16px !important;
-    }
-
-    h1 {
-        font-size: 1.6rem !important;
-        line-height: 1.25 !important;
-        margin-bottom: 8px !important;
-        letter-spacing: -0.02em !important;
-    }
-
-    h2 {
-        font-size: 1.3rem !important;
-        margin-bottom: 12px !important;
-    }
-
-    /* ---- КНОПКИ (Точечный таргетинг CTA) ---- */
-    .btn-primary, 
-    .cta-button,
-    .submit-btn {
-        width: 100% !important;
-        max-width: 100% !important;
-        min-height: 52px !important;
-        padding: 14px 20px !important;
-        font-size: 1rem !important;
-        font-weight: 600 !important;
-        border-radius: var(--radius-sm, 8px) !important;
-        box-sizing: border-box !important;
-        display: flex !important;
-        align-items: center !important;
-        justify-content: center !important;
-        gap: 8px !important;
-        touch-action: manipulation !important;
-        -webkit-tap-highlight-color: transparent !important;
-    }
-
-    .btn-primary:active, .cta-button:active {
-        transform: scale(0.98) !important;
-    }
-
-    /* ---- ФИКСИРОВАННАЯ НИЖНЯЯ ПАНЕЛЬ (Sticky CTA) ---- */
-    .sticky-bottom-bar {
-        position: fixed !important;
-        bottom: 0 !important;
-        left: 0 !important;
-        right: 0 !important;
-        background: rgba(18, 20, 23, 0.94) !important;
-        backdrop-filter: blur(16px) !important;
-        -webkit-backdrop-filter: blur(16px) !important;
-        padding: 12px 16px !important;
-        padding-bottom: calc(12px + env(safe-area-inset-bottom, 0px)) !important;
-        padding-left: calc(16px + env(safe-area-inset-left, 0px)) !important;
-        padding-right: calc(16px + env(safe-area-inset-right, 0px)) !important;
-        border-top: 1px solid var(--border-card, #282c34) !important;
-        z-index: 9999 !important;
-        box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.5) !important;
-    }
-
-    /* ---- ФОРМЫ (Исключаем авто-зум в iOS Safari) ---- */
-    input[type="text"], 
-    input[type="tel"], 
-    input[type="email"],
-    select, 
-    textarea {
-        font-size: 16px !important; /* КРИТИЧНО для iOS */
-        padding: 14px !important;
-        border-radius: var(--radius-sm, 8px) !important;
-        width: 100% !important;
-        box-sizing: border-box !important;
-        background-color: var(--bg-input, #0b0c0e) !important;
-        border: 1px solid var(--border-card, #282c34) !important;
-        color: var(--text-primary, #edf0f5) !important;
-    }
-
-    /* ---- ОПТИМИЗАЦИЯ ДЛЯ СВЕРХМАЛЫХ ЭКРАНОВ (<= 360px) ---- */
-    @media (max-width: 360px) {
-        .cities-grid, .categories-grid {
-            gap: 6px !important;
-            padding: 0 10px !important;
-        }
-        
-        .card h2, .card h3 {
-            font-size: 0.95rem !important;
-        }
-        
-        h1 {
-            font-size: 1.35rem !important;
-        }
-        
-        .btn-primary, .cta-button {
-            min-height: 46px !important;
-            font-size: 0.9rem !important;
-        }
-    }
-
-    /* Служебные классы */
-    .desktop-only {
-        display: none !important;
-    }
-}
-
-/* ---- ПЛАНШЕТЫ (769px - 1024px) ---- */
-@media (min-width: 769px) and (max-width: 1024px) {
     .services-grid, .grid-container {
-        display: grid !important;
-        grid-template-columns: repeat(2, 1fr) !important;
-        gap: 16px !important;
-        padding: 0 24px !important;
-    }
-    
-    .cities-grid {
-        display: grid !important;
-        grid-template-columns: repeat(4, 1fr) !important;
+        display: flex !important;
+        flex-direction: column !important;
         gap: 12px !important;
     }
-}
-/* ==========================================
-   СТИЛИЗАЦИЯ ИКОНОК
-   ========================================== */
 
-/* По умолчанию иконки сдержанные (графит/серый) */
-.card-icon, 
-.service-item i, 
-.icon {
-    font-size: 1.5rem;
-    color: var(--text-muted); /* #8c94a0 */
-    transition: color 0.25s ease, transform 0.25s ease;
-    display: inline-block;
-    margin-bottom: 8px;
-}
-
-/* При наведении на карточку иконка загорается ОРАНЖЕВЫМ */
-.card:hover .card-icon,
-.service-item:hover i {
-    color: var(--accent-orange); /* #ff5500 */
-    transform: scale(1.1);
+    .btn-primary, .cta-button, .btn, button {
+        width: 100% !important;
+        min-height: 50px !important;
+    }
 }
