@@ -51,7 +51,7 @@ def rotate_api_key():
     global current_key_index
     if len(GROQ_API_KEYS) > 1:
         current_key_index = (current_key_index + 1) % len(GROQ_API_KEYS)
-        logging.info(f" Переключение на API ключ #{current_key_index + 1}")
+        logging.info(f"Переключение на API ключ #{current_key_index + 1}")
 
 GROQ_MODEL = os.getenv("GROQ_MODEL", "llama-3.1-8b-instant")
 GROQ_TEMP = float(os.getenv("GROQ_TEMPERATURE", "0.45"))
@@ -393,7 +393,7 @@ def update_html_dom(soup: BeautifulSoup, generated_text: str, appliance: str, ci
     else:
         soup.body.append(new_section_soup)
 
-    # 3. Безопасная замена мусорных списков ошибок
+    # 3. Безопасная замена мусорных списков ошибок (ПОЛНЫЙ ИСПРАВЛЕННЫЙ МЕХАНИЗМ)
     appliance_type = APPLIANCE_NAMES.get(appliance, appliance)
     errors_list = None
     for db in [TECH_FACTS_DB, AUTO_TECH_FACTS_DB, TECH_FACTS_DB_EXTRA]:
@@ -419,11 +419,20 @@ def update_html_dom(soup: BeautifulSoup, generated_text: str, appliance: str, ci
     if not errors_list:
         errors_list = DEFAULT_FALLBACK_ERRORS
 
-    garbage_markers = ['wymaga diagnozy technicznej', 'awaria układu: ułożenie', 'błąd systemowy']
+    # Расширенный список маркеров фейкового/мусорного текста
+    garbage_markers = [
+        'awaria układu', 'wymaga diagnozy', 'błąd systemowy', 
+        'test komputerowy', 'sprawdzenie drożności', 'ułożenie wiązki'
+    ]
     
     for ul in soup.find_all(['ul', 'ol']):
+        ul_classes = ul.get('class', [])
         ul_text = ul.get_text().lower()
-        if any(marker in ul_text for marker in garbage_markers):
+        
+        # Точное обнаружение: если есть класс 'error-codes-list' ИЛИ совпадает мусорный текст
+        is_garbage = 'error-codes-list' in ul_classes or any(marker in ul_text for marker in garbage_markers)
+        
+        if is_garbage:
             new_lis = []
             for err in errors_list[:8]:
                 code = err.get('code', 'Błąd')
@@ -434,7 +443,6 @@ def update_html_dom(soup: BeautifulSoup, generated_text: str, appliance: str, ci
                     f"<span style='color: #9da5b1; font-size: 0.9rem;'>(kontrola: {part})</span>.</li>"
                 )
             
-            ul_classes = ul.get('class', [])
             ul_class_str = f" class=\"{' '.join(ul_classes)}\"" if ul_classes else ""
             new_ul_html = f"<ul{ul_class_str}>\n" + "\n".join(new_lis) + "\n</ul>"
             

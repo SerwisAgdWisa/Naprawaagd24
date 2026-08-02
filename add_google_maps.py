@@ -13,10 +13,10 @@ CITY_MAPS = {
         "embed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39442!2d15.0497!3d53.3353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47aa3a3b3b3b3b3b%3A0x42b45b23a5895509!2sStargard!5e0!3m2!1spl!2spl!4v1625000000001",
         "area": "Stargard i okolice w promieniu 30km"
     },
-    "Goleniów": {
-        "name": "Goleniów",
+    "goleniow": {
+        "name": "goleniow",
         "embed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39442!2d14.8219!3d53.5588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47aa3a3b3b3b3b3c%3A0x42b45b23a5895509!2sGoleni%C3%B3w!5e0!3m2!1spl!2spl!4v1625000000002",
-        "area": "Goleniów i okolice w promieniu 25km"
+        "area": "goleniow i okolice w promieniu 25km"
     },
     "nowogard": {
         "name": "Nowogard",

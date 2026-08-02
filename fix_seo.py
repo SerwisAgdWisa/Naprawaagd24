@@ -15,8 +15,8 @@ SERVICES = {
 }
 
 CITIES = {
-    "Goleniów": ("Goleniów", "Goleniówie", "72-100"),
-    "goleniów": ("Goleniów", "Goleniówie", "72-100"),
+    "goleniow": ("goleniow", "goleniowie", "72-100"),
+    "goleniow": ("goleniow", "goleniowie", "72-100"),
     "maszewo": ("Maszewo", "Maszewie", "72-130"),
     "nowogard": ("Nowogard", "Nowogardzie", "72-200"),
     "police": ("Police", "Policach", "72-010"),

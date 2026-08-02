@@ -355,7 +355,7 @@
 2026-07-30 13:30:39,684 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
 2026-07-30 13:30:55,686 [INFO] AFC is enabled with max remote calls: 10.
 2026-07-30 13:30:55,966 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
-2026-07-30 13:30:55,968 [ERROR] Не удалось сгенерировать контент для naprawa-pralek\goleniów\aeg.html: Ошибка Gemini API: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key not valid. Please pass a valid API key.'}]}}
+2026-07-30 13:30:55,968 [ERROR] Не удалось сгенерировать контент для naprawa-pralek\goleniow\aeg.html: Ошибка Gemini API: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key not valid. Please pass a valid API key.'}]}}
 2026-07-30 13:30:56,533 [INFO] AFC is enabled with max remote calls: 10.
 2026-07-30 13:30:56,785 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
 2026-07-30 13:30:58,803 [INFO] AFC is enabled with max remote calls: 10.
@@ -366,7 +366,7 @@
 2026-07-30 13:31:11,226 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
 2026-07-30 13:31:27,229 [INFO] AFC is enabled with max remote calls: 10.
 2026-07-30 13:31:27,508 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
-2026-07-30 13:31:27,510 [ERROR] Не удалось сгенерировать контент для naprawa-pralek\goleniów\haier.html: Ошибка Gemini API: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key not valid. Please pass a valid API key.'}]}}
+2026-07-30 13:31:27,510 [ERROR] Не удалось сгенерировать контент для naprawa-pralek\goleniow\haier.html: Ошибка Gemini API: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key not valid. Please pass a valid API key.'}]}}
 2026-07-30 13:31:27,936 [INFO] AFC is enabled with max remote calls: 10.
 2026-07-30 13:31:28,119 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
 2026-07-30 13:31:30,122 [INFO] AFC is enabled with max remote calls: 10.
@@ -377,7 +377,7 @@
 2026-07-30 13:31:42,659 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
 2026-07-30 13:31:58,661 [INFO] AFC is enabled with max remote calls: 10.
 2026-07-30 13:31:58,941 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
-2026-07-30 13:31:58,943 [ERROR] Не удалось сгенерировать контент для naprawa-pralek\goleniów\hisense.html: Ошибка Gemini API: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key not valid. Please pass a valid API key.'}]}}
+2026-07-30 13:31:58,943 [ERROR] Не удалось сгенерировать контент для naprawa-pralek\goleniow\hisense.html: Ошибка Gemini API: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key not valid. Please pass a valid API key.'}]}}
 2026-07-30 13:31:59,408 [INFO] AFC is enabled with max remote calls: 10.
 2026-07-30 13:31:59,665 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
 2026-07-30 13:32:01,667 [INFO] AFC is enabled with max remote calls: 10.
@@ -388,7 +388,7 @@
 2026-07-30 13:32:14,095 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
 2026-07-30 13:32:30,097 [INFO] AFC is enabled with max remote calls: 10.
 2026-07-30 13:32:30,379 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
-2026-07-30 13:32:30,381 [ERROR] Не удалось сгенерировать контент для naprawa-pralek\goleniów\hotpoint-ariston.html: Ошибка Gemini API: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key not valid. Please pass a valid API key.'}]}}
+2026-07-30 13:32:30,381 [ERROR] Не удалось сгенерировать контент для naprawa-pralek\goleniow\hotpoint-ariston.html: Ошибка Gemini API: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key not valid. Please pass a valid API key.'}]}}
 2026-07-30 13:32:30,858 [INFO] AFC is enabled with max remote calls: 10.
 2026-07-30 13:32:31,097 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
 2026-07-30 13:32:33,100 [INFO] AFC is enabled with max remote calls: 10.
@@ -399,7 +399,7 @@
 2026-07-30 13:32:45,638 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
 2026-07-30 13:33:01,640 [INFO] AFC is enabled with max remote calls: 10.
 2026-07-30 13:33:01,915 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
-2026-07-30 13:33:01,917 [ERROR] Не удалось сгенерировать контент для naprawa-pralek\goleniów\indesit.html: Ошибка Gemini API: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key not valid. Please pass a valid API key.'}]}}
+2026-07-30 13:33:01,917 [ERROR] Не удалось сгенерировать контент для naprawa-pralek\goleniow\indesit.html: Ошибка Gemini API: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key not valid. Please pass a valid API key.'}]}}
 2026-07-30 13:33:02,351 [INFO] AFC is enabled with max remote calls: 10.
 2026-07-30 13:33:02,573 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
 2026-07-30 13:33:04,576 [INFO] AFC is enabled with max remote calls: 10.
@@ -410,7 +410,7 @@
 2026-07-30 13:33:17,072 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
 2026-07-30 13:33:33,074 [INFO] AFC is enabled with max remote calls: 10.
 2026-07-30 13:33:33,357 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
-2026-07-30 13:33:33,359 [ERROR] Не удалось сгенерировать контент для naprawa-pralek\goleniów\lg.html: Ошибка Gemini API: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key not valid. Please pass a valid API key.'}]}}
+2026-07-30 13:33:33,359 [ERROR] Не удалось сгенерировать контент для naprawa-pralek\goleniow\lg.html: Ошибка Gemini API: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key not valid. Please pass a valid API key.'}]}}
 2026-07-30 13:33:33,832 [INFO] AFC is enabled with max remote calls: 10.
 2026-07-30 13:33:34,070 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
 2026-07-30 13:33:36,072 [INFO] AFC is enabled with max remote calls: 10.
@@ -421,7 +421,7 @@
 2026-07-30 13:33:48,611 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
 2026-07-30 13:34:04,623 [INFO] AFC is enabled with max remote calls: 10.
 2026-07-30 13:34:04,895 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
-2026-07-30 13:34:04,897 [ERROR] Не удалось сгенерировать контент для naprawa-pralek\goleniów\miele.html: Ошибка Gemini API: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key not valid. Please pass a valid API key.'}]}}
+2026-07-30 13:34:04,897 [ERROR] Не удалось сгенерировать контент для naprawa-pralek\goleniow\miele.html: Ошибка Gemini API: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key not valid. Please pass a valid API key.'}]}}
 2026-07-30 13:34:05,366 [INFO] AFC is enabled with max remote calls: 10.
 2026-07-30 13:34:05,609 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
 2026-07-30 13:34:07,611 [INFO] AFC is enabled with max remote calls: 10.
@@ -432,7 +432,7 @@
 2026-07-30 13:34:20,154 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
 2026-07-30 13:34:36,156 [INFO] AFC is enabled with max remote calls: 10.
 2026-07-30 13:34:36,328 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
-2026-07-30 13:34:36,356 [ERROR] Не удалось сгенерировать контент для naprawa-pralek\goleniów\samsung.html: Ошибка Gemini API: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key not valid. Please pass a valid API key.'}]}}
+2026-07-30 13:34:36,356 [ERROR] Не удалось сгенерировать контент для naprawa-pralek\goleniow\samsung.html: Ошибка Gemini API: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key not valid. Please pass a valid API key.'}]}}
 2026-07-30 13:34:36,913 [INFO] AFC is enabled with max remote calls: 10.
 2026-07-30 13:34:37,147 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
 2026-07-30 13:34:39,151 [INFO] AFC is enabled with max remote calls: 10.
@@ -443,7 +443,7 @@
 2026-07-30 13:34:51,584 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
 2026-07-30 13:35:07,586 [INFO] AFC is enabled with max remote calls: 10.
 2026-07-30 13:35:07,866 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
-2026-07-30 13:35:07,867 [ERROR] Не удалось сгенерировать контент для naprawa-pralek\goleniów\sharp.html: Ошибка Gemini API: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key not valid. Please pass a valid API key.'}]}}
+2026-07-30 13:35:07,867 [ERROR] Не удалось сгенерировать контент для naprawa-pralek\goleniow\sharp.html: Ошибка Gemini API: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key not valid. Please pass a valid API key.'}]}}
 2026-07-30 13:35:08,366 [INFO] AFC is enabled with max remote calls: 10.
 2026-07-30 13:35:08,584 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
 2026-07-30 13:35:10,587 [INFO] AFC is enabled with max remote calls: 10.
@@ -454,7 +454,7 @@
 2026-07-30 13:35:23,228 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
 2026-07-30 13:35:39,230 [INFO] AFC is enabled with max remote calls: 10.
 2026-07-30 13:35:39,510 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
-2026-07-30 13:35:39,512 [ERROR] Не удалось сгенерировать контент для naprawa-pralek\goleniów\siemens.html: Ошибка Gemini API: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key not valid. Please pass a valid API key.'}]}}
+2026-07-30 13:35:39,512 [ERROR] Не удалось сгенерировать контент для naprawa-pralek\goleniow\siemens.html: Ошибка Gemini API: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key not valid. Please pass a valid API key.'}]}}
 2026-07-30 13:35:39,955 [INFO] AFC is enabled with max remote calls: 10.
 2026-07-30 13:35:40,228 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
 2026-07-30 13:35:42,231 [INFO] AFC is enabled with max remote calls: 10.
@@ -465,7 +465,7 @@
 2026-07-30 13:35:54,768 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
 2026-07-30 13:36:10,769 [INFO] AFC is enabled with max remote calls: 10.
 2026-07-30 13:36:11,052 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
-2026-07-30 13:36:11,053 [ERROR] Не удалось сгенерировать контент для naprawa-pralek\goleniów\whirlpool.html: Ошибка Gemini API: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key not valid. Please pass a valid API key.'}]}}
+2026-07-30 13:36:11,053 [ERROR] Не удалось сгенерировать контент для naprawa-pralek\goleniow\whirlpool.html: Ошибка Gemini API: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key not valid. Please pass a valid API key.'}]}}
 2026-07-30 13:36:11,562 [INFO] AFC is enabled with max remote calls: 10.
 2026-07-30 13:36:11,767 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
 2026-07-30 13:36:13,770 [INFO] AFC is enabled with max remote calls: 10.
@@ -476,7 +476,7 @@
 2026-07-30 13:36:26,306 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
 2026-07-30 13:36:42,311 [INFO] AFC is enabled with max remote calls: 10.
 2026-07-30 13:36:42,586 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
-2026-07-30 13:36:42,588 [ERROR] Не удалось сгенерировать контент для naprawa-pralek\goleniów\zanussi.html: Ошибка Gemini API: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key not valid. Please pass a valid API key.'}]}}
+2026-07-30 13:36:42,588 [ERROR] Не удалось сгенерировать контент для naprawa-pralek\goleniow\zanussi.html: Ошибка Gemini API: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key not valid. Please pass a valid API key.'}]}}
 2026-07-30 13:36:43,107 [INFO] AFC is enabled with max remote calls: 10.
 2026-07-30 13:36:43,305 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
 2026-07-30 13:36:45,308 [INFO] AFC is enabled with max remote calls: 10.
@@ -888,7 +888,7 @@
 2026-07-30 14:25:49,681 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent "HTTP/1.1 400 Bad Request"
 2026-07-30 14:26:05,684 [INFO] AFC is enabled with max remote calls: 10.
 2026-07-30 14:26:05,967 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent "HTTP/1.1 400 Bad Request"
-2026-07-30 14:26:05,968 [ERROR] Не удалось сгенерировать контент для naprawa-pralek\goleniów\aeg.html: Ошибка Gemini API: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key not valid. Please pass a valid API key.'}]}}
+2026-07-30 14:26:05,968 [ERROR] Не удалось сгенерировать контент для naprawa-pralek\goleniow\aeg.html: Ошибка Gemini API: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key not valid. Please pass a valid API key.'}]}}
 2026-07-30 14:26:07,073 [INFO] AFC is enabled with max remote calls: 10.
 2026-07-30 14:26:07,335 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent "HTTP/1.1 400 Bad Request"
 2026-07-30 14:26:09,340 [INFO] AFC is enabled with max remote calls: 10.
@@ -901,7 +901,7 @@
 [ВНИМАНИЕ] Получен сигнал прерывания (2). Завершаем текущие операции...
 2026-07-30 14:26:37,621 [INFO] AFC is enabled with max remote calls: 10.
 2026-07-30 14:26:37,758 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent "HTTP/1.1 400 Bad Request"
-2026-07-30 14:26:37,759 [ERROR] Не удалось сгенерировать контент для naprawa-pralek\goleniów\haier.html: Ошибка Gemini API: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key not valid. Please pass a valid API key.'}]}}
+2026-07-30 14:26:37,759 [ERROR] Не удалось сгенерировать контент для naprawa-pralek\goleniow\haier.html: Ошибка Gemini API: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key not valid. Please pass a valid API key.'}]}}
 2026-07-30 14:26:37,760 [WARNING] Работа прервана пользователем.
 2026-07-30 14:26:37,761 [INFO] 
         ═══════════════════════════════════════
@@ -3478,8 +3478,8 @@
 2026-08-01 10:11:16,573 [INFO] Выполнение Health-Check для Groq API...
 2026-08-01 10:11:17,106 [INFO] Health-Check успешно пройден!
 2026-08-01 10:11:17,113 [INFO] Найдено 44 index.html страниц
-2026-08-01 10:11:18,025 [INFO] [СГЕНЕРИРОВАНО] naprawa-pralek\goleniów\index.html
-2026-08-01 10:11:18,032 [INFO] [ЗАПИСАНО] naprawa-pralek\goleniów\index.html
+2026-08-01 10:11:18,025 [INFO] [СГЕНЕРИРОВАНО] naprawa-pralek\goleniow\index.html
+2026-08-01 10:11:18,032 [INFO] [ЗАПИСАНО] naprawa-pralek\goleniow\index.html
 2026-08-01 10:11:18,942 [INFO] [СГЕНЕРИРОВАНО] naprawa-pralek\maszewo\index.html
 2026-08-01 10:11:18,950 [INFO] [ЗАПИСАНО] naprawa-pralek\maszewo\index.html
 2026-08-01 10:11:19,775 [INFO] [СГЕНЕРИРОВАНО] naprawa-pralek\nowogard\index.html
@@ -3495,8 +3495,8 @@
 2026-08-01 10:12:18,855 [INFO] [СГЕНЕРИРОВАНО] naprawa-pralek\szczecin\index.html
 2026-08-01 10:12:18,861 [INFO] [ЗАПИСАНО] naprawa-pralek\szczecin\index.html
 2026-08-01 10:12:18,873 [INFO] [RateLimiter] Защита API. Пауза 0.1 сек...
-2026-08-01 10:12:19,815 [INFO] [СГЕНЕРИРОВАНО] naprawa-lodowek\Goleniów\index.html
-2026-08-01 10:12:19,821 [INFO] [ЗАПИСАНО] naprawa-lodowek\Goleniów\index.html
+2026-08-01 10:12:19,815 [INFO] [СГЕНЕРИРОВАНО] naprawa-lodowek\goleniow\index.html
+2026-08-01 10:12:19,821 [INFO] [ЗАПИСАНО] naprawa-lodowek\goleniow\index.html
 2026-08-01 10:12:20,709 [INFO] [СГЕНЕРИРОВАНО] naprawa-lodowek\Gryfino\index.html
 2026-08-01 10:12:20,715 [INFO] [ЗАПИСАНО] naprawa-lodowek\Gryfino\index.html
 2026-08-01 10:12:20,726 [INFO] [RateLimiter] Защита API. Пауза 0.3 сек...
@@ -3515,8 +3515,8 @@
 2026-08-01 10:13:21,840 [INFO] [СГЕНЕРИРОВАНО] naprawa-lodowek\szczecin\index.html
 2026-08-01 10:13:21,848 [INFO] [ЗАПИСАНО] naprawa-lodowek\szczecin\index.html
 2026-08-01 10:13:21,859 [INFO] [RateLimiter] Защита API. Пауза 55.3 сек...
-2026-08-01 10:14:18,043 [INFO] [СГЕНЕРИРОВАНО] naprawa-zmywarek\Goleniów\index.html
-2026-08-01 10:14:18,050 [INFO] [ЗАПИСАНО] naprawa-zmywarek\Goleniów\index.html
+2026-08-01 10:14:18,043 [INFO] [СГЕНЕРИРОВАНО] naprawa-zmywarek\goleniow\index.html
+2026-08-01 10:14:18,050 [INFO] [ЗАПИСАНО] naprawa-zmywarek\goleniow\index.html
 2026-08-01 10:14:18,059 [INFO] [RateLimiter] Защита API. Пауза 0.2 сек...
 2026-08-01 10:14:19,477 [INFO] [СГЕНЕРИРОВАНО] naprawa-zmywarek\maszewo\index.html
 2026-08-01 10:14:19,488 [INFO] [ЗАПИСАНО] naprawa-zmywarek\maszewo\index.html
@@ -3533,8 +3533,8 @@
 2026-08-01 10:15:19,142 [INFO] [СГЕНЕРИРОВАНО] naprawa-zmywarek\szczecin\index.html
 2026-08-01 10:15:19,147 [INFO] [ЗАПИСАНО] naprawa-zmywarek\szczecin\index.html
 2026-08-01 10:15:19,164 [INFO] [RateLimiter] Защита API. Пауза 0.3 сек...
-2026-08-01 10:15:20,394 [INFO] [СГЕНЕРИРОВАНО] naprawa-piekarnikow\Goleniów\index.html
-2026-08-01 10:15:20,401 [INFO] [ЗАПИСАНО] naprawa-piekarnikow\Goleniów\index.html
+2026-08-01 10:15:20,394 [INFO] [СГЕНЕРИРОВАНО] naprawa-piekarnikow\goleniow\index.html
+2026-08-01 10:15:20,401 [INFO] [ЗАПИСАНО] naprawa-piekarnikow\goleniow\index.html
 2026-08-01 10:15:20,410 [INFO] [RateLimiter] Защита API. Пауза 0.4 сек...
 2026-08-01 10:15:21,607 [INFO] [СГЕНЕРИРОВАНО] naprawa-piekarnikow\maszewo\index.html
 2026-08-01 10:15:21,614 [INFO] [ЗАПИСАНО] naprawa-piekarnikow\maszewo\index.html
@@ -3550,8 +3550,8 @@
 2026-08-01 10:16:22,211 [INFO] [ЗАПИСАНО] naprawa-piekarnikow\stargard\index.html
 2026-08-01 10:16:23,167 [INFO] [СГЕНЕРИРОВАНО] naprawa-piekarnikow\szczecin\index.html
 2026-08-01 10:16:23,173 [INFO] [ЗАПИСАНО] naprawa-piekarnikow\szczecin\index.html
-2026-08-01 10:16:23,994 [INFO] [СГЕНЕРИРОВАНО] naprawa-suszarek\Goleniów\index.html
-2026-08-01 10:16:24,000 [INFO] [ЗАПИСАНО] naprawa-suszarek\Goleniów\index.html
+2026-08-01 10:16:23,994 [INFO] [СГЕНЕРИРОВАНО] naprawa-suszarek\goleniow\index.html
+2026-08-01 10:16:24,000 [INFO] [ЗАПИСАНО] naprawa-suszarek\goleniow\index.html
 2026-08-01 10:16:24,014 [INFO] [RateLimiter] Защита API. Пауза 53.1 сек...
 2026-08-01 10:17:18,347 [INFO] [СГЕНЕРИРОВАНО] naprawa-suszarek\maszewo\index.html
 2026-08-01 10:17:18,354 [INFO] [ЗАПИСАНО] naprawa-suszarek\maszewo\index.html
@@ -3570,8 +3570,8 @@
 2026-08-01 10:18:18,384 [INFO] [СГЕНЕРИРОВАНО] naprawa-suszarek\szczecin\index.html
 2026-08-01 10:18:18,392 [INFO] [ЗАПИСАНО] naprawa-suszarek\szczecin\index.html
 2026-08-01 10:18:18,402 [INFO] [RateLimiter] Защита API. Пауза 1.1 сек...
-2026-08-01 10:18:20,651 [INFO] [СГЕНЕРИРОВАНО] naprawa-pralko-suszarek\Goleniów\index.html
-2026-08-01 10:18:20,659 [INFO] [ЗАПИСАНО] naprawa-pralko-suszarek\Goleniów\index.html
+2026-08-01 10:18:20,651 [INFO] [СГЕНЕРИРОВАНО] naprawa-pralko-suszarek\goleniow\index.html
+2026-08-01 10:18:20,659 [INFO] [ЗАПИСАНО] naprawa-pralko-suszarek\goleniow\index.html
 2026-08-01 10:18:20,668 [INFO] [RateLimiter] Защита API. Пауза 0.6 сек...
 2026-08-01 10:18:22,318 [INFO] [СГЕНЕРИРОВАНО] naprawa-pralko-suszarek\gryfino\index.html
 2026-08-01 10:18:22,324 [INFO] [ЗАПИСАНО] naprawa-pralko-suszarek\gryfino\index.html
@@ -3597,14 +3597,14 @@
 2026-08-01 11:08:03,455 [INFO] Выполнение Health-Check для Groq API...
 2026-08-01 11:08:04,731 [INFO] Health-Check успешно пройден!
 2026-08-01 11:08:04,739 [INFO] Найдено 44 index.html страниц
-2026-08-01 11:08:04,764 [INFO] [ЗАПИСАНО] naprawa-pralek\goleniów\index.html
+2026-08-01 11:08:04,764 [INFO] [ЗАПИСАНО] naprawa-pralek\goleniow\index.html
 2026-08-01 11:08:04,773 [INFO] [ЗАПИСАНО] naprawa-pralek\maszewo\index.html
 2026-08-01 11:08:04,783 [INFO] [ЗАПИСАНО] naprawa-pralek\nowogard\index.html
 2026-08-01 11:08:04,793 [INFO] [ЗАПИСАНО] naprawa-pralek\police\index.html
 2026-08-01 11:08:04,807 [INFO] [ЗАПИСАНО] naprawa-pralek\pyrzyce\index.html
 2026-08-01 11:08:04,818 [INFO] [ЗАПИСАНО] naprawa-pralek\stargard\index.html
 2026-08-01 11:08:04,827 [INFO] [ЗАПИСАНО] naprawa-pralek\szczecin\index.html
-2026-08-01 11:08:04,838 [INFO] [ЗАПИСАНО] naprawa-lodowek\Goleniów\index.html
+2026-08-01 11:08:04,838 [INFO] [ЗАПИСАНО] naprawa-lodowek\goleniow\index.html
 2026-08-01 11:08:04,845 [INFO] [ЗАПИСАНО] naprawa-lodowek\Gryfino\index.html
 2026-08-01 11:08:04,856 [INFO] [ЗАПИСАНО] naprawa-lodowek\maszewo\index.html
 2026-08-01 11:08:04,862 [INFO] [ЗАПИСАНО] naprawa-lodowek\nowogard\index.html
@@ -3612,28 +3612,28 @@
 2026-08-01 11:08:04,878 [INFO] [ЗАПИСАНО] naprawa-lodowek\pyrzyce\index.html
 2026-08-01 11:08:04,888 [INFO] [ЗАПИСАНО] naprawa-lodowek\stargard\index.html
 2026-08-01 11:08:04,895 [INFO] [ЗАПИСАНО] naprawa-lodowek\szczecin\index.html
-2026-08-01 11:08:04,905 [INFO] [ЗАПИСАНО] naprawa-zmywarek\Goleniów\index.html
+2026-08-01 11:08:04,905 [INFO] [ЗАПИСАНО] naprawa-zmywarek\goleniow\index.html
 2026-08-01 11:08:04,912 [INFO] [ЗАПИСАНО] naprawa-zmywarek\maszewo\index.html
 2026-08-01 11:08:04,921 [INFO] [ЗАПИСАНО] naprawa-zmywarek\nowogard\index.html
 2026-08-01 11:08:04,928 [INFO] [ЗАПИСАНО] naprawa-zmywarek\police\index.html
 2026-08-01 11:08:04,938 [INFO] [ЗАПИСАНО] naprawa-zmywarek\pyrzyce\index.html
 2026-08-01 11:08:04,945 [INFO] [ЗАПИСАНО] naprawa-zmywarek\stargard\index.html
 2026-08-01 11:08:04,956 [INFO] [ЗАПИСАНО] naprawa-zmywarek\szczecin\index.html
-2026-08-01 11:08:04,962 [INFO] [ЗАПИСАНО] naprawa-piekarnikow\Goleniów\index.html
+2026-08-01 11:08:04,962 [INFO] [ЗАПИСАНО] naprawa-piekarnikow\goleniow\index.html
 2026-08-01 11:08:04,971 [INFO] [ЗАПИСАНО] naprawa-piekarnikow\maszewo\index.html
 2026-08-01 11:08:04,978 [INFO] [ЗАПИСАНО] naprawa-piekarnikow\nowogard\index.html
 2026-08-01 11:08:04,988 [INFO] [ЗАПИСАНО] naprawa-piekarnikow\police\index.html
 2026-08-01 11:08:04,995 [INFO] [ЗАПИСАНО] naprawa-piekarnikow\pyrzyce\index.html
 2026-08-01 11:08:05,005 [INFO] [ЗАПИСАНО] naprawa-piekarnikow\stargard\index.html
 2026-08-01 11:08:05,012 [INFO] [ЗАПИСАНО] naprawa-piekarnikow\szczecin\index.html
-2026-08-01 11:08:05,026 [INFO] [ЗАПИСАНО] naprawa-suszarek\Goleniów\index.html
+2026-08-01 11:08:05,026 [INFO] [ЗАПИСАНО] naprawa-suszarek\goleniow\index.html
 2026-08-01 11:08:05,034 [INFO] [ЗАПИСАНО] naprawa-suszarek\maszewo\index.html
 2026-08-01 11:08:05,041 [INFO] [ЗАПИСАНО] naprawa-suszarek\nowogard\index.html
 2026-08-01 11:08:05,048 [INFO] [ЗАПИСАНО] naprawa-suszarek\police\index.html
 2026-08-01 11:08:05,057 [INFO] [ЗАПИСАНО] naprawa-suszarek\pyrzyce\index.html
 2026-08-01 11:08:05,066 [INFO] [ЗАПИСАНО] naprawa-suszarek\stargard\index.html
 2026-08-01 11:08:05,075 [INFO] [ЗАПИСАНО] naprawa-suszarek\szczecin\index.html
-2026-08-01 11:08:05,083 [INFO] [ЗАПИСАНО] naprawa-pralko-suszarek\Goleniów\index.html
+2026-08-01 11:08:05,083 [INFO] [ЗАПИСАНО] naprawa-pralko-suszarek\goleniow\index.html
 2026-08-01 11:08:05,091 [INFO] [ЗАПИСАНО] naprawa-pralko-suszarek\gryfino\index.html
 2026-08-01 11:08:05,099 [INFO] [ЗАПИСАНО] naprawa-pralko-suszarek\maszewo\index.html
 2026-08-01 11:08:05,108 [INFO] [ЗАПИСАНО] naprawa-pralko-suszarek\nowogard\index.html
@@ -3646,14 +3646,14 @@
 2026-08-01 11:08:16,534 [INFO] Выполнение Health-Check для Groq API...
 2026-08-01 11:08:17,027 [INFO] Health-Check успешно пройден!
 2026-08-01 11:08:17,033 [INFO] Найдено 44 index.html страниц
-2026-08-01 11:08:17,091 [INFO] [ЗАПИСАНО] naprawa-pralek\goleniów\index.html
+2026-08-01 11:08:17,091 [INFO] [ЗАПИСАНО] naprawa-pralek\goleniow\index.html
 2026-08-01 11:08:17,242 [INFO] [ЗАПИСАНО] naprawa-pralek\maszewo\index.html
 2026-08-01 11:08:17,382 [INFO] [ЗАПИСАНО] naprawa-pralek\nowogard\index.html
 2026-08-01 11:08:17,523 [INFO] [ЗАПИСАНО] naprawa-pralek\police\index.html
 2026-08-01 11:08:17,664 [INFO] [ЗАПИСАНО] naprawa-pralek\pyrzyce\index.html
 2026-08-01 11:08:17,814 [INFO] [ЗАПИСАНО] naprawa-pralek\stargard\index.html
 2026-08-01 11:08:17,969 [INFO] [ЗАПИСАНО] naprawa-pralek\szczecin\index.html
-2026-08-01 11:08:18,107 [INFO] [ЗАПИСАНО] naprawa-lodowek\Goleniów\index.html
+2026-08-01 11:08:18,107 [INFO] [ЗАПИСАНО] naprawa-lodowek\goleniow\index.html
 2026-08-01 11:08:18,243 [INFO] [ЗАПИСАНО] naprawa-lodowek\Gryfino\index.html
 2026-08-01 11:08:18,377 [INFO] [ЗАПИСАНО] naprawa-lodowek\maszewo\index.html
 2026-08-01 11:08:18,513 [INFO] [ЗАПИСАНО] naprawa-lodowek\nowogard\index.html
@@ -3661,28 +3661,28 @@
 2026-08-01 11:08:18,792 [INFO] [ЗАПИСАНО] naprawa-lodowek\pyrzyce\index.html
 2026-08-01 11:08:18,933 [INFO] [ЗАПИСАНО] naprawa-lodowek\stargard\index.html
 2026-08-01 11:08:19,063 [INFO] [ЗАПИСАНО] naprawa-lodowek\szczecin\index.html
-2026-08-01 11:08:19,204 [INFO] [ЗАПИСАНО] naprawa-zmywarek\Goleniów\index.html
+2026-08-01 11:08:19,204 [INFO] [ЗАПИСАНО] naprawa-zmywarek\goleniow\index.html
 2026-08-01 11:08:19,339 [INFO] [ЗАПИСАНО] naprawa-zmywarek\maszewo\index.html
 2026-08-01 11:08:19,485 [INFO] [ЗАПИСАНО] naprawa-zmywarek\nowogard\index.html
 2026-08-01 11:08:19,627 [INFO] [ЗАПИСАНО] naprawa-zmywarek\police\index.html
 2026-08-01 11:08:19,766 [INFO] [ЗАПИСАНО] naprawa-zmywarek\pyrzyce\index.html
 2026-08-01 11:08:19,897 [INFO] [ЗАПИСАНО] naprawa-zmywarek\stargard\index.html
 2026-08-01 11:08:20,031 [INFO] [ЗАПИСАНО] naprawa-zmywarek\szczecin\index.html
-2026-08-01 11:08:20,165 [INFO] [ЗАПИСАНО] naprawa-piekarnikow\Goleniów\index.html
+2026-08-01 11:08:20,165 [INFO] [ЗАПИСАНО] naprawa-piekarnikow\goleniow\index.html
 2026-08-01 11:08:20,296 [INFO] [ЗАПИСАНО] naprawa-piekarnikow\maszewo\index.html
 2026-08-01 11:08:20,436 [INFO] [ЗАПИСАНО] naprawa-piekarnikow\nowogard\index.html
 2026-08-01 11:08:20,584 [INFO] [ЗАПИСАНО] naprawa-piekarnikow\police\index.html
 2026-08-01 11:08:20,705 [INFO] [ЗАПИСАНО] naprawa-piekarnikow\pyrzyce\index.html
 2026-08-01 11:08:20,843 [INFO] [ЗАПИСАНО] naprawa-piekarnikow\stargard\index.html
 2026-08-01 11:08:20,991 [INFO] [ЗАПИСАНО] naprawa-piekarnikow\szczecin\index.html
-2026-08-01 11:08:21,108 [INFO] [ЗАПИСАНО] naprawa-suszarek\Goleniów\index.html
+2026-08-01 11:08:21,108 [INFO] [ЗАПИСАНО] naprawa-suszarek\goleniow\index.html
 2026-08-01 11:08:21,251 [INFO] [ЗАПИСАНО] naprawa-suszarek\maszewo\index.html
 2026-08-01 11:08:21,381 [INFO] [ЗАПИСАНО] naprawa-suszarek\nowogard\index.html
 2026-08-01 11:08:21,513 [INFO] [ЗАПИСАНО] naprawa-suszarek\police\index.html
 2026-08-01 11:08:21,642 [INFO] [ЗАПИСАНО] naprawa-suszarek\pyrzyce\index.html
 2026-08-01 11:08:21,783 [INFO] [ЗАПИСАНО] naprawa-suszarek\stargard\index.html
 2026-08-01 11:08:21,927 [INFO] [ЗАПИСАНО] naprawa-suszarek\szczecin\index.html
-2026-08-01 11:08:22,039 [INFO] [ЗАПИСАНО] naprawa-pralko-suszarek\Goleniów\index.html
+2026-08-01 11:08:22,039 [INFO] [ЗАПИСАНО] naprawa-pralko-suszarek\goleniow\index.html
 2026-08-01 11:08:22,116 [INFO] [ЗАПИСАНО] naprawa-pralko-suszarek\gryfino\index.html
 2026-08-01 11:08:22,221 [INFO] [ЗАПИСАНО] naprawa-pralko-suszarek\maszewo\index.html
 2026-08-01 11:08:22,333 [INFO] [ЗАПИСАНО] naprawa-pralko-suszarek\nowogard\index.html
@@ -4017,8 +4017,8 @@
 2026-08-01 13:20:44,667 [INFO] Выполнение Health-Check для Groq API...
 2026-08-01 13:20:45,237 [INFO] Health-Check успешно пройден!
 2026-08-01 13:20:45,244 [INFO] Найдено 44 index.html страниц
-2026-08-01 13:20:46,214 [INFO] [СГЕНЕРИРОВАНО] naprawa-pralek\goleniów\index.html
-2026-08-01 13:20:46,228 [INFO] [ЗАПИСАНО] naprawa-pralek\goleniów\index.html
+2026-08-01 13:20:46,214 [INFO] [СГЕНЕРИРОВАНО] naprawa-pralek\goleniow\index.html
+2026-08-01 13:20:46,228 [INFO] [ЗАПИСАНО] naprawa-pralek\goleniow\index.html
 2026-08-01 13:20:47,558 [INFO] [СГЕНЕРИРОВАНО] naprawa-pralek\maszewo\index.html
 2026-08-01 13:20:47,568 [INFO] [ЗАПИСАНО] naprawa-pralek\maszewo\index.html
 2026-08-01 13:20:48,662 [INFO] [СГЕНЕРИРОВАНО] naprawa-pralek\nowogard\index.html
@@ -4069,22 +4069,22 @@
         
 2026-08-01 16:58:54,081 [INFO] Выполнение Health-Check для Groq API...
 2026-08-01 16:58:54,713 [INFO] Health-Check успешно пройден!
-2026-08-01 16:58:57,354 [ERROR] Не удалось безопасно записать naprawa-pralek\goleniów\amica.html: [WinError 183] Невозможно создать файл, так как он уже существует: 'naprawa-pralek\\goleniów\\amica.html.bak' -> 'naprawa-pralek\\goleniów\\amica.html'
-2026-08-01 16:58:58,562 [ERROR] Не удалось безопасно записать naprawa-pralek\goleniów\beko.html: [WinError 183] Невозможно создать файл, так как он уже существует: 'naprawa-pralek\\goleniów\\beko.html.bak' -> 'naprawa-pralek\\goleniów\\beko.html'
+2026-08-01 16:58:57,354 [ERROR] Не удалось безопасно записать naprawa-pralek\goleniow\amica.html: [WinError 183] Невозможно создать файл, так как он уже существует: 'naprawa-pralek\\goleniow\\amica.html.bak' -> 'naprawa-pralek\\goleniow\\amica.html'
+2026-08-01 16:58:58,562 [ERROR] Не удалось безопасно записать naprawa-pralek\goleniow\beko.html: [WinError 183] Невозможно создать файл, так как он уже существует: 'naprawa-pralek\\goleniow\\beko.html.bak' -> 'naprawa-pralek\\goleniow\\beko.html'
 2026-08-01 16:58:59,009 [WARNING] [429 Rate Limit] Ключ #1 исчерпан. Ротация + пауза 8.0 сек (по retry-after)...
 2026-08-01 16:58:59,009 [INFO]  Переключение на API ключ #2
-2026-08-01 16:59:08,338 [ERROR] Не удалось безопасно записать naprawa-pralek\goleniów\bosch.html: [WinError 183] Невозможно создать файл, так как он уже существует: 'naprawa-pralek\\goleniów\\bosch.html.bak' -> 'naprawa-pralek\\goleniów\\bosch.html'
-2026-08-01 16:59:09,681 [ERROR] Не удалось безопасно записать naprawa-pralek\goleniów\candy.html: [WinError 183] Невозможно создать файл, так как он уже существует: 'naprawa-pralek\\goleniów\\candy.html.bak' -> 'naprawa-pralek\\goleniów\\candy.html'
-2026-08-01 16:59:10,851 [ERROR] Не удалось безопасно записать naprawa-pralek\goleniów\electrolux.html: [WinError 183] Невозможно создать файл, так как он уже существует: 'naprawa-pralek\\goleniów\\electrolux.html.bak' -> 'naprawa-pralek\\goleniów\\electrolux.html'
+2026-08-01 16:59:08,338 [ERROR] Не удалось безопасно записать naprawa-pralek\goleniow\bosch.html: [WinError 183] Невозможно создать файл, так как он уже существует: 'naprawa-pralek\\goleniow\\bosch.html.bak' -> 'naprawa-pralek\\goleniow\\bosch.html'
+2026-08-01 16:59:09,681 [ERROR] Не удалось безопасно записать naprawa-pralek\goleniow\candy.html: [WinError 183] Невозможно создать файл, так как он уже существует: 'naprawa-pralek\\goleniow\\candy.html.bak' -> 'naprawa-pralek\\goleniow\\candy.html'
+2026-08-01 16:59:10,851 [ERROR] Не удалось безопасно записать naprawa-pralek\goleniow\electrolux.html: [WinError 183] Невозможно создать файл, так как он уже существует: 'naprawa-pralek\\goleniow\\electrolux.html.bak' -> 'naprawa-pralek\\goleniow\\electrolux.html'
 2026-08-01 16:59:11,414 [WARNING] [429 Rate Limit] Ключ #2 исчерпан. Ротация + пауза 12.0 сек (по retry-after)...
 2026-08-01 16:59:11,414 [INFO]  Переключение на API ключ #1
-2026-08-01 16:59:24,577 [ERROR] Не удалось безопасно записать naprawa-pralek\goleniów\gorenje.html: [WinError 183] Невозможно создать файл, так как он уже существует: 'naprawa-pralek\\goleniów\\gorenje.html.bak' -> 'naprawa-pralek\\goleniów\\gorenje.html'
-2026-08-01 16:59:25,791 [ERROR] Не удалось безопасно записать naprawa-pralek\goleniów\haier.html: [WinError 183] Невозможно создать файл, так как он уже существует: 'naprawa-pralek\\goleniów\\haier.html.bak' -> 'naprawa-pralek\\goleniów\\haier.html'
+2026-08-01 16:59:24,577 [ERROR] Не удалось безопасно записать naprawa-pralek\goleniow\gorenje.html: [WinError 183] Невозможно создать файл, так как он уже существует: 'naprawa-pralek\\goleniow\\gorenje.html.bak' -> 'naprawa-pralek\\goleniow\\gorenje.html'
+2026-08-01 16:59:25,791 [ERROR] Не удалось безопасно записать naprawa-pralek\goleniow\haier.html: [WinError 183] Невозможно создать файл, так как он уже существует: 'naprawa-pralek\\goleniow\\haier.html.bak' -> 'naprawa-pralek\\goleniow\\haier.html'
 2026-08-01 16:59:26,145 [WARNING] [429 Rate Limit] Ключ #1 исчерпан. Ротация + пауза 12.0 сек (по retry-after)...
 2026-08-01 16:59:26,146 [INFO]  Переключение на API ключ #2
 2026-08-01 16:59:28,361 [WARNING] 
 [ВНИМАНИЕ] Получен сигнал прерывания (2). Завершаем текущие операции...
-2026-08-01 16:59:39,580 [ERROR] Не удалось безопасно записать naprawa-pralek\goleniów\hisense.html: [WinError 183] Невозможно создать файл, так как он уже существует: 'naprawa-pralek\\goleniów\\hisense.html.bak' -> 'naprawa-pralek\\goleniów\\hisense.html'
+2026-08-01 16:59:39,580 [ERROR] Не удалось безопасно записать naprawa-pralek\goleniow\hisense.html: [WinError 183] Невозможно создать файл, так как он уже существует: 'naprawa-pralek\\goleniow\\hisense.html.bak' -> 'naprawa-pralek\\goleniow\\hisense.html'
 2026-08-01 16:59:39,580 [WARNING] Работа прервана пользователем. Сохраняем статистику...
 2026-08-01 16:59:39,581 [INFO] 
         ═══════════════════════════════════════
@@ -6101,5 +6101,21 @@
         Оценка токенов:      ~825116
         Оценка стоимости:    ~$0.08251
         Время выполнения:    4159.9 сек.
+        ═══════════════════════════════════════
+        
+2026-08-02 21:35:39,450 [INFO] Выполнение Health-Check для Groq API...
+2026-08-02 21:35:40,041 [INFO] Health-Check успешно пройден!
+2026-08-02 21:36:55,203 [INFO] 
+        ═══════════════════════════════════════
+        СТАТИСТИКА ОБРАБОТКИ
+        ═══════════════════════════════════════
+        Всего страниц:       564
+        Сгенерировано AI:    0
+        Записано в HTML:     564
+        Ошибок:              0
+        Вызовов API:         0 (Ошибок API: 0)
+        Оценка токенов:      ~0
+        Оценка стоимости:    ~$0.00000
+        Время выполнения:    75.8 сек.
         ═══════════════════════════════════════
         

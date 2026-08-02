@@ -22,8 +22,8 @@ ROOT_DIR = Path(".")
 
 # Слаги города -> как они должны выглядеть в тексте (можно расширять)
 CITY_NAMES = {
-    "goleniów": ["Goleniów", "Goleniówie", "Goleniówa"],
-    "Goleniów": ["Goleniów", "Goleniówie", "Goleniówa"],
+    "goleniow": ["goleniow", "goleniowie", "goleniowa"],
+    "goleniow": ["goleniow", "goleniowie", "goleniowa"],
     "nowogard": ["Nowogard", "Nowogardzie", "Nowogardu"],
     "maszewo": ["Maszewo", "Maszewie"],
     "szczecin": ["Szczecin", "Szczecinie", "Szczecina"],

@@ -12,7 +12,7 @@ SERVICES = {
 
 CITIES = {
     "szczecin": "Szczecin", "stargard": "Stargard",
-    "Goleniów": "Goleniów", "nowogard": "Nowogard",
+    "goleniow": "goleniow", "nowogard": "Nowogard",
     "maszewo": "Maszewo", "police": "Police",
     "pyrzyce": "Pyrzyce", "gryfino": "Gryfino"
 }

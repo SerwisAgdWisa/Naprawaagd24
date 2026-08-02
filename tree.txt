@@ -64,7 +64,7 @@ C:.
 +   css
 -       style.css
 -       
-+   Goleniów
++   goleniow
 -       index.html
 -       
 +   maszewo
@@ -73,7 +73,7 @@ C:.
 +   naprawa-lodowek
 -   -   index.html
 -   -   
--   +   Goleniów
+-   +   goleniow
 -   -       amica.html
 -   -       beko.html
 -   -       bosch.html
@@ -220,7 +220,7 @@ C:.
 +   naprawa-piekarnikow
 -   -   index.html
 -   -   
--   +   Goleniów
+-   +   goleniow
 -   -       amica.html
 -   -       beko.html
 -   -       bosch.html
@@ -459,7 +459,7 @@ C:.
 +   naprawa-pralko-suszarek
 -   -   index.html
 -   -   
--   +   Goleniów
+-   +   goleniow
 -   -       aeg.html
 -   -       beko.html
 -   -       bosch.html
@@ -582,7 +582,7 @@ C:.
 +   naprawa-suszarek
 -   -   index.html
 -   -   
--   +   Goleniów
+-   +   goleniow
 -   -       amica.html
 -   -       beko.html
 -   -       bosch.html
@@ -690,7 +690,7 @@ C:.
 +   naprawa-zmywarek
 -   -   index.html
 -   -   
--   +   Goleniów
+-   +   goleniow
 -   -       amica.html
 -   -       beko.html
 -   -       bosch.html

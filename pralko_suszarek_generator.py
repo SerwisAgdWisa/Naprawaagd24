@@ -6,7 +6,7 @@ DOMAIN = "https://naprawaagd24.pl"
 CITIES = {
     "szczecin": "Szczecin",
     "stargard": "Stargard",
-    "Goleniów": "Goleniów",
+    "goleniow": "goleniow",
     "nowogard": "Nowogard",
     "maszewo": "Maszewo",
     "police": "Police",
@@ -365,8 +365,8 @@ def create_all():
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Naprawa Pralko-Suszarek | Szczecin, Stargard, Goleniów | 721 988 949</title>
-    <meta name="description" content="Naprawa pralko-suszarek Szczecin, Stargard, Goleniów i okolice. Nie suszy? Pranie mokre? Naprawiamy wszystkie marki. Tel: 721 988 949">
+    <title>Naprawa Pralko-Suszarek | Szczecin, Stargard, goleniow | 721 988 949</title>
+    <meta name="description" content="Naprawa pralko-suszarek Szczecin, Stargard, goleniow i okolice. Nie suszy? Pranie mokre? Naprawiamy wszystkie marki. Tel: 721 988 949">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
