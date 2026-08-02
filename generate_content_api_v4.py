@@ -54,7 +54,7 @@ def rotate_api_key():
         logging.info(f" Переключение на API ключ #{current_key_index + 1}")
 
 GROQ_MODEL = os.getenv("GROQ_MODEL", "llama-3.1-8b-instant")
-GROQ_TEMP = float(os.getenv("GROQ_TEMPERATURE", "0.45"))  # Слегка поднята температура для вариативности
+GROQ_TEMP = float(os.getenv("GROQ_TEMPERATURE", "0.45"))
 RATE_LIMIT = int(os.getenv("RATE_LIMIT_PER_MINUTE", "12"))
 DB_PATH = Path(os.getenv("CACHE_DB_PATH", "content_cache.db"))
 SITE_DOMAIN = os.getenv("SITE_DOMAIN", "https://naprawaagd24.pl")
@@ -81,7 +81,14 @@ APPLIANCE_NAMES = {
     "naprawa-pralko-suszarek": "pralko-suszarki",
 }
 
-# Вариативность ролей для избежания одинакового стиля
+DEFAULT_FALLBACK_ERRORS = [
+    {"code": "E01 / F01", "cause": "Błąd blokady drzwi lub czujnika zamknięcia", "part": "blokada drzwi / moduł"},
+    {"code": "E02 / F02", "cause": "Problem z dopływem wody lub zaworem ssącym", "part": "elektrozawór / filtr"},
+    {"code": "E03 / F03", "cause": "Problem z odpływem wody lub zablokowana pompa", "part": "pompa odpływowa / filtr"},
+    {"code": "E04 / F04", "cause": "Weryfikacja obwodu grzania i czujnika NTC", "part": "grzałka / czujnik NTC"},
+    {"code": "E05 / F05", "cause": "Usterka silnika lub zużycie szczotek węglowych", "part": "szczotki silnika / prądniczka"}
+]
+
 PERSPECTIVES = [
     "Jesteś inżynierem elektronikiem specjalizującym się w modułach sterujących AGD.",
     "Jesteś praktycznym mobilnym serwisantem AGD z 15-letnim doświadczeniem w terenie.",
@@ -203,7 +210,6 @@ def safe_write_file(path: Path, content: str):
     backup_path = path.with_suffix(path.suffix + ".bak")
     try:
         if path.exists():
-            # На Windows os.replace безопасно перезаписывает целевой файл
             os.replace(path, backup_path)
         
         path.write_text(content, encoding="utf-8", errors="replace")
@@ -293,7 +299,6 @@ def extract_existing_seo_text(soup: BeautifulSoup) -> str:
     return combined[:1200] + "..." if len(combined) > 1200 else combined
 
 def ensure_canonical_tag(soup: BeautifulSoup, rel_path: Path) -> BeautifulSoup:
-    """Устанавливает абсолютный canonical URL для исключения дублей в Google."""
     clean_url = f"{SITE_DOMAIN}/{rel_path.as_posix()}"
     head = soup.find('head')
     if head:
@@ -332,11 +337,11 @@ def generate_with_groq(prompt: str, system_prompt: str, model: str = GROQ_MODEL,
                 if len(GROQ_API_KEYS) > 1:
                     logging.warning(
                         f"[429 Rate Limit] Ключ #{current_key_index + 1} исчерпан. "
-                        f"Ротация + пауза {wait_time:.1f} сек (по retry-after)..."
+                        f"Ротация + пауза {wait_time:.1f} сек..."
                     )
                     rotate_api_key()
                 else:
-                    logging.warning(f"[429 Rate Limit] Ждём {wait_time:.1f} сек (по retry-after)...")
+                    logging.warning(f"[429 Rate Limit] Ждём {wait_time:.1f} сек...")
 
                 with rate_limiter.lock:
                     rate_limiter.requests.clear()
@@ -366,34 +371,76 @@ def generate_with_groq(prompt: str, system_prompt: str, model: str = GROQ_MODEL,
     raise SEOGeneratorError("Неизвестная ошибка связи с API.")
 
 def update_html_dom(soup: BeautifulSoup, generated_text: str, appliance: str, city: str, brand: str) -> BeautifulSoup:
+    # 1. Удаляем старые генерированные AI-блоки
     for old_tag in soup.find_all(['section', 'div'], class_=['local-info', MARKER_CLASS]):
         old_tag.decompose()
 
-    paragraphs_list = split_into_paragraphs(generated_text)
-    paragraphs_html = "".join(f"<p>{p}</p>" for p in paragraphs_list)
+    # 2. Вставляем СВЕЖИЙ AI-контент перед футером или в конец main
+    paragraphs = split_into_paragraphs(generated_text)
+    p_html = "".join(f"<p style='margin-bottom: 1rem;'>{p}</p>" for p in paragraphs)
     
-    h2_title = f"Specyfika serwisu i naprawy {appliance} {brand_display_name(brand)} w {city.capitalize()}"
-    
-    new_block_html = f"""
-    <section class="{MARKER_CLASS}" style="padding: 25px; background: #f8f9fa; border-radius: 8px; margin: 30px 0;">
-        <div class="container">
-            <h2 style="font-size: 1.4rem; margin-bottom: 15px;">{h2_title}</h2>
-            {paragraphs_html}
-        </div>
+    new_section_html = f"""
+    <section class="{MARKER_CLASS}" style="background: #1a1d20; padding: 2rem; border-radius: 12px; margin: 2rem 0; color: #e1e1e1;">
+        <h3 style="color: #3b82f6; margin-bottom: 1rem;">Specyfika serwisu {brand_display_name(brand)} w mieście {city.capitalize()}</h3>
+        {p_html}
     </section>
     """
-    
-    new_section = BeautifulSoup(new_block_html, 'html.parser').find('section')
+    new_section_soup = BeautifulSoup(new_section_html, 'html.parser')
 
     main_tag = soup.find('main')
     if main_tag:
-        main_tag.append(new_section)
+        main_tag.append(new_section_soup)
     else:
-        footer_tag = soup.find('footer')
-        if footer_tag:
-            footer_tag.insert_before(new_section)
-        elif soup.body:
-            soup.body.append(new_section)
+        soup.body.append(new_section_soup)
+
+    # 3. Безопасная замена мусорных списков ошибок
+    appliance_type = APPLIANCE_NAMES.get(appliance, appliance)
+    errors_list = None
+    for db in [TECH_FACTS_DB, AUTO_TECH_FACTS_DB, TECH_FACTS_DB_EXTRA]:
+        if isinstance(db, dict) and brand in db:
+            val = db[brand]
+            if isinstance(val, list):
+                errors_list = val
+                break
+            if isinstance(val, dict):
+                for sub_key in [appliance, appliance_type]:
+                    if sub_key in val and isinstance(val[sub_key], dict) and "common_errors" in val[sub_key]:
+                        errors_list = val[sub_key]["common_errors"]
+                        break
+                if errors_list:
+                    break
+                for sub_k, sub_v in val.items():
+                    if isinstance(sub_v, dict) and "common_errors" in sub_v:
+                        errors_list = sub_v["common_errors"]
+                        break
+        if errors_list:
+            break
+
+    if not errors_list:
+        errors_list = DEFAULT_FALLBACK_ERRORS
+
+    garbage_markers = ['wymaga diagnozy technicznej', 'awaria układu: ułożenie', 'błąd systemowy']
+    
+    for ul in soup.find_all(['ul', 'ol']):
+        ul_text = ul.get_text().lower()
+        if any(marker in ul_text for marker in garbage_markers):
+            new_lis = []
+            for err in errors_list[:8]:
+                code = err.get('code', 'Błąd')
+                cause = err.get('cause', 'Wymaga weryfikacji')
+                part = err.get('part', 'diagnostyka')
+                new_lis.append(
+                    f"<li><strong>Kod {code}</strong> – {cause} "
+                    f"<span style='color: #9da5b1; font-size: 0.9rem;'>(kontrola: {part})</span>.</li>"
+                )
+            
+            ul_classes = ul.get('class', [])
+            ul_class_str = f" class=\"{' '.join(ul_classes)}\"" if ul_classes else ""
+            new_ul_html = f"<ul{ul_class_str}>\n" + "\n".join(new_lis) + "\n</ul>"
+            
+            ul.clear()
+            for child in BeautifulSoup(new_ul_html, 'html.parser').children:
+                ul.append(child)
 
     return soup
 
@@ -445,13 +492,31 @@ def main():
             metrics.errors += 1
             continue
 
-        brand_tech = (
-            TECH_FACTS_DB.get(brand_slug, {}).get(appliance_dir)
-            or AUTO_TECH_FACTS_DB.get(brand_slug, {}).get(appliance_dir)
-            or TECH_FACTS_DB_EXTRA.get(brand_slug, {}).get(appliance_dir)
-        )
-        if not brand_tech or not brand_tech.get("common_errors"):
-            continue
+        # Гибкий поиск ошибок по брендам и категориям
+        appliance_type = APPLIANCE_NAMES.get(appliance_dir, appliance_dir)
+        errors_list = None
+        for tech_db in [TECH_FACTS_DB, AUTO_TECH_FACTS_DB, TECH_FACTS_DB_EXTRA]:
+            if isinstance(tech_db, dict) and brand_slug in tech_db:
+                val = tech_db[brand_slug]
+                if isinstance(val, list):
+                    errors_list = val
+                    break
+                if isinstance(val, dict):
+                    for sub_key in [appliance_dir, appliance_type]:
+                        if sub_key in val and isinstance(val[sub_key], dict) and "common_errors" in val[sub_key]:
+                            errors_list = val[sub_key]["common_errors"]
+                            break
+                    if errors_list:
+                        break
+                    for sub_k, sub_v in val.items():
+                        if isinstance(sub_v, dict) and "common_errors" in sub_v:
+                            errors_list = sub_v["common_errors"]
+                            break
+            if errors_list:
+                break
+
+        if not errors_list:
+            errors_list = DEFAULT_FALLBACK_ERRORS
 
         cached_text = None if args.force else db.get(cache_key)
 
@@ -464,14 +529,13 @@ def main():
             extracted_streets = extract_streets_from_soup(soup)
             streets_text = ", ".join(extracted_streets) if extracted_streets else "całe miasto i okolice"
 
-            errors = brand_tech["common_errors"]
-            # Перемешиваем ошибки для разной структуры
-            random.shuffle(errors)
+            errors_to_use = list(errors_list)
+            random.shuffle(errors_to_use)
             errors_text = "\n".join(
-                f"- Kod/Usterka: {e['code']}, przyczyna: {e['cause']}, część: {e['part']}" for e in errors
+                f"- Kod/Usterka: {e.get('code', 'Błąd')}, przyczyna: {e.get('cause', 'Weryfikacja')}, część: {e.get('part', 'diagnostyka')}"
+                for e in errors_to_use[:5]
             )
 
-            # Выбираем случайную роль и угол подачи
             selected_perspective = random.choice(PERSPECTIVES)
             
             system_prompt = f"""{selected_perspective} Piszesz unikalny, profesjonalny tekst SEO w języku polskim dla serwisu AGD.
@@ -509,11 +573,9 @@ Zainspiruj się poniższym tekstem, ale NIE POWTARZAJ GO:
 
         if args.apply and cached_text and not args.dry_run:
             try:
-                # 1. Вставляем уникальный текст
                 updated_soup = update_html_dom(
-                    soup, cached_text, APPLIANCE_NAMES[appliance_dir], city_slug, brand_slug
+                    soup, cached_text, appliance_dir, city_slug, brand_slug
                 )
-                # 2. Добавляем canonical tag для SEO
                 updated_soup = ensure_canonical_tag(updated_soup, path)
                 
                 safe_write_file(path, str(updated_soup))

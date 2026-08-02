@@ -784,16 +784,16 @@ C:.
 -           siemens.html
 -           whirlpool.html
 -           
-+   nowogard
++   Nowogard
 -       index.html
 -       
 +   police
 -       index.html
 -       
-+   pyrzyce
++   Pyrzyce
 -       index.html
 -       
-+   stargard
++   Stargard
 -       index.html
 -       
 +   szczecin
