@@ -1,416 +1,176 @@
 /* ==========================================
-   PREMIUM THEME — графит + оранжевый акцент
-   Override-стиль поверх инлайновых стилей сайта.
+   DARK UI DASHBOARD — STYLE.CSS
    ========================================== */
 
+/* 1. Базовые переменные и сброс */
 :root {
-    --bg-main: #14171a;
-    --bg-card: #1e2228;
-    --accent-orange: #ff6b00;
-    --accent-hover: #e05e00;
-    --text-white: #ffffff;
-    --text-muted: #9da5b1;
-    --border-card: #2a2f38;
+    --bg-main: #1c1e22;          /* Основной темный фон */
+    --card-bg: #272a2e;          /* Фон крупных карточек-секции */
+    --item-bg: #1e2024;          /* Фон внутренних элементов и полей ввода */
+    --border-color: #383c43;     /* Серые границы */
+    --accent-orange: #f26522;    /* Оранжевый акцент */
+    --accent-hover: #d95316;     /* Оранжевый при наведении */
+    --text-primary: #ffffff;     /* Белый текст */
+    --text-secondary: #9aa0a6;   /* Серый текст */
 }
 
-/* ---- RESET ---- */
-* { box-sizing: border-box; }
-body {
-    background-color: var(--bg-main) !important;
-    color: var(--text-white) !important;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    -webkit-font-smoothing: antialiased;
 }
 
-h1, h2, h3, h4, p, span, a {
-    text-shadow: none !important;
-}
-
-h1, h2, h3 {
-    color: var(--text-white) !important;
-    font-weight: 800;
-}
-
-p, .description {
-    color: var(--text-muted) !important;
-}
-
-header, .header, .top-bar {
-    background-color: var(--bg-main) !important;
-    border-bottom: 1px solid var(--border-card);
-    padding: 12px 16px;
-}
-
-.logo, .logo-text {
-    color: var(--text-white) !important;
-    font-weight: 800;
-    text-decoration: none;
-}
-
-.phone, .phone-link {
-    color: var(--accent-orange) !important;
-    font-weight: 700;
-    text-decoration: none;
-}
-
-.btn, button, input[type="submit"], .cta-button, .btn-primary, .submit-btn {
-    background: var(--accent-orange) !important;
-    color: #ffffff !important;
-    border: none !important;
-    border-radius: 12px !important;
-    padding: 16px 24px !important;
-    font-size: 1rem !important;
-    font-weight: 700 !important;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    cursor: pointer;
-    box-shadow: 0 4px 18px rgba(255, 107, 0, 0.35) !important;
-    transition: all 0.2s ease-in-out;
-    text-decoration: none;
-    display: inline-block;
-    text-align: center;
-}
-
-.btn:active, button:active, .cta-button:active {
-    background: var(--accent-hover) !important;
-    transform: scale(0.98);
-}
-
-.floating-call-button {
-    background-color: var(--accent-orange) !important;
-    box-shadow: 0 4px 14px rgba(255, 107, 0, 0.45) !important;
-}
-
-.floating-call-button:hover {
-    background-color: var(--accent-hover) !important;
-}
-
-.card,
-.service-card, .service-item,
-.city-card, .city-item,
-.service-link-card {
-    background-color: var(--bg-card) !important;
-    border: 1px solid var(--border-card) !important;
-    border-radius: 16px !important;
-    padding: 16px !important;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25) !important;
-    text-decoration: none;
-    color: var(--text-white) !important;
-}
-
-input[type="text"], input[type="tel"], input[type="email"], select, textarea {
-    background-color: #0d0f11 !important;
-    border: 1px solid var(--border-card) !important;
-    color: #ffffff !important;
-    border-radius: 10px !important;
-    padding: 14px !important;
-    box-sizing: border-box;
-}
-
-.map-section {
-    background-color: var(--bg-main) !important;
+body {
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     padding: 40px 20px;
-    text-align: center;
-}
-
-.map-section .map-container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.map-section .map-title {
-    color: var(--text-white) !important;
-    font-size: 1.8rem;
-    font-weight: 800;
-    margin-bottom: 8px;
-}
-
-.map-section .map-desc {
-    color: var(--text-muted) !important;
-    font-size: 1rem;
-    margin-bottom: 24px;
-}
-
-.map-section .map-wrapper {
-    width: 100%;
-    height: 400px;
-    border-radius: 16px;
-    overflow: hidden;
-    border: 1px solid var(--border-card);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
-}
-
-.map-section .map-wrapper iframe {
-    border: none !important;
-    width: 100%;
-    height: 100%;
-}
-
-.map-section .map-subtext {
-    color: var(--text-muted) !important;
-    font-size: 0.9rem;
-    margin-top: 16px;
-}
-
-.map-section .map-phone {
-    color: var(--accent-orange) !important;
-    font-weight: 700;
-    text-decoration: none;
-}
-
-@media (max-width: 768px) {
-
-    body {
-        padding-bottom: 75px !important;
-    }
-
-    .services-grid,
-    .cities-grid,
-    .grid-container,
-    .cards-wrapper {
-        display: grid !important;
-        grid-template-columns: repeat(2, 1fr) !important;
-        gap: 12px !important;
-        padding: 0 12px !important;
-        box-sizing: border-box;
-    }
-
-    .card,
-    .service-card, .service-item,
-    .city-card, .city-item,
-    .service-link-card {
-        margin-bottom: 0 !important;
-        padding: 14px 10px !important;
-        border-radius: 14px !important;
-        display: flex !important;
-        flex-direction: column !important;
-        align-items: center !important;
-        justify-content: center !important;
-        text-align: center !important;
-        min-height: 120px !important;
-        min-width: 0 !important;
-        word-break: break-word !important;
-        touch-action: manipulation !important;
-        -webkit-tap-highlight-color: rgba(255, 107, 0, 0.15) !important;
-        transition: transform 0.15s ease !important;
-    }
-
-    .card:active, .service-card:active, .service-link-card:active {
-        transform: scale(0.97) !important;
-    }
-
-    .card h2, .card h3, .service-card h3, .service-link-card h3 {
-        font-size: 0.95rem !important;
-        margin: 6px 0 2px 0 !important;
-        line-height: 1.3 !important;
-    }
-
-    .card p, .service-card p, .service-link-card p {
-        font-size: 0.75rem !important;
-        margin: 0 !important;
-        display: -webkit-box !important;
-        -webkit-line-clamp: 2 !important;
-        -webkit-box-orient: vertical !important;
-        overflow: hidden !important;
-        line-height: 1.3 !important;
-    }
-
-    .card-icon, .icon, .service-icon {
-        font-size: 1.6rem !important;
-        margin-bottom: 4px !important;
-    }
-
-    .hero, section:first-of-type {
-        padding: 20px 16px 16px 16px !important;
-    }
-
-    h1 {
-        font-size: 1.4rem !important;
-        line-height: 1.25 !important;
-        margin-bottom: 8px !important;
-    }
-
-    h2 {
-        font-size: 1.2rem !important;
-        margin-bottom: 12px !important;
-    }
-
-    .btn,
-    button,
-    .cta-button,
-    input[type="submit"],
-    .submit-btn {
-        width: 100% !important;
-        max-width: 100% !important;
-        min-height: 50px !important;
-        padding: 14px 20px !important;
-        font-size: 0.95rem !important;
-        border-radius: 12px !important;
-        box-sizing: border-box !important;
-        display: flex !important;
-        align-items: center !important;
-        justify-content: center !important;
-        gap: 8px !important;
-        touch-action: manipulation !important;
-        -webkit-tap-highlight-color: transparent !important;
-    }
-
-    .btn:active, button:active, .cta-button:active {
-        transform: scale(0.97) !important;
-    }
-
-    .sticky-bottom-bar {
-        position: fixed !important;
-        bottom: 0 !important;
-        left: 0 !important;
-        right: 0 !important;
-        background: rgba(20, 23, 26, 0.92) !important;
-        backdrop-filter: blur(12px) !important;
-        -webkit-backdrop-filter: blur(12px) !important;
-        padding: 10px 16px !important;
-        padding-bottom: calc(10px + env(safe-area-inset-bottom, 0px)) !important;
-        padding-left: calc(16px + env(safe-area-inset-left, 0px)) !important;
-        padding-right: calc(16px + env(safe-area-inset-right, 0px)) !important;
-        border-top: 1px solid var(--border-card) !important;
-        z-index: 9999 !important;
-        box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3) !important;
-    }
-
-    .sticky-bottom-bar a {
-        display: flex !important;
-        align-items: center !important;
-        justify-content: center !important;
-        gap: 8px !important;
-        background: var(--accent-orange) !important;
-        color: #ffffff !important;
-        font-weight: 700 !important;
-        text-decoration: none !important;
-        border-radius: 12px !important;
-        padding: 14px !important;
-        min-height: 50px !important;
-    }
-
-    .map-section {
-        padding: 24px 12px !important;
-    }
-
-    .map-section .map-title {
-        font-size: 1.3rem !important;
-        margin-bottom: 6px !important;
-    }
-
-    .map-section .map-desc {
-        font-size: 0.85rem !important;
-        margin-bottom: 16px !important;
-    }
-
-    .map-section .map-wrapper {
-        height: 280px !important;
-        border-radius: 12px !important;
-    }
-
-    .map-section .map-subtext {
-        font-size: 0.8rem !important;
-        margin-top: 12px !important;
-    }
-
-    @media (max-width: 380px) {
-        .services-grid, .cities-grid {
-            gap: 8px !important;
-            padding: 0 8px !important;
-        }
-
-        .card h2, .card h3, .service-link-card h3 {
-            font-size: 0.8rem !important;
-        }
-
-        .card p, .service-link-card p {
-            font-size: 0.65rem !important;
-            -webkit-line-clamp: 1 !important;
-        }
-
-        .card, .service-card, .service-link-card {
-            padding: 10px 6px !important;
-            min-height: 90px !important;
-            border-radius: 10px !important;
-        }
-
-        h1 {
-            font-size: 1.2rem !important;
-        }
-
-        .btn, button, .cta-button {
-            min-height: 44px !important;
-            font-size: 0.85rem !important;
-            padding: 12px !important;
-        }
-    }
-
-    .desktop-only {
-        display: none !important;
-    }
-
-    input[type="text"],
-    input[type="tel"],
-    input[type="email"],
-    select,
-    textarea {
-        font-size: 16px !important;
-        padding: 12px 14px !important;
-        border-radius: 10px !important;
-        width: 100% !important;
-    }
-}
-
-@media (min-width: 769px) and (max-width: 1024px) {
-    .services-grid, .cities-grid {
-        grid-template-columns: repeat(3, 1fr) !important;
-        gap: 16px !important;
-    }
-/* ---- ACCORDION FOR MOBILE (Раскрывашки) ---- */
-details.seo-accordion {
-    background-color: var(--bg-card) !important;
-    border: 1px solid var(--border-card) !important;
-    border-radius: 12px !important;
-    margin-bottom: 12px !important;
-    overflow: hidden;
-}
-
-details.seo-accordion summary {
-    padding: 14px 16px !important;
-    font-weight: 700;
-    color: var(--text-white) !important;
-    cursor: pointer;
-    list-style: none;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    min-height: 100vh;
 }
 
-details.seo-accordion summary::-webkit-details-marker {
-    display: none;
+/* 2. Заголовок сайта */
+.page-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 32px;
+    color: var(--text-primary);
 }
 
-details.seo-accordion summary::after {
-    content: "＋";
-    color: var(--accent-orange);
-    font-size: 1.2rem;
+/* 3. Главный контейнер (Дашборд) */
+.main-dashboard {
+    width: 100%;
+    max-width: 1050px;
+    display: grid;
+    grid-template-columns: 1fr 340px;
+    gap: 20px;
+    align-items: start;
 }
 
-details[open].seo-accordion summary::after {
-    content: "－";
+/* 4. Общие стили блоков (Серая подложка) */
+.services-section,
+.booking-form-section {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 24px;
 }
 
-details.seo-accordion .accordion-content {
-    padding: 0 16px 16px 16px !important;
-    border-top: 1px solid var(--border-card);
-    color: var(--text-muted) !important;
-    font-size: 0.9rem;
+.block-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--text-primary);
 }
-    .card, .service-card, .service-link-card {
-        min-height: 140px !important;
+
+/* 5. Сетка выбора техники (Wybierz usługę) */
+.services-grid-ui {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+/* Карточка отдельной техники */
+.service-card-ui {
+    background: transparent;
+    border: 1px solid var(--border-color);
+    border-radius: 14px;
+    padding: 24px 12px 16px 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--text-primary);
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.service-card-ui svg {
+    margin-bottom: 12px;
+    display: block;
+}
+
+.service-card-ui span {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+/* Оранжевая рамка при фокусе/клике (Как на макете) */
+.service-card-ui.active,
+.service-card-ui:hover {
+    border: 2px solid var(--accent-orange);
+    box-shadow: 0 0 12px rgba(242, 101, 34, 0.15);
+}
+
+/* 6. Форма заявки (Kontakt i Umówienie) */
+.booking-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.booking-form input,
+.booking-form textarea {
+    width: 100%;
+    background: var(--item-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 14px 16px;
+    color: var(--text-primary);
+    font-size: 0.95rem;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+.booking-form input::placeholder,
+.booking-form textarea::placeholder {
+    color: #6c727a;
+}
+
+.booking-form input:focus,
+.booking-form textarea:focus {
+    border-color: var(--accent-orange);
+}
+
+.booking-form textarea {
+    resize: none;
+    height: 110px;
+}
+
+/* Кнопка отправки */
+.btn-submit {
+    background: var(--accent-orange);
+    color: var(--text-primary);
+    border: none;
+    border-radius: 10px;
+    padding: 16px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 6px;
+    transition: background-color 0.2s ease;
+}
+
+.btn-submit:hover {
+    background: var(--accent-hover);
+}
+
+/* 7. Адаптив под мобилки */
+@media (max-width: 850px) {
+    body {
+        padding: 16px 10px;
+    }
+
+    .main-dashboard {
+        grid-template-columns: 1fr;
+    }
+
+    .services-grid-ui {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
-
