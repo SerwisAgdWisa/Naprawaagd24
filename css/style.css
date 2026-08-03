@@ -369,7 +369,46 @@ input[type="text"], input[type="tel"], input[type="email"], select, textarea {
         grid-template-columns: repeat(3, 1fr) !important;
         gap: 16px !important;
     }
+/* ---- ACCORDION FOR MOBILE (Раскрывашки) ---- */
+details.seo-accordion {
+    background-color: var(--bg-card) !important;
+    border: 1px solid var(--border-card) !important;
+    border-radius: 12px !important;
+    margin-bottom: 12px !important;
+    overflow: hidden;
+}
 
+details.seo-accordion summary {
+    padding: 14px 16px !important;
+    font-weight: 700;
+    color: var(--text-white) !important;
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+details.seo-accordion summary::-webkit-details-marker {
+    display: none;
+}
+
+details.seo-accordion summary::after {
+    content: "＋";
+    color: var(--accent-orange);
+    font-size: 1.2rem;
+}
+
+details[open].seo-accordion summary::after {
+    content: "－";
+}
+
+details.seo-accordion .accordion-content {
+    padding: 0 16px 16px 16px !important;
+    border-top: 1px solid var(--border-card);
+    color: var(--text-muted) !important;
+    font-size: 0.9rem;
+}
     .card, .service-card, .service-link-card {
         min-height: 140px !important;
     }
