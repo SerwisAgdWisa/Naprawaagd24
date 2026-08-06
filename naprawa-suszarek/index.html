@@ -7,7 +7,7 @@
 <meta content="index, follow" name="robots"/>
 <title>Naprawa Suszarek | WISA 721 988 949</title>
 <meta content="Profesjonalny serwis suszarek wszystkich marek. Naprawa, konserwacja i diagnostyka w Twoim mieście. Suszarka nie grzeje, nie obraca bębna, hałasuje." name="description"/>
-<link href="../css/style.css" rel="stylesheet"/>
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -31,29 +31,7 @@
   }
 }
 </script>
-<style>
-.breadcrumb-nav {
-    background: rgba(0,0,0,0.3);
-    padding: 12px 20px;
-    font-size: 0.9rem;
-}
-.breadcrumb-nav a {
-    color: #a0b4f8;
-    text-decoration: none;
-}
-.breadcrumb-nav a:hover {
-    color: white;
-    text-decoration: underline;
-}
-.breadcrumb-nav span {
-    color: rgba(255,255,255,0.6);
-    margin: 0 6px;
-}
-.breadcrumb-nav .current {
-    color: white;
-    font-weight: bold;
-}
-</style>
+
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",
@@ -84,7 +62,7 @@
 </header>
 <!-- BREADCRUMB -->
 <nav aria-label="Breadcrumb" class="breadcrumb-nav">
-<div style="max-width:1200px;margin:0 auto;">
+<div>
 <a href="/">Strona Glowna</a><span>›</span><span class="current">Naprawa Suszarek</span>
 </div>
 </nav>
@@ -185,12 +163,10 @@ function sendToWhatsApp(event) {
                `❗ Problem: ${message}`;
 
     let url = "https://api.whatsapp.com/send?phone=48721988949&text=" + encodeURIComponent(text);
-    window.open(url, '_blank');
+    window.location.href(url, '_blank');
     alert("Twoja zgłoszenie zostało wysłane na WhatsApp!");
 }
 </script>
-<div class="breadcrumb container">
-<a href="../index.html">Strona Główna</a> &gt; <span>Naprawa Suszarek</span>
-</div>
+
 <div class="sticky-bottom-bar"><a href="tel:+48721988949">📞 Zadzwoń teraz: +48721988949</a></div></body>
 </html>

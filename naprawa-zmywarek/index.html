@@ -7,30 +7,8 @@
 <title>Naprawa Zmywarek | WISA 721 988 949</title>
 <meta content="Profesjonalny serwis zmywarek w Twoim mieście. Naprawa wszystkich modeli, problemy z wodą, grzałką i elektroniką." name="description"/>
 <meta content="index, follow" name="robots"/>
-<link href="../css/style.css" rel="stylesheet"/>
-<style>
-.breadcrumb-nav {
-    background: rgba(0,0,0,0.3);
-    padding: 12px 20px;
-    font-size: 0.9rem;
-}
-.breadcrumb-nav a {
-    color: #a0b4f8;
-    text-decoration: none;
-}
-.breadcrumb-nav a:hover {
-    color: white;
-    text-decoration: underline;
-}
-.breadcrumb-nav span {
-    color: rgba(255,255,255,0.6);
-    margin: 0 6px;
-}
-.breadcrumb-nav .current {
-    color: white;
-    font-weight: bold;
-}
-</style>
+
+
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",
@@ -61,7 +39,7 @@
 </header>
 <!-- BREADCRUMB -->
 <nav aria-label="Breadcrumb" class="breadcrumb-nav">
-<div style="max-width:1200px;margin:0 auto;">
+<div>
 <a href="/">Strona Glowna</a><span>›</span><span class="current">Naprawa Zmywarek</span>
 </div>
 </nav>
@@ -149,29 +127,9 @@
 </div>
 </section>
 <section>
-<a class="floating-call-button" href="tel:+48721988949">📞</a>
+
 </section>
-<style>
-.floating-call-button {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 60px;
-  height: 60px;
-  background-color: #28a745;
-  color: white;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 60px;
-  font-size: 24px;
-  z-index: 9999;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-  text-decoration: none;
-}
-.floating-call-button:hover {
-  background-color: #218838;
-}
-</style>
+
 <!-- WhatsApp Script -->
 <script>
         function sendToWhatsApp(event) {
@@ -191,13 +149,11 @@
                        `❗ Problem: ${message}`;
 
             let url = "https://api.whatsapp.com/send?phone=48721988949&text=" + encodeURIComponent(text);
-            window.open(url, '_blank');
+            window.location.href(url, '_blank');
 
             alert("Twoje zgłoszenie zostało wysłane na WhatsApp!");
         }
     </script>
-<div class="breadcrumb container">
-<a href="../index.html">Strona Główna</a> &gt; <span>Naprawa Zmywarek</span>
-</div>
+
 <div class="sticky-bottom-bar"><a href="tel:+48721988949">📞 Zadzwoń teraz: +48721988949</a></div></body>
 </html>

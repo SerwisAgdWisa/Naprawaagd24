@@ -7,31 +7,9 @@
 <meta content="index, follow" name="robots"/>
 <title>Naprawa Suszarek Pyrzyce | Serwis Suszarek AGD | 721 988 949</title>
 <meta content="Naprawa suszarek w Pyrzycach – szybki serwis w domu klienta. Diagnostyka usterek, naprawa bębna, grzałek i elektroniki." name="description"/>
-<link href="../../css/style.css" rel="stylesheet"/>
+
 <!-- Schema.org -->
-<style>
-.breadcrumb-nav {
-    background: rgba(0,0,0,0.3);
-    padding: 12px 20px;
-    font-size: 0.9rem;
-}
-.breadcrumb-nav a {
-    color: #a0b4f8;
-    text-decoration: none;
-}
-.breadcrumb-nav a:hover {
-    color: white;
-    text-decoration: underline;
-}
-.breadcrumb-nav span {
-    color: rgba(255,255,255,0.6);
-    margin: 0 6px;
-}
-.breadcrumb-nav .current {
-    color: white;
-    font-weight: bold;
-}
-</style>
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -102,7 +80,7 @@
 </header>
 <!-- BREADCRUMB -->
 <nav aria-label="Breadcrumb" class="breadcrumb-nav">
-<div style="max-width:1200px;margin:0 auto;">
+<div>
 <a href="/">Strona Glowna</a><span>›</span><a href="/naprawa-suszarek/">Naprawa Suszarek</a><span>›</span><span class="current">Pyrzyce</span>
 </div>
 </nav>
@@ -134,11 +112,7 @@
 </div>
 </section>
 <!-- Breadcrumbs -->
-<div class="breadcrumb container">
-<a href="../../index.html">Strona Główna</a> &gt; 
-  <a href="../../index.html">Naprawa Suszarek</a> &gt; 
-  <span class="current">Pyrzyce</span>
-</div>
+
 <!-- Other Cities -->
 <section class="other-cities">
 <div class="container">
@@ -189,29 +163,9 @@
 </section>
 <!-- Floating Call Button -->
 <section>
-<a class="floating-call-button" href="tel:+48721988949">📞</a>
+
 </section>
-<style>
-.floating-call-button {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 60px;
-  height: 60px;
-  background-color: #28a745;
-  color: white;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 60px;
-  font-size: 24px;
-  z-index: 9999;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-  text-decoration: none;
-}
-.floating-call-button:hover {
-  background-color: #218838;
-}
-</style>
+
 <script>
 function sendToWhatsApp(event) {
   event.preventDefault();
@@ -230,233 +184,101 @@ function sendToWhatsApp(event) {
                `❗ Problem: ${message}`;
 
   const url = "https://api.whatsapp.com/send?phone=48721988949&text=" + encodeURIComponent(text);
-  window.open(url, '_blank');
+  window.location.href(url, '_blank');
   alert("Twoje zgłoszenie zostało wysłane na WhatsApp!");
 }
 </script>
 <!-- ULICE - SEO LOKALNE -->
-<section style="background:linear-gradient(135deg,#2c3e50,#34495e);padding:3rem 0;color:white;">
-<div style="max-width:1200px;margin:0 auto;padding:0 20px;">
-<h2 style="text-align:center;margin-bottom:0.5rem;font-size:1.8rem;">
+<section>
+<div>
+<h2>
             Naprawa suszarek - ulice w Pyrzyce
         </h2>
-<p style="text-align:center;color:rgba(255,255,255,0.7);margin-bottom:2rem;">
+<p>
             Dojeżdżamy do wszystkich ulic w Pyrzyce i okolicach
         </p>
-<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;">
-<ul style="list-style:none;padding:0;margin:0;">
+<div>
+<ul>
 <li>ul. Wojska Polskiego</li><li>ul. Niepodleglosci</li><li>ul. Rynek</li><li>ul. Kosciuszki</li><li>ul. Mickiewicza</li><li>ul. Slowackiego</li>
 </ul>
-<ul style="list-style:none;padding:0;margin:0;">
+<ul>
 <li>ul. Lipianska</li><li>ul. Stargardzka</li><li>ul. Szczecinska</li><li>ul. Ogrodowa</li><li>ul. Polna</li><li>ul. Lesna</li>
 </ul>
-<ul style="list-style:none;padding:0;margin:0;">
+<ul>
 <li>ul. Parkowa</li><li>ul. Kwiatowa</li><li>ul. Sosnowa</li>
 </ul>
 </div>
-<p style="text-align:center;margin-top:1.5rem;color:rgba(255,255,255,0.7);">
+<p>
             Nie widzisz swojej ulicy? Zadzwon - obslugujemy caly Pyrzyce!
-            <a href="tel:+48721988949" style="color:#f39c12;font-weight:bold;"> 721 988 949</a>
+            <a href="tel:+48721988949"> 721 988 949</a>
 </p>
 </div>
 </section>
 <!-- KONIEC ULIC -->
 <!-- MAPA GOOGLE - DODANA SKRYPTEM -->
-<section class="map-section" style="background:linear-gradient(135deg,#1a1a2e,#16213e);padding:3rem 0;">
-<div class="map-container map-wrapper" style="max-width:1200px;margin:0 auto;padding:0 20px;">
-<h2 class="map-title" style="color:white;text-align:center;margin-bottom:0.5rem;font-size:1.8rem;">
+<section class="map-section">
+<div class="map-container map-wrapper map-section"><h2 class="map-title">
             Obszar obslugi - Pyrzyce
-        </h2>
-<p class="map-desc" style="color:rgba(255,255,255,0.7);text-align:center;margin-bottom:1.5rem;">
+        </h2><p class="map-desc">
             Pyrzyce i okolice w promieniu 20km | Dojazd tego samego dnia | Tel: 721 988 949
-        </p>
-<iframe allowfullscreen="" height="400" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39442!2d14.8833!3d53.1500!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47aa3a3b3b3b3b40%3A0x42b45b23a5895509!2sPyrzyce!5e0!3m2!1spl!2spl!4v1625000000006" style="border:0;border-radius:12px;box-shadow:0 5px 20px rgba(0,0,0,0.3);" width="100%">
-</iframe>
-<p style="color:rgba(255,255,255,0.6);text-align:center;margin-top:1rem;font-size:0.9rem;">
+        </p><p>
             Nie widzisz swojej miejscowosci? Zadzwon - obslugujemy caly region!
-            <a href="tel:+48721988949" style="color:#f39c12;font-weight:bold;"> 721 988 949</a>
-</p>
-</div>
+            <a href="tel:+48721988949"> 721 988 949</a>
+</p><div class="map-container">
+
+
+<iframe allowfullscreen="" height="400" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39442!2d14.8833!3d53.1500!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47aa3a3b3b3b3b40%3A0x42b45b23a5895509!2sPyrzyce!5e0!3m2!1spl!2spl!4v1625000000006" width="100%">
+</iframe>
+
+</div></div>
 </section>
 <!-- KONIEC MAPY -->
-<section class="unique-ai-content" style="padding: 25px; background: #f8f9fa; border-radius: 8px; margin: 30px 0;">
+<section class="unique-ai-content">
 <div class="container">
-<h2 style="font-size: 1.4rem; margin-bottom: 15px;">Serwis suszarki wszystkich marek w Pyrzyce</h2>
+<h2>Serwis suszarki wszystkich marek w Pyrzyce</h2>
 <p>Suszarki w Pyrzycach - nasza obsługa. Często napotykamy usterki takie jak brak grzania, zatrzymanie się bębna lub zbyt długi czas suszenia. W niektórych przypadkach suszarka może również emitować niepożądany hałas. Nasz serwis specjalizuje się w naprawie tych usterków, aby Twoja suszarka działała sprawnie i bezproblemowo.</p><p>Nasza siedziba znajduje się w centrum Pyrzyc, blisko ul. Wojska, ul. Niepodległości, ul. Rynek, ul. Kosciuszki i ul. Mickiewicza. Czas dojazdu do Twojego miejsca w zależności od lokalizacji nie przekracza 15-20 minut. Nasz serwis jest dostępny dla mieszkańców Pyrzyc i okolicznych dzielnic.</p><p>Zgłaszając się do naszego serwisu, masz pewność, że Twoja suszarka zostanie sprawdzona i naprawiona w jednej wizycie. Nasz serwis obsługuje wiele marek, w tym Samsung, Lg, Bosch, Whirlpool, Beko, Siemens,</p>
 </div>
 </section><footer>
 <p>© 2026 Serwis Suszarek Pyrzyce | WISA | Tel: +48 721 988 949</p>
 <p><a href="../../index.html">← Powrót do strony głównej</a> | <a href="../../index.html">Naprawa Suszarek</a></p>
 <!-- СЕКЦИЯ БРЕНДОВ - ДОБАВЛЕНО СКРИПТОМ -->
-<section style="background:linear-gradient(135deg,#667eea,#764ba2);padding:3rem 0;">
-<div style="max-width:1200px;margin:0 auto;padding:0 20px;">
-<h2 style="color:white;text-align:center;margin-bottom:2rem;font-size:2rem;">
+<section>
+<div>
+<h2>
                 Wybierz marke - Naprawa Suszarek Pyrzyce
             </h2>
-<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:15px;">
-<a href="samsung.html" onmouseout="this.style.background='rgba(255,255,255,0.15)'" onmouseover="this.style.background='rgba(255,255,255,0.25)'" style="
-                display:block;
-                background:rgba(255,255,255,0.15);
-                backdrop-filter:blur(10px);
-                color:white;
-                padding:20px;
-                border-radius:12px;
-                text-decoration:none;
-                text-align:center;
-                border:1px solid rgba(255,255,255,0.3);
-                transition:all 0.3s ease;
-                font-weight:bold;
-            ">
+<div>
+<a href="samsung.html" onmouseout="this.style.background='rgba(255,255,255,0.15)'" onmouseover="this.style.background='rgba(255,255,255,0.25)'">
                 Samsung
             </a>
-<a href="lg.html" onmouseout="this.style.background='rgba(255,255,255,0.15)'" onmouseover="this.style.background='rgba(255,255,255,0.25)'" style="
-                display:block;
-                background:rgba(255,255,255,0.15);
-                backdrop-filter:blur(10px);
-                color:white;
-                padding:20px;
-                border-radius:12px;
-                text-decoration:none;
-                text-align:center;
-                border:1px solid rgba(255,255,255,0.3);
-                transition:all 0.3s ease;
-                font-weight:bold;
-            ">
+<a href="lg.html" onmouseout="this.style.background='rgba(255,255,255,0.15)'" onmouseover="this.style.background='rgba(255,255,255,0.25)'">
                 LG
             </a>
-<a href="bosch.html" onmouseout="this.style.background='rgba(255,255,255,0.15)'" onmouseover="this.style.background='rgba(255,255,255,0.25)'" style="
-                display:block;
-                background:rgba(255,255,255,0.15);
-                backdrop-filter:blur(10px);
-                color:white;
-                padding:20px;
-                border-radius:12px;
-                text-decoration:none;
-                text-align:center;
-                border:1px solid rgba(255,255,255,0.3);
-                transition:all 0.3s ease;
-                font-weight:bold;
-            ">
+<a href="bosch.html" onmouseout="this.style.background='rgba(255,255,255,0.15)'" onmouseover="this.style.background='rgba(255,255,255,0.25)'">
                 Bosch
             </a>
-<a href="whirlpool.html" onmouseout="this.style.background='rgba(255,255,255,0.15)'" onmouseover="this.style.background='rgba(255,255,255,0.25)'" style="
-                display:block;
-                background:rgba(255,255,255,0.15);
-                backdrop-filter:blur(10px);
-                color:white;
-                padding:20px;
-                border-radius:12px;
-                text-decoration:none;
-                text-align:center;
-                border:1px solid rgba(255,255,255,0.3);
-                transition:all 0.3s ease;
-                font-weight:bold;
-            ">
+<a href="whirlpool.html" onmouseout="this.style.background='rgba(255,255,255,0.15)'" onmouseover="this.style.background='rgba(255,255,255,0.25)'">
                 Whirlpool
             </a>
-<a href="beko.html" onmouseout="this.style.background='rgba(255,255,255,0.15)'" onmouseover="this.style.background='rgba(255,255,255,0.25)'" style="
-                display:block;
-                background:rgba(255,255,255,0.15);
-                backdrop-filter:blur(10px);
-                color:white;
-                padding:20px;
-                border-radius:12px;
-                text-decoration:none;
-                text-align:center;
-                border:1px solid rgba(255,255,255,0.3);
-                transition:all 0.3s ease;
-                font-weight:bold;
-            ">
+<a href="beko.html" onmouseout="this.style.background='rgba(255,255,255,0.15)'" onmouseover="this.style.background='rgba(255,255,255,0.25)'">
                 Beko
             </a>
-<a href="siemens.html" onmouseout="this.style.background='rgba(255,255,255,0.15)'" onmouseover="this.style.background='rgba(255,255,255,0.25)'" style="
-                display:block;
-                background:rgba(255,255,255,0.15);
-                backdrop-filter:blur(10px);
-                color:white;
-                padding:20px;
-                border-radius:12px;
-                text-decoration:none;
-                text-align:center;
-                border:1px solid rgba(255,255,255,0.3);
-                transition:all 0.3s ease;
-                font-weight:bold;
-            ">
+<a href="siemens.html" onmouseout="this.style.background='rgba(255,255,255,0.15)'" onmouseover="this.style.background='rgba(255,255,255,0.25)'">
                 Siemens
             </a>
-<a href="candy.html" onmouseout="this.style.background='rgba(255,255,255,0.15)'" onmouseover="this.style.background='rgba(255,255,255,0.25)'" style="
-                display:block;
-                background:rgba(255,255,255,0.15);
-                backdrop-filter:blur(10px);
-                color:white;
-                padding:20px;
-                border-radius:12px;
-                text-decoration:none;
-                text-align:center;
-                border:1px solid rgba(255,255,255,0.3);
-                transition:all 0.3s ease;
-                font-weight:bold;
-            ">
+<a href="candy.html" onmouseout="this.style.background='rgba(255,255,255,0.15)'" onmouseover="this.style.background='rgba(255,255,255,0.25)'">
                 Candy
             </a>
-<a href="miele.html" onmouseout="this.style.background='rgba(255,255,255,0.15)'" onmouseover="this.style.background='rgba(255,255,255,0.25)'" style="
-                display:block;
-                background:rgba(255,255,255,0.15);
-                backdrop-filter:blur(10px);
-                color:white;
-                padding:20px;
-                border-radius:12px;
-                text-decoration:none;
-                text-align:center;
-                border:1px solid rgba(255,255,255,0.3);
-                transition:all 0.3s ease;
-                font-weight:bold;
-            ">
+<a href="miele.html" onmouseout="this.style.background='rgba(255,255,255,0.15)'" onmouseover="this.style.background='rgba(255,255,255,0.25)'">
                 Miele
             </a>
-<a href="haier.html" onmouseout="this.style.background='rgba(255,255,255,0.15)'" onmouseover="this.style.background='rgba(255,255,255,0.25)'" style="
-                display:block;
-                background:rgba(255,255,255,0.15);
-                backdrop-filter:blur(10px);
-                color:white;
-                padding:20px;
-                border-radius:12px;
-                text-decoration:none;
-                text-align:center;
-                border:1px solid rgba(255,255,255,0.3);
-                transition:all 0.3s ease;
-                font-weight:bold;
-            ">
+<a href="haier.html" onmouseout="this.style.background='rgba(255,255,255,0.15)'" onmouseover="this.style.background='rgba(255,255,255,0.25)'">
                 Haier
             </a>
-<a href="hisense.html" onmouseout="this.style.background='rgba(255,255,255,0.15)'" onmouseover="this.style.background='rgba(255,255,255,0.25)'" style="
-                display:block;
-                background:rgba(255,255,255,0.15);
-                backdrop-filter:blur(10px);
-                color:white;
-                padding:20px;
-                border-radius:12px;
-                text-decoration:none;
-                text-align:center;
-                border:1px solid rgba(255,255,255,0.3);
-                transition:all 0.3s ease;
-                font-weight:bold;
-            ">
+<a href="hisense.html" onmouseout="this.style.background='rgba(255,255,255,0.15)'" onmouseover="this.style.background='rgba(255,255,255,0.25)'">
                 Hisense
             </a>
-<a href="amica.html" onmouseout="this.style.background='rgba(255,255,255,0.15)'" onmouseover="this.style.background='rgba(255,255,255,0.25)'" style="
-                display:block;
-                background:rgba(255,255,255,0.15);
-                backdrop-filter:blur(10px);
-                color:white;
-                padding:20px;
-                border-radius:12px;
-                text-decoration:none;
-                text-align:center;
-                border:1px solid rgba(255,255,255,0.3);
-                transition:all 0.3s ease;
-                font-weight:bold;
-            ">
+<a href="amica.html" onmouseout="this.style.background='rgba(255,255,255,0.15)'" onmouseover="this.style.background='rgba(255,255,255,0.25)'">
                 Amica
             </a>
 </div>
@@ -466,24 +288,24 @@ function sendToWhatsApp(event) {
 <p><a href="/mapa-stron.html">Mapa strony (wszystkie usługi i miasta)</a></p>
 </footer>
 <!-- НАВИГАЦИЯ - ДОБАВЛЕНО СКРИПТОМ -->
-<div style="background:#2c3e50;padding:20px;text-align:center;">
-<div style="max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;text-align:left;">
 <div>
-<h4 style="color:#667eea;margin:0 0 10px 0;">Nawigacja</h4>
-<a href="../../" style="color:#667eea;text-decoration:none;display:block;margin:5px 0;">← Strona Glowna</a>
-<a href="../" style="color:#667eea;text-decoration:none;display:block;margin:5px 0;">← Naprawa Suszarek</a>
+<div>
+<div>
+<h4>Nawigacja</h4>
+<a href="../../">← Strona Glowna</a>
+<a href="../">← Naprawa Suszarek</a>
 </div>
 <div>
-<h4 style="color:#667eea;margin:0 0 10px 0;">Inne miasta</h4>
-<a href="../szczecin/" style="color:#667eea;text-decoration:none;display:block;margin:5px 0;">Szczecin</a><a href="../stargard/" style="color:#667eea;text-decoration:none;display:block;margin:5px 0;">Stargard</a><a href="../goleniow/" style="color:#667eea;text-decoration:none;display:block;margin:5px 0;">goleniow</a><a href="../nowogard/" style="color:#667eea;text-decoration:none;display:block;margin:5px 0;">Nowogard</a><a href="../maszewo/" style="color:#667eea;text-decoration:none;display:block;margin:5px 0;">Maszewo</a><a href="../police/" style="color:#667eea;text-decoration:none;display:block;margin:5px 0;">Police</a>
+<h4>Inne miasta</h4>
+<a href="../szczecin/">Szczecin</a><a href="../stargard/">Stargard</a><a href="../goleniow/">goleniow</a><a href="../nowogard/">Nowogard</a><a href="../maszewo/">Maszewo</a><a href="../police/">Police</a>
 </div>
 <div>
-<h4 style="color:#667eea;margin:0 0 10px 0;">Inne uslugi</h4>
-<a href="../../naprawa-pralek/pyrzyce/" style="color:#667eea;text-decoration:none;display:block;margin:5px 0;">Naprawa Pralek</a>
-<a href="../../naprawa-zmywarek/pyrzyce/" style="color:#667eea;text-decoration:none;display:block;margin:5px 0;">Naprawa Zmywarek</a>
-<a href="../../naprawa-lodowek/pyrzyce/" style="color:#667eea;text-decoration:none;display:block;margin:5px 0;">Naprawa Lodowek</a>
-<a href="../../naprawa-piekarnikow/pyrzyce/" style="color:#667eea;text-decoration:none;display:block;margin:5px 0;">Naprawa Piekarnikow</a>
-<a href="../../naprawa-suszarek/pyrzyce/" style="color:#667eea;text-decoration:none;display:block;margin:5px 0;">Naprawa Suszarek</a>
+<h4>Inne uslugi</h4>
+<a href="../../naprawa-pralek/pyrzyce/">Naprawa Pralek</a>
+<a href="../../naprawa-zmywarek/pyrzyce/">Naprawa Zmywarek</a>
+<a href="../../naprawa-lodowek/pyrzyce/">Naprawa Lodowek</a>
+<a href="../../naprawa-piekarnikow/pyrzyce/">Naprawa Piekarnikow</a>
+<a href="../../naprawa-suszarek/pyrzyce/">Naprawa Suszarek</a>
 </div>
 </div>
 </div>

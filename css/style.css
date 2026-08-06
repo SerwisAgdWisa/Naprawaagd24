@@ -15,6 +15,37 @@
 
 /* ---- RESET ---- */
 * { box-sizing: border-box; }
+
+/* ---- SERVICE / CITY ICONS (SVG) ---- */
+.service-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.service-icon-img,
+.city-herb-icon {
+    width: 44px;
+    height: 44px;
+    object-fit: contain;
+    display: block;
+    filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.35));
+    transition: transform 0.2s ease;
+}
+
+.service-link-card:hover .service-icon-img,
+.city-card:hover .city-herb-icon {
+    transform: scale(1.08) translateY(-2px);
+}
+
+/* herb-иконки городов в H1 на страницах городов */
+h1 .city-herb-icon {
+    vertical-align: middle;
+    margin-right: 8px;
+    width: 40px;
+    height: 40px;
+}
 body {
     background-color: var(--bg-main) !important;
     color: var(--text-white) !important;
@@ -220,6 +251,12 @@ input[type="text"], input[type="tel"], input[type="email"], select, textarea {
     .card-icon, .icon, .service-icon {
         font-size: 1.6rem !important;
         margin-bottom: 4px !important;
+    }
+
+    .service-icon-img,
+    .city-herb-icon {
+        width: 36px !important;
+        height: 36px !important;
     }
 
     .hero, section:first-of-type {

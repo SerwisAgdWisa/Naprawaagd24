@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 120" width="100" height="120">
+        <defs>
+            <linearGradient id="bodyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#ffffff"/>
+                <stop offset="100%" stop-color="#e2e8f0"/>
+            </linearGradient>
+            <linearGradient id="doorGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#475569"/>
+                <stop offset="100%" stop-color="#0f172a"/>
+            </linearGradient>
+        </defs>
+        <!-- Корпус -->
+        <rect x="15" y="10" width="70" height="95" rx="8" fill="url(#bodyGrad)" stroke="#1e293b" stroke-width="4"/>
+        <!-- Панель управления -->
+        <line x1="15" y1="32" x2="85" y2="32" stroke="#1e293b" stroke-width="3"/>
+        <rect x="22" y="17" width="22" height="10" rx="3" fill="#cbd5e1" stroke="#1e293b" stroke-width="2"/>
+        <circle cx="58" cy="22" r="4" fill="#1e293b"/>
+        <circle cx="70" cy="20" r="2" fill="#1e293b"/>
+        <circle cx="76" cy="20" r="2" fill="#1e293b"/>
+        <!-- Люк c объемом -->
+        <circle cx="50" cy="68" r="24" fill="#ffffff" stroke="#1e293b" stroke-width="4"/>
+        <circle cx="50" cy="68" r="18" fill="url(#doorGrad)" stroke="#1e293b" stroke-width="3"/>
+        <path d="M 40 60 A 10 10 0 0 1 58 60" fill="none" stroke="#94a3b8" stroke-width="3" stroke-linecap="round"/>
+        <!-- Ножки -->
+        <rect x="22" y="105" width="10" height="5" rx="1" fill="#1e293b"/>
+        <rect x="68" y="105" width="10" height="5" rx="1" fill="#1e293b"/>
+    </svg>
