@@ -70,7 +70,7 @@
 </div>
 </section>
 <!-- Cities Navigation -->
-<section class="cities-navigation">
+<div class="dashboard-grid"><div class="dashboard-left"><section class="cities-navigation">
 <div class="container">
 <h2>Wybierz swoje miasto:</h2>
 <div class="cities-grid">
@@ -83,9 +83,7 @@
 <a class="city-card" href="police/">Police</a>
 </div>
 </div>
-</section>
-<!-- Order Form -->
-<section class="order-section" id="order">
+</section></div><div class="dashboard-right"><section class="order-section" id="order">
 <div class="container">
 <form class="order-form" onsubmit="sendToWhatsApp(event)">
 <h2>Zamów naprawę zmywarki</h2>
@@ -125,7 +123,7 @@
 <button class="submit-btn" type="submit">Wyślij na WhatsApp</button>
 </form>
 </div>
-</section>
+</section></div></div>
 <section>
 
 </section>
@@ -149,7 +147,7 @@
                        `❗ Problem: ${message}`;
 
             let url = "https://api.whatsapp.com/send?phone=48721988949&text=" + encodeURIComponent(text);
-            window.location.href(url, '_blank');
+            window.open(url, '_blank');
 
             alert("Twoje zgłoszenie zostało wysłane na WhatsApp!");
         }

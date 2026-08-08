@@ -238,7 +238,7 @@
 </div>
 </section>
 <!-- Common Problems -->
-<section class="services">
+<div class="dashboard-grid"><div class="dashboard-left"><section class="services">
 <div class="container">
 <h2>Najczęstsze Usterki Pralek</h2>
 <div class="services-grid">
@@ -274,8 +274,7 @@
 </div>
 </div>
 </div>
-</section>
-<section class="order-section" id="order">
+</section></div><div class="dashboard-right"><section class="order-section" id="order">
 <div class="container">
 <h2>Zamów Naprawę Pralki</h2>
 <form class="order-form" onsubmit="sendToWhatsApp(event)">
@@ -306,7 +305,7 @@
 <button class="submit-btn" type="submit">Wyślij na WhatsApp</button>
 </form>
 </div>
-</section>
+</section></div></div>
 <!-- Footer -->
 <!-- ULICE - SEO LOKALNE -->
 <section>
@@ -388,7 +387,7 @@
                      `Wysłane z: https://naprawaagd24.pl`;
         
         const whatsappURL = `https://wa.me/48721988949?text=${encodeURIComponent(text)}`;
-        window.location.href(whatsappURL, '_blank');
+        window.open(whatsappURL, '_blank');
     }
     </script>
 <div class="sticky-bottom-bar"><a href="tel:+48721988949">📞 Zadzwoń teraz: +48721988949</a></div></body>

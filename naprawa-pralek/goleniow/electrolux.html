@@ -167,12 +167,12 @@
 <h2>Kody błędów w pralkach Electrolux</h2>
 <div class="content">
 <p>Pralki Electrolux mają system autodiagnostyki. Jeśli widzisz któryś z kodów na wyświetlaczu:</p>
-<ul class="error-codes-list"><ul class="error-codes-list">
+<ul class="error-codes-list">
 <li><strong>Kod E20 / E21 / C2</strong> – problem z odpływem wody, zablokowany filtr lub pompa <span>(kontrola: pompa spustowa)</span>.</li>
 <li><strong>Kod E40 / E41</strong> – problem z zamknięciem drzwi pralki <span>(kontrola: zamek drzwi)</span>.</li>
 <li><strong>Kod E10 / C1</strong> – brak poboru wody w wyznaczonym czasie <span>(kontrola: zawór wlewowy)</span>.</li>
 <li><strong>Kod E60 / E61</strong> – błąd grzania wody, uszkodzony element grzejny <span>(kontrola: grzałka)</span>.</li>
-</ul></ul>
+</ul>
 <p class="alert-box">
                     📞 <strong>Nawet jeśli kod nie jest na liście</strong> lub pralka nie pokazuje błędu - zadzwoń <a href="tel:+48721988949">721 988 949</a>. 
                     Mamy dokumentację dla wszystkich modeli Electrolux.
@@ -279,7 +279,7 @@
 </div>
 </div>
 </section>
-<section class="services">
+<div class="dashboard-grid"><div class="dashboard-left"><section class="services">
 <div class="container">
 <div class="expertise-box">
 <h2>📋 Ekspertyza techniczna dla ubezpieczenia</h2>
@@ -306,7 +306,7 @@
 </div>
 </div>
 </div>
-</section><section class="order-section" id="order">
+</section></div><div class="dashboard-right"><section class="order-section" id="order">
 <div class="container">
 <h2>Zamów Naprawę Pralki</h2>
 <form class="order-form" onsubmit="sendToWhatsApp(event)">
@@ -337,7 +337,7 @@
 <button class="submit-btn" type="submit">Wyślij na WhatsApp</button>
 </form>
 </div>
-</section>
+</section></div></div>
 <!-- Footer -->
 <!-- unique-local-block -->
 <section class="unique-ai-content">
@@ -373,7 +373,7 @@
                      `Wysłane z: https://naprawaagd24.pl`;
         
         const whatsappURL = `https://wa.me/48721988949?text=${encodeURIComponent(text)}`;
-        window.location.href(whatsappURL, '_blank');
+        window.open(whatsappURL, '_blank');
     }
     </script>
 
