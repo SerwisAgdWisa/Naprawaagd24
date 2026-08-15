@@ -340,3 +340,42 @@ footer a {
 footer a:hover {
     color: var(--accent-orange) !important;
 }
+/* ---- ОГРАНИЧЕНИЕ РАЗМЕРОВ ВСТАВЛЕННЫХ SVG ИКОНОК ---- */
+svg {
+    max-width: 100%;
+}
+
+/* Строчные иконки (телефон, эмодзи в тексте) */
+svg.icon-inline,
+svg.icon-phone {
+    width: 1em !important;
+    height: 1em !important;
+    max-width: 20px !important;
+    max-height: 20px !important;
+    display: inline-block !important;
+    vertical-align: -2px !important;
+    fill: currentColor !important; /* Наследует цвет текста/ссылки (оранжевый для .phone) */
+}
+
+/* Плавающая кнопка WhatsApp */
+.whatsapp-float svg,
+svg.icon-whatsapp {
+    width: 28px !important;
+    height: 28px !important;
+    display: block !important;
+    margin: auto !important;
+    fill: #25d366 !important; /* <--- ЗДЕСЬ ВОТ ЗЕЛЕНЫЙ ЦВЕТ WHATSAPP */
+}
+
+/* Иконки услуг в сетке */
+.service-icon svg,
+.service-icon-img svg,
+svg.service-icon {
+    width: 44px !important;
+    height: 44px !important;
+    max-width: 44px !important;
+    max-height: 44px !important;
+    display: block !important;
+    margin: 0 auto 10px auto !important;
+    fill: var(--accent-orange) !important; /* Оранжевый цвет темы */
+}
