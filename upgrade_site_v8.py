@@ -61,8 +61,8 @@ def process_file(path: Path) -> bool:
 
     # 2. Исправление домена в Schema.org
     for script in soup.find_all('script', type='application/ld+json'):
-        if script.string and 'naprawawagd24.pl' in script.string:
-            script.string = script.string.replace('naprawawagd24.pl', 'naprawaagd24.pl')
+        if script.string and 'naprawaagd24.pl' in script.string:
+            script.string = script.string.replace('naprawaagd24.pl', 'naprawaagd24.pl')
             modified = True
 
     # 3. Удаление текстовых эмодзи из шапки

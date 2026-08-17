@@ -2,7 +2,7 @@ import os
 import re
 import json
 
-DOMAIN = "https://naprawawagd24.pl"
+DOMAIN = "https://naprawaagd24.pl"
 PHONE = "+48721988949"
 
 SERVICES = {
