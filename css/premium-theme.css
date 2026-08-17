@@ -379,3 +379,97 @@ svg.service-icon {
     margin: 0 auto 10px auto !important;
     fill: var(--accent-orange) !important; /* Оранжевый цвет темы */
 }
+/* ==========================================
+   КОМПАКТНЫЙ МОБИЛЬНЫЙ СТИЛЬ (ПЛИТКА 2x2)
+   ========================================== */
+@media (max-width: 580px) {
+    /* 1. Компактный Hero-блок и заголовки */
+    .hero {
+        padding: 24px 0 16px 0 !important;
+    }
+
+    h1 {
+        font-size: 1.5rem !important;
+        margin-bottom: 8px !important;
+    }
+
+    .hero p {
+        font-size: 0.85rem !important;
+        margin-bottom: 14px !important;
+    }
+
+    h2 {
+        font-size: 1.25rem !important;
+        margin-bottom: 14px !important;
+    }
+
+    .services-navigation, 
+    .cities-navigation, 
+    .services, 
+    .reviews,
+    .order-section {
+        padding: 16px 0 !important;
+    }
+
+    /* 2. Перевод сеток в 2 колонки */
+    .services-grid, 
+    .cities-grid, 
+    .reviews-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 8px !important;
+    }
+
+    /* 3. Компактные карточки */
+    .service-link-card, 
+    .service-card, 
+    .city-card, 
+    .review-card {
+        padding: 12px 8px !important;
+        min-height: 110px !important;
+        border-radius: 10px !important;
+    }
+
+    /* 4. Уменьшение иконок и отступов */
+    .service-icon, 
+    .service-icon-img, 
+    .city-herb-icon,
+    .service-icon svg,
+    .service-icon-img svg,
+    svg.service-icon {
+        width: 30px !important;
+        height: 30px !important;
+        max-width: 30px !important;
+        max-height: 30px !important;
+        margin-bottom: 6px !important;
+    }
+
+    /* 5. Уменьшение шрифта внутри карточек */
+    .service-link-card h3, 
+    .service-card h3, 
+    .city-card h3 {
+        font-size: 0.88rem !important;
+        margin-top: 4px !important;
+        margin-bottom: 2px !important;
+    }
+
+    .service-link-card p, 
+    .service-card p, 
+    .city-card p {
+        font-size: 0.72rem !important;
+        line-height: 1.2 !important;
+    }
+
+    /* 6. Компактная форма заявки */
+    .order-form {
+        padding: 16px !important;
+    }
+
+    input[type="text"], 
+    input[type="tel"], 
+    input[type="email"], 
+    select, 
+    textarea {
+        padding: 9px 10px !important;
+        font-size: 0.85rem !important;
+    }
+}
