@@ -473,3 +473,8 @@ svg.service-icon {
         font-size: 0.85rem !important;
     }
 }
+.service-icon, .service-icon-img, .city-herb-icon {
+    filter: none !important;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
